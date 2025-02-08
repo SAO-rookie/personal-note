@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "后端/java/springboot/springboot技巧.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "springboot技巧"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "后端/java/springboot/springboot技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "README 的反向链接列表"
+              "title": "springboot技巧 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "后端/java/springboot/springboot技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "README 的出链列表"
+              "title": "springboot技巧 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "后端/java/springboot/springboot技巧.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "springboot技巧 的大纲"
             }
           },
           {
@@ -179,6 +179,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "074f90217a862b91",
-  "lastOpenFiles": []
+  "active": "b1ee5468c9d26b96",
+  "lastOpenFiles": [
+    "前端",
+    "运维/mysql",
+    "运维/未命名.md",
+    "后端/java/springboot/springboot技巧.md",
+    "README.md",
+    "运维",
+    "后端/java/springboot",
+    "后端/go/go技巧.md",
+    "后端/java",
+    "后端/go",
+    "工具/杂物.md",
+    "后端",
+    "工具"
+  ]
 }
