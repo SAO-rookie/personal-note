@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端/java/springboot/springboot技巧.md",
+                "file": "运维/nginx.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "springboot技巧"
+              "title": "nginx"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "后端/java/springboot/springboot技巧.md",
+                "file": "运维/nginx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "springboot技巧 的反向链接列表"
+              "title": "nginx 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "后端/java/springboot/springboot技巧.md",
+                "file": "运维/nginx.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "springboot技巧 的出链列表"
+              "title": "nginx 的出链列表"
             }
           },
           {
@@ -142,27 +142,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "后端/java/springboot/springboot技巧.md",
+                "file": "运维/nginx.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "springboot技巧 的大纲"
-            }
-          },
-          {
-            "id": "9cc42987b853e8c9",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "nginx 的大纲"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -173,26 +163,48 @@
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b1ee5468c9d26b96",
+  "active": "074f90217a862b91",
   "lastOpenFiles": [
-    "前端",
-    "运维/mysql",
-    "运维/未命名.md",
-    "后端/java/springboot/springboot技巧.md",
-    "README.md",
-    "运维",
-    "后端/java/springboot",
+    "运维/容器/Minio.md",
+    "运维/容器/PostgreSql.md",
+    "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
+    "运维/Kubernetes/kubernetes安装/服务器初始化.md",
+    "运维/Kubernetes/kubernetes流量入口/ingress-nginx",
+    "运维/Kubernetes/kubernetes流量入口",
+    "运维/Kubernetes/未命名.md",
+    "运维/Kubernetes/kubernetes技巧.md",
+    "运维/Kubernetes/kubernetes解决方案.md",
+    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
+    "运维/Kubernetes/helm/ingress-nginx.md",
+    "运维/Kubernetes/helm/prometheus.md",
+    "运维/Kubernetes/helm/loki.md",
+    "运维/Kubernetes/helm/cert-manager.md",
+    "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
+    "运维/Kubernetes/helm/openvpn.md",
+    "运维/Kubernetes/helm/监控",
+    "运维/Kubernetes/minio.md",
+    "运维/nginx.md",
+    "运维/NFS安装.md",
+    "后端/消息队列/kafka技巧.md",
     "后端/go/go技巧.md",
-    "后端/java",
-    "后端/go",
-    "工具/杂物.md",
-    "后端",
-    "工具"
+    "后端/mysql/mysql配置.md",
+    "后端/mysql/mysql技巧.md",
+    "运维/Kubernetes/helm",
+    "运维/容器/containerd/Containerd配置.md",
+    "运维/Kubernetes/kubernetes安装",
+    "后端/消息队列",
+    "运维/Kubernetes",
+    "运维/容器/docker/Docker配置.md",
+    "运维/VPN",
+    "前端/前端技巧.md",
+    "运维/容器/containerd",
+    "运维/容器/docker",
+    "后端/java/springboot/springboot技巧.md",
+    "后端/mysql/mysql.md"
   ]
 }
