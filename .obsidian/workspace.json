@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/helm/openvpn.md",
+                "file": "运维/linux解决方案.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "openvpn"
+              "title": "linux解决方案"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "运维/Kubernetes/helm/openvpn.md",
+                "file": "运维/linux解决方案.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "openvpn 的反向链接列表"
+              "title": "linux解决方案 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "运维/Kubernetes/helm/openvpn.md",
+                "file": "运维/linux解决方案.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "openvpn 的出链列表"
+              "title": "linux解决方案 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/Kubernetes/helm/openvpn.md",
+                "file": "运维/linux解决方案.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "openvpn 的大纲"
+              "title": "linux解决方案 的大纲"
             }
           }
         ],
@@ -170,17 +170,20 @@
   },
   "active": "074f90217a862b91",
   "lastOpenFiles": [
+    "运维/Kubernetes/kubernetes安装/服务器初始化.md",
+    "运维/linux解决方案.md",
+    "运维/容器/minio.md",
+    "运维/Kubernetes/helm/cert-manager.md",
+    "运维/Kubernetes/helm/openvpn.md",
     "运维/容器/docker/Docker配置.md",
     "运维/容器/containerd/Containerd配置.md",
     "后端/mysql/mysql配置.md",
-    "运维/容器/Minio.md",
     "后端/消息队列/kafka技巧.md",
     "运维/Kubernetes/kubernetes技巧.md",
     "运维/Kubernetes/kubernetes解决方案.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/nginx.md",
     "运维/容器/PostgreSql.md",
-    "运维/Kubernetes/kubernetes安装/服务器初始化.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx",
     "运维/Kubernetes/kubernetes流量入口",
     "运维/Kubernetes/未命名.md",
@@ -188,9 +191,7 @@
     "运维/Kubernetes/helm/ingress-nginx.md",
     "运维/Kubernetes/helm/prometheus.md",
     "运维/Kubernetes/helm/loki.md",
-    "运维/Kubernetes/helm/cert-manager.md",
     "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
-    "运维/Kubernetes/helm/openvpn.md",
     "运维/Kubernetes/helm/监控",
     "运维/Kubernetes/minio.md",
     "运维/NFS安装.md",
@@ -204,7 +205,6 @@
     "前端/前端技巧.md",
     "运维/容器/containerd",
     "运维/容器/docker",
-    "后端/java/springboot/springboot技巧.md",
-    "后端/mysql/mysql.md"
+    "后端/java/springboot/springboot技巧.md"
   ]
 }
