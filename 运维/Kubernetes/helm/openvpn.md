@@ -73,5 +73,257 @@ remote {ip} {port} tcp
 ```
 * ip: 添加可访问的ip
 * port：开发的端口
+# 客户端配置
+## 使用vpn软件连接
+[pritunl下载地址-三端通用](https://client.pritunl.com/)
+将以.ovpn结尾的密钥文件导入即可
+![](http://sc4pndhye.hd-bkt.clouddn.com/k8s/openvpn/openvpn.png)
 
+## linux命令行请按照以下策略
+**注意：在云服务器千万别使用，否则无法连接服务器。服务器网络都被VPN接管了**
+**注意：docker容器用VPN 别用host模式和端口，单机运行即可**
+### 安装openvpn客户端
+```
+# centos 
+yum install openvpn -y
+# debian 
+ apt install -y openvpn
+```
+### 编写同步服务端推送的dns信息脚步
+* 使用resolvectl 更新服务端推送的dns
+```
+#!/usr/bin/env bash
+
+# 简单的OpenVPN辅助脚本，用于获取并设置服务端推送的DNS信息到systemd-resolved。
+
+log() {
+    logger -s -t "openvpn-helper" "$@"
+}
+
+set_dns_resolvectl() {
+    local dns_domains=""
+    local dns_search_domains=""
+    
+    for option in "${!foreign_option_@}"; do
+        option_value="${!option}"
+        if [[ "$option_value" == dhcp-option\ DNS\ * ]]; then
+            dns_server="${option_value#dhcp-option DNS }"
+            echo "设置 DNS 服务器: ${dns_server}"
+            
+            # 使用 resolvectl 设置 DNS
+            resolvectl dns tun0 "$dns_server"
+        elif [[ "$option_value" == dhcp-option\ DOMAIN-SEARCH\ * ]]; then
+            dns_search_domain="${option_value#dhcp-option DOMAIN-SEARCH }"
+            dns_search_domains+="$dns_search_domain "
+        else
+            echo "未处理的选项: $option_value"
+        fi
+    done
+
+    # 去除尾部的空格
+    dns_search_domains=$(echo "$dns_search_domains" | xargs)
+    if [[ -n "$dns_search_domains" ]]; then
+        echo "设置 DNS 搜索域: $dns_search_domains"
+        # 使用 resolvectl 设置 DNS 搜索域
+        resolvectl domain tun0 $dns_search_domains
+    fi
+}
+
+revert_dns_resolvectl() {
+    echo "恢复系统DNS设置"
+    # 使用 resolvectl 清除 DNS 和 DNS 域设置
+    resolvectl dns tun0
+    resolvectl domain tun0
+}
+
+flush_dns_cache() {
+    echo "刷新 systemd-resolved DNS 缓存"
+    resolvectl flush-caches
+}
+
+# 脚本入口
+main() {
+    local script_type="${1:-unknown}"
+
+    case "$script_type" in
+        up)
+            log "VPN连接已建立"
+            set_dns_resolvectl
+            flush_dns_cache
+            ;;
+        down)
+            log "VPN连接已断开"
+            revert_dns_resolvectl
+            flush_dns_cache
+            ;;
+        *)
+            log "未知的脚本类型: $script_type"
+            ;;
+    esac
+}
+
+main "$@"
+
+```
+
+* 直接修改/etc/resolv.conf 更新服务端推送dns信息
+```
+#!/usr/bin/env bash
+
+# Simple OpenVPN helper script to get and set server-pushed DNS information to /etc/resolv.conf.
+
+log() {
+    logger -s -t "openvpn-helper" "$@"
+}
+
+update_resolv_conf() {
+    local dns_servers=""
+    local dns_search_domains=""
+
+    # Backup the current resolv.conf
+    cp /etc/resolv.conf /etc/resolv.conf.bak
+
+    for option in "${!foreign_option_@}"; do
+        option_value="${!option}"
+        if [[ "$option_value" == dhcp-option\ DNS\ * ]]; then
+            dns_server="${option_value#dhcp-option DNS }"
+            echo "Setting DNS server: ${dns_server}"
+            
+            # Add DNS server to /etc/resolv.conf
+            dns_servers+="nameserver ${dns_server}\n"
+        elif [[ "$option_value" == dhcp-option\ DOMAIN-SEARCH\ * ]]; then
+            dns_search_domain="${option_value#dhcp-option DOMAIN-SEARCH }"
+            dns_search_domains+="$dns_search_domain "
+        else
+            echo "Unhandled option: $option_value"
+        fi
+    done
+
+    # Update /etc/resolv.conf
+    {
+        echo -e "$dns_servers"
+        if [[ -n "$dns_search_domains" ]]; then
+            echo "search $dns_search_domains"
+        fi
+    } > /etc/resolv.conf
+
+    echo "DNS configuration updated"
+}
+
+revert_resolv_conf() {
+    echo "Restoring system DNS settings"
+
+    if [[ -f /etc/resolv.conf.bak ]]; then
+        # Restore the backup of /etc/resolv.conf
+        mv /etc/resolv.conf.bak /etc/resolv.conf
+        echo "DNS configuration restored"
+    else
+        echo "Backup file not found, unable to restore DNS configuration"
+    fi
+}
+
+flush_dns_cache() {
+    echo "Flushing system DNS cache"
+    # Since we can only edit /etc/resolv.conf and have no direct cache flush command,
+    # restarting the networking service may be needed
+    systemctl restart networking || echo "Please manually restart the networking service to clear DNS cache"
+}
+
+# Script entry point
+main() {
+    local script_type="${1:-unknown}"
+
+    case "$script_type" in
+        up)
+            log "VPN connection established"
+            update_resolv_conf
+            flush_dns_cache
+            ;;
+        down)
+            log "VPN connection disconnected"
+            revert_resolv_conf
+            flush_dns_cache
+            ;;
+        *)
+            log "Unknown script type: $script_type"
+            ;;
+    esac
+}
+
+main "$@"
+
+```
+
+### 修改.ovpn文件
+``` 
+# 将 cipher 修改成 data-ciphers 
+data-ciphers AES-256-CBC
+
+# 在文件最后写 添加以下代码
+script-security 2
+up "/path/fresh-dns.sh up"
+down "/path/fresh-dns.sh down"
+```
+### 启动openvpn
+```
+openvpn --daemon openvpn  --config /path/prod-client.ovpn
+```
+
+### 关闭 
+```
+killall openvpn
+
+```
+### 自定义docker客户端
+1. Dockerfile
+```
+FROM ubuntu:24.10
+
+# 修改时区
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
+RUN sed -i 's/security.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
+
+RUN apt update && apt install -y wget gnupg curl openvpn vim cron psmisc
+
+VOLUME ["/storage","/back-script","/vpn"]
+
+```
+2. docker-compose.yml
+```
+version: '3.9'
+services:
+  back-server: 
+    container_name: back-server
+    image: harbor.changtech.cn/common/data-back-server:v1
+    restart: always
+    stdin_open: true # 简写为 -i
+    tty: true  # 简写为 -t
+    command: /bin/sh -c "/back-script/init-container.sh && service cron start && tail -f /dev/null"
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - "/dev/net/tun:/dev/net/tun"
+    volumes:
+      - "/data-back/back-script/:/back-script"
+      - "/data-back/data/:/storage"
+      - "/data-back/vpn-info/:/vpn-info"
+```
+**注意：定义初始化脚本用于安装自定义软件和定时任务**
+```
+#!/bin/bash
+sleep 10
+crontab /back-script/crontab.txt
+
+# 其他软件安装写在下面
+```
+
+```
+# crontab.txt 配置
+0 1 * * * /back-script/backup-script.sh
+
+0 1 1 * *  /back-script/mysql-node-long-time-back-up.sh
+```
 
