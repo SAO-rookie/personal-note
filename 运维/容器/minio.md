@@ -39,8 +39,8 @@ services:
       - "minio3:10.0.4.8"  # 3st node
       - "minio4:10.0.4.6"  # 4st node
     environment:
-      - MINIO_ACCESS_KEY=changtanminio # 设置账号
-      - MINIO_SECRET_KEY=gTz_2021 # 设置密码
+      - MINIO_ROOT_USER=admin
+      - MINIO_ROOT_PASSWORD=123456789
       - MINIO_DISTRIBUTED_MODE_ENABLED=yes
       - MINIO_DISTRIBUTED_NODES=minio1,minio2,minio3,minio4 # 该参数随节点名称而改变
       - MINIO_SKIP_CLIENT=yes
