@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/nginx.md",
+                "file": "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "nginx"
+              "title": "ingress-nginx技巧"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "运维/nginx.md",
+                "file": "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "nginx 的反向链接列表"
+              "title": "ingress-nginx技巧 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "运维/nginx.md",
+                "file": "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "nginx 的出链列表"
+              "title": "ingress-nginx技巧 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/nginx.md",
+                "file": "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "nginx 的大纲"
+              "title": "ingress-nginx技巧 的大纲"
             }
           }
         ],
@@ -170,6 +170,7 @@
   },
   "active": "074f90217a862b91",
   "lastOpenFiles": [
+    "运维/nginx.md",
     "运维/容器/Minio.md",
     "运维/容器/PostgreSql.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
@@ -188,7 +189,6 @@
     "运维/Kubernetes/helm/openvpn.md",
     "运维/Kubernetes/helm/监控",
     "运维/Kubernetes/minio.md",
-    "运维/nginx.md",
     "运维/NFS安装.md",
     "后端/消息队列/kafka技巧.md",
     "后端/go/go技巧.md",

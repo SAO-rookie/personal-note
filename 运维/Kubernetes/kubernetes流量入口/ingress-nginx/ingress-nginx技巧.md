@@ -1,3 +1,4 @@
+[官方文档](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/)
 # ingress-nginx一个域名下配置多个后端服务
 ```
 apiVersion: networking.k8s.io/v1
