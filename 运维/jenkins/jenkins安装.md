@@ -68,3 +68,6 @@ docker compose -f docker-compose.yaml up -d
  ![](../../image/jenkins-install/8.png)
  3. 配置maven
  ![](../../image/jenkins-install/9.png)
+ 4. 配置node.js
+ ![](../../image/jenkins-install/10.png)
+ 点击保存即可

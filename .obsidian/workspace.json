@@ -180,8 +180,9 @@
   },
   "active": "6927a164bafe92dd",
   "lastOpenFiles": [
-    "image/jenkins-install/9.png",
     "运维/jenkins/jenkins安装.md",
+    "image/jenkins-install/10.png",
+    "image/jenkins-install/9.png",
     "image/jenkins-install/8.png",
     "image/jenkins-install/7.png",
     "image/jenkins-install/6.png",
@@ -191,7 +192,6 @@
     "image/jenkins-install/0.png",
     "image/jenkins-install/3.png",
     "image/jenkins-install/2.png",
-    "image/jenkins-install/1.png",
     "image/jenkins-install",
     "运维/Kubernetes/helm/openvpn.md",
     "后端/mysql/mysql配置.md",
