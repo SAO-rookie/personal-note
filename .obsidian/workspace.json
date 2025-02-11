@@ -178,10 +178,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ebb606fe73b47b68",
+  "active": "3d0ff0697ff57a11",
   "lastOpenFiles": [
-    "运维/jenkins/jenkins解决方案.md",
+    "运维/容器/minio.md",
     "运维/jenkins/jenkins安装.md",
+    "运维/jenkins/jenkins解决方案.md",
     "运维/jenkins/pipline脚本.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
     "运维/Kubernetes/helm/prometheus.md",
@@ -192,7 +193,6 @@
     "运维/Kubernetes/helm/loki.md",
     "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "运维/Kubernetes/helm/openvpn.md",
-    "运维/容器/minio.md",
     "运维/nginx.md",
     "运维/容器/PostgreSql.md",
     "运维/NFS安装.md",

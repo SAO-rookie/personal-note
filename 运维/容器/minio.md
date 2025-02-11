@@ -23,7 +23,7 @@ mc alias set tc https://cos.ap-shanghai.myqcloud.com $accessKey $secretKey --api
 
 # 多服务器的minio集群docker-compose
 ```
-version: '3.7'
+version: '3.9'
 
 services:
   minio:                       # 该参数 随节点服务器而改变 编写请参考extra_hosts ip和节点名称对应
