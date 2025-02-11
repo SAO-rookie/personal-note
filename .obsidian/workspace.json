@@ -180,8 +180,10 @@
   },
   "active": "3d0ff0697ff57a11",
   "lastOpenFiles": [
-    "运维/容器/minio.md",
+    "运维/jenkins/image/jenkins-install-0.png",
     "运维/jenkins/jenkins安装.md",
+    "运维/jenkins/image",
+    "运维/容器/minio.md",
     "运维/jenkins/jenkins解决方案.md",
     "运维/jenkins/pipline脚本.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
@@ -209,12 +211,10 @@
     "运维/Kubernetes/未命名.md",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/Kubernetes/helm/监控",
-    "运维/Kubernetes/minio.md",
     "运维/Kubernetes/helm",
     "运维/Kubernetes/kubernetes安装",
     "后端/消息队列",
     "运维/Kubernetes",
-    "运维/VPN",
-    "运维/容器/containerd"
+    "运维/VPN"
   ]
 }

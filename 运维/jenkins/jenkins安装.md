@@ -25,6 +25,8 @@ services:
 ```
 使用命令启动后，等代即可  
 **注意：第一次启动的时候正在加载jenkins大概会等待3-10分钟。**
-加载完毕 ，需要解锁jenkins。获取密钥有两个方法
+加载完毕 ,会出现以下画面
+![]
+解锁jenkins。获取密钥有两个方法
 - 使用 **docker logs jenkins**查看日志获取密钥
 - 使用**docker exec -it jenkins /bin/bash**进入容器 再使用 **cat /var/jenkins_home/secrets/initialAdminPassword**获取密钥
