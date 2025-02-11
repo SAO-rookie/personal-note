@@ -77,8 +77,6 @@ remote {ip} {port} tcp
 ## 使用vpn软件连接
 [pritunl下载地址-三端通用](https://client.pritunl.com/)
 将以.ovpn结尾的密钥文件导入即可
-![](http://sc4pndhye.hd-bkt.clouddn.com/k8s/openvpn/openvpn.png)
-
 ## linux命令行请按照以下策略
 **注意：在云服务器千万别使用，否则无法连接服务器。服务器网络都被VPN接管了**
 **注意：docker容器用VPN 别用host模式和端口，单机运行即可**
