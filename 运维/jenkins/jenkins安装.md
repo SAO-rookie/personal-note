@@ -47,3 +47,13 @@ docker compose -f docker-compose.yaml up -d
 一直点下一步即可
 ![](../../image/jenkins-install/4.png)
 ### 安装所需插件
+进入插件管理的点击流程
+**系统管理->插件管理**
+进入以下界面即可
+![](../../image/jenkins-install/5.png)
+选择 **Available plugins**，搜索以下插件安装
+- Generic Webhook Trigger 用于webhook监听仓库
+- Git plugin 
+- Maven Integration
+- publish over SSH 用于远程操作其他服务器
+- NodeJs 用于打包前端项目
