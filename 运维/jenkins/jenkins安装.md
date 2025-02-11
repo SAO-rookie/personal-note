@@ -11,7 +11,7 @@ version: '3.9'
 services:
   jenkins:
     container_name: jenkins
-    image: jenkins/jenkins:latest
+    image: jenkins/jenkins:2.492.1
     restart: always
     environment:
      - JAVA_OPTS=-Duser.timezone=Asia/Shanghai
@@ -24,9 +24,14 @@ services:
      - 9090:8080
 ```
 使用命令启动后，等代即可  
-**注意：第一次启动的时候正在加载jenkins大概会等待3-10分钟。**
-加载完毕 ,会出现以下画面
-![]
+```
+docker compose -f docker-compose.yaml up -d
+```
+## 配置jenkins
+### 解锁jenkins
+用浏览器访问http://127.0.0.1:9090,等待加载完毕 ,会出现以下画面
+![jenkins-install-0](./image/jenkins-install-0.png)
 解锁jenkins。获取密钥有两个方法
 - 使用 **docker logs jenkins**查看日志获取密钥
 - 使用**docker exec -it jenkins /bin/bash**进入容器 再使用 **cat /var/jenkins_home/secrets/initialAdminPassword**获取密钥
+### 安装差距
