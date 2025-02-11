@@ -47,7 +47,7 @@ docker compose -f docker-compose.yaml up -d
 一直点下一步即可
 ![](../../image/jenkins-install/4.png)
 ### 安装所需插件
-进入插件管理的点击流程
+进入*插件管理*的点击流程
 **系统管理->插件管理**
 进入以下界面即可
 ![](../../image/jenkins-install/5.png)
@@ -56,3 +56,8 @@ docker compose -f docker-compose.yaml up -d
 - Git plugin 
 - Maven Integration
 - NodeJs 用于打包前端项目
+### 修改全局工具配置
+进入*全局工具配置*的点击流程
+**系统管理-># 全局工具配置**
+进入以下界面即可
+![](../../image/jenkins-install/6.png)
