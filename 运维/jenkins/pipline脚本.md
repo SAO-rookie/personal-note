@@ -31,7 +31,7 @@ pipeline {
                 script{
                     if("develop".equals(BRANCH) || "Started by user root".equals(CAUSE)){
                         echo '测试环境'
-                        git branch: 'develop', credentialsId: 'd8aba4d3-6696-4b49-ac1f-79a226d0541e', url: 'https://zengxh:zengXh_8702@gitlabland-mass-service.git'
+                        git branch: 'develop', url: 'https://zengxh:zengXh_8702@gitlabland-mass-service.git'
                         sh '''
                             git checkout release
                             git merge develop
@@ -39,7 +39,7 @@ pipeline {
                     }
                     if("master".equals(BRANCH)){
                         echo '正式环境'
-                        git branch: 'master', credentialsId: 'd8aba4d3-6696-4b49-ac1f-79a226d0541e', url: 'https://zengxh:zengXh_8702@cnland-mass-service.git'
+                        git branch: 'master',  url: 'https://zengxh:zengXh_8702@cnland-mass-service.git'
                     }
                 }
 
