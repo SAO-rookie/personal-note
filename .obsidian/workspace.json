@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0097a1a230edcb03",
+        "id": "de739c4e152e7fda",
         "type": "tabs",
         "children": [
           {
-            "id": "074f90217a862b91",
+            "id": "3d0ff0697ff57a11",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "运维/容器/minio.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "minio"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -178,14 +178,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "074f90217a862b91",
+  "active": "3d0ff0697ff57a11",
   "lastOpenFiles": [
+    "运维/容器/minio.md",
     "运维/nginx.md",
     "运维/容器/PostgreSql.md",
     "运维/NFS安装.md",
     "运维/linux解决方案.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
-    "运维/容器/minio.md",
     "运维/Kubernetes/helm/cert-manager.md",
     "运维/Kubernetes/helm/openvpn.md",
     "运维/容器/docker/Docker配置.md",
