@@ -11,14 +11,14 @@
             "id": "3d0ff0697ff57a11",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "运维/Kubernetes/helm/prometheus.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-file",
+              "title": "prometheus"
             }
           }
         ]
@@ -180,14 +180,18 @@
   },
   "active": "3d0ff0697ff57a11",
   "lastOpenFiles": [
+    "运维/Kubernetes/helm/cert-manager.md",
+    "运维/Kubernetes/helm/ingress-nginx.md",
+    "运维/Kubernetes/helm/loki.md",
+    "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
+    "运维/Kubernetes/helm/openvpn.md",
+    "运维/Kubernetes/helm/prometheus.md",
     "运维/容器/minio.md",
     "运维/nginx.md",
     "运维/容器/PostgreSql.md",
     "运维/NFS安装.md",
     "运维/linux解决方案.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
-    "运维/Kubernetes/helm/cert-manager.md",
-    "运维/Kubernetes/helm/openvpn.md",
     "运维/容器/docker/Docker配置.md",
     "运维/容器/containerd/Containerd配置.md",
     "后端/mysql/mysql配置.md",
@@ -199,10 +203,6 @@
     "运维/Kubernetes/kubernetes流量入口",
     "运维/Kubernetes/未命名.md",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
-    "运维/Kubernetes/helm/ingress-nginx.md",
-    "运维/Kubernetes/helm/prometheus.md",
-    "运维/Kubernetes/helm/loki.md",
-    "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "运维/Kubernetes/helm/监控",
     "运维/Kubernetes/minio.md",
     "后端/go/go技巧.md",
