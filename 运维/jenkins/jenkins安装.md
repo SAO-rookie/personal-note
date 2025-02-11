@@ -34,7 +34,8 @@ docker compose -f docker-compose.yaml up -d
 解锁jenkins。获取密钥有两个方法
 - 使用 **docker logs jenkins**查看日志获取密钥
 - 使用**docker exec -it jenkins /bin/bash**进入容器 再使用 **cat /var/jenkins_home/secrets/initialAdminPassword**获取密钥
-### 安装插件
+### 使用默认插件
+**注意：这个步骤很需要时间请耐心等待，大约要5-15分钟左右**
 使用密钥进入后选择 *安装推荐的插件*  按钮
 ![[jenkins-install-1.png]]
 选择后会出现以下情况,等待即可
