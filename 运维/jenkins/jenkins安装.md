@@ -61,3 +61,4 @@ docker compose -f docker-compose.yaml up -d
 **系统管理-># 全局工具配置**
 进入以下界面即可
 ![](../../image/jenkins-install/6.png)
+1. 配置全局maven配置文件
