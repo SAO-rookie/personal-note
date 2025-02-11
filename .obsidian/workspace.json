@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/jenkins/jenkins安装.md",
+                "file": "运维/jenkins/jenkins解决方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "jenkins安装"
+              "title": "jenkins解决方案"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/jenkins/jenkins安装.md",
+                "file": "运维/jenkins/jenkins解决方案.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "jenkins安装 的大纲"
+              "title": "jenkins解决方案 的大纲"
             }
           },
           {
@@ -178,7 +178,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6927a164bafe92dd",
+  "active": "b1ee5468c9d26b96",
   "lastOpenFiles": [
     "运维/jenkins/jenkins安装.md",
     "image/jenkins-install/10.png",
