@@ -55,5 +55,4 @@ docker compose -f docker-compose.yaml up -d
 - Generic Webhook Trigger 用于webhook监听仓库
 - Git plugin 
 - Maven Integration
-- publish over SSH 用于远程操作其他服务器
 - NodeJs 用于打包前端项目
