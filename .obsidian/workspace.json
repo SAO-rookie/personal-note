@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/jenkins/jenkins.md",
+                "file": "运维/jenkins/pipline脚本.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "jenkins"
+              "title": "pipline脚本"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/容器/minio.md",
+                "file": "运维/jenkins/pipline脚本.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "minio 的大纲"
+              "title": "pipline脚本 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -180,8 +180,10 @@
   },
   "active": "3d0ff0697ff57a11",
   "lastOpenFiles": [
+    "运维/jenkins/jenkins解决方案.md",
+    "运维/jenkins/pipline脚本.md",
+    "运维/Kubernetes/kubernetes安装/服务器初始化.md",
     "运维/Kubernetes/helm/prometheus.md",
-    "运维/jenkins/jenkins.md",
     "运维/jenkins",
     "运维/未命名.md",
     "运维/Kubernetes/helm/cert-manager.md",
@@ -194,7 +196,6 @@
     "运维/容器/PostgreSql.md",
     "运维/NFS安装.md",
     "运维/linux解决方案.md",
-    "运维/Kubernetes/kubernetes安装/服务器初始化.md",
     "运维/容器/docker/Docker配置.md",
     "运维/容器/containerd/Containerd配置.md",
     "后端/mysql/mysql配置.md",
@@ -209,7 +210,6 @@
     "运维/Kubernetes/helm/监控",
     "运维/Kubernetes/minio.md",
     "后端/go/go技巧.md",
-    "后端/mysql/mysql技巧.md",
     "运维/Kubernetes/helm",
     "运维/Kubernetes/kubernetes安装",
     "后端/消息队列",
