@@ -257,3 +257,40 @@ pipeline {
     }
 }
 ```
+# jenkins监听分支和tag自动化打包
+**注意：必须有Generic Webhook Trigger Plugin才可以使用**
+
+```
+pipeline {
+    agent any
+    triggers {
+        GenericTrigger(
+            genericVariables: [
+                [key: 'ref', value: '$.ref'],
+            ],
+            token: 'old-gtz-server',
+            regexpFilterExpression: '^(refs/heads/(master|develop)|refs/tags/.{0,10})$',
+            regexpFilterText: '$ref',
+        )
+    }
+    environment {
+        EVENT = env.ref.split("/")[1].trim()
+        BRANCH_OR_TAG = env.ref.split("/")[2].trim()
+        WORKSPACE = "/opt/workspace/${JOB_NAME}"
+        CAUSE = "${currentBuild.getBuildCauses()[0].shortDescription}"
+    }
+    stages {
+        stage('Hello') {
+            steps {
+                script{
+                     git 'https://zengxh:zengXh_8702@gitlab.changtech.cn/gtz/springboot-webserver-framework.git'
+                     sh "git tag -l -n"
+                     sh 'echo ${BRANCH_OR_TAG}'
+                     sh 'echo ${EVENT}'
+                    
+                }
+            }
+        }
+    }
+}
+```
