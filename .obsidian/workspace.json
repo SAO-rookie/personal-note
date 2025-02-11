@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "jenkins安装"
             }
+          },
+          {
+            "id": "f725f35fcdd14826",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "image/jenkins-install/jenkins-install-3.png"
+              },
+              "icon": "lucide-image",
+              "title": "jenkins-install-3"
+            }
           }
         ]
       }
@@ -162,7 +174,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -178,8 +190,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b1ee5468c9d26b96",
+  "active": "89d3ca6b8590a1ae",
   "lastOpenFiles": [
+    "运维/jenkins/jenkins解决方案.md",
+    "image/jenkins-install/jenkins-install-0.png",
+    "运维/jenkins/jenkins安装.md",
+    "image/jenkins-install",
+    "image/jenkins-install/jenkins-install-3.png",
     "运维/Kubernetes/helm/openvpn.md",
     "后端/mysql/mysql配置.md",
     "后端/mysql/mysql技巧.md",
@@ -204,13 +221,10 @@
     "运维/linux解决方案.md",
     "运维/nginx.md",
     "运维/NFS安装.md",
-    "运维/jenkins/jenkins安装.md",
-    "运维/jenkins/image/jenkins-install-2.png",
-    "运维/jenkins/image/jenkins-install-1.png",
-    "运维/jenkins/image/jenkins-install-0.png",
+    "image/jenkins-install/jenkins-install-2.png",
+    "image/jenkins-install/jenkins-install-1.png",
     "运维/jenkins/image/Pasted image 20250211143129.png",
-    "运维/jenkins/image",
-    "运维/jenkins/jenkins解决方案.md",
+    "image",
     "运维/jenkins",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx",
     "运维/Kubernetes/kubernetes流量入口",
@@ -218,7 +232,6 @@
     "运维/Kubernetes/helm",
     "运维/Kubernetes/kubernetes安装",
     "后端/消息队列",
-    "运维/Kubernetes",
-    "运维/VPN"
+    "运维/Kubernetes"
   ]
 }

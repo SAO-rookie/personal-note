@@ -40,3 +40,5 @@ docker compose -f docker-compose.yaml up -d
 ![[jenkins-install-1.png]]
 选择后会出现以下情况,等待即可
 ![[jenkins-install-2.png]]
+### 创建第一个用户
+![[jenkins-install-3.png]]
