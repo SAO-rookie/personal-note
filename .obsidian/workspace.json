@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "运维/jenkins/jenkins解决方案.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -178,7 +178,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b1ee5468c9d26b96",
+  "active": "89d3ca6b8590a1ae",
   "lastOpenFiles": [
     "运维/jenkins/jenkins安装.md",
     "image/jenkins-install/10.png",
