@@ -53,9 +53,10 @@ docker compose -f docker-compose.yaml up -d
 ![](../../image/jenkins-install/5.png)
 选择 **Available plugins**，搜索以下插件安装
 - Generic Webhook Trigger 用于webhook监听仓库
-- Git plugin 
-- Maven Integration
-- NodeJs 用于打包前端项目
+- Git plugin 用于安装 git
+- Maven Integration 用于安装 maven
+- NodeJs 用于安装Node.js
+- Docker 打包时可以使用docker命令
 ### 修改全局工具配置
 进入*全局工具配置*的点击流程
 **系统管理-># 全局工具配置**
@@ -70,4 +71,4 @@ docker compose -f docker-compose.yaml up -d
  ![](../../image/jenkins-install/9.png)
  4. 配置node.js
  ![](../../image/jenkins-install/10.png)
- 点击保存即可
+ 点击保存即可 **现在你就可以使用jenkins了**
