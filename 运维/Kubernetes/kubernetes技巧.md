@@ -15,6 +15,7 @@ kubectl taint nodes <节点> node-role.kubernetes.io/master:NoSchedule-
 kubectl taint nodes <节点> node-role.kubernetes.io/control-plane:NoSchedule-
 ```
 # kubernetes创建新用户
+**注意：公网ip必须要要SSL证书**
 - 创建create-user.sh文件
 ```
 #!/bin/bash
@@ -92,7 +93,27 @@ kubectl config set-context ${USERNAME}-context \
 kubectl config use-context ${USERNAME}-context \
   --kubeconfig=${USERNAME}.kubeconfig
 
-# 创建 Role 和 RoleBinding 或 ClusterRole  和 ClusterRoleBinding ，以下是 Role 和 RoleBinding的例子
+
+
+echo "用户创建完成！"
+echo "Kubeconfig 文件: ${USERNAME}.kubeconfig"
+echo "私钥文件: ${USERNAME}.key"
+echo "证书文件: ${USERNAME}.crt"
+```
+- 添加执行权限
+```
+chmod +x create-user.sh
+```
+- 需要具有集群管理员权限执行
+- 根据实际情况修改以下参数：
+	- `CLUSTER_NAME`
+	- `API_SERVER`
+	- `CA_CERT` 和 `CA_KEY` 证书路径
+	- `USERNAME`
+	- `NAMESPACE`
+# 创建 r
+Role 和 RoleBinding 或 ClusterRole  和 ClusterRoleBinding ，以下是 Role 和 RoleBinding的例子
+```
 cat <<EOF | kubectl apply -f -
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
@@ -118,23 +139,7 @@ roleRef:
   name: ${USERNAME}-role
   apiGroup: rbac.authorization.k8s.io
 EOF
-
-echo "用户创建完成！"
-echo "Kubeconfig 文件: ${USERNAME}.kubeconfig"
-echo "私钥文件: ${USERNAME}.key"
-echo "证书文件: ${USERNAME}.crt"
 ```
-- 添加执行权限
-```
-chmod +x create-user.sh
-```
-- 需要具有集群管理员权限执行
-- 根据实际情况修改以下参数：
-	- `CLUSTER_NAME`
-	- `API_SERVER`
-	- `CA_CERT` 和 `CA_KEY` kubernetes证书路径
-	- `USERNAME`
-	- `NAMESPACE`
 # k8s的CRI配置
 ## deployment 等运行时 修改hosts文件
 ```
