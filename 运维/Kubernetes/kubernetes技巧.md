@@ -14,8 +14,9 @@ kubectl label node node1 node-role.kubernetes.io/master=master
 kubectl taint nodes <节点> node-role.kubernetes.io/master:NoSchedule-
 kubectl taint nodes <节点> node-role.kubernetes.io/control-plane:NoSchedule-
 ```
-## k8s创建.kubeconfig文件
-### 创建基本用户
+## k8s权限
+### k8s创建.kubeconfig文件
+#### 创建基本用户
 **注意：公网ip必须要要SSL证书**
 - 创建create-user.sh文件
 ```
@@ -110,15 +111,16 @@ chmod +x create-user.sh
 	- `CA_CERT` 和 `CA_KEY` 证书路径
 	- `USERNAME`
 	- `NAMESPACE`
-
-## 创建ServiceAccount
+绑定权限请看[创建 RBAC模型](./kubernetes技巧.md#创建 RBAC模型)
+### 创建ServiceAccount
 [官方文档](https://kubernetes.io/zh-cn/docs/concepts/security/service-accounts/)
 ```
 kubectl create serviceaccount <sa-name> -n <namespace>
 ```
-## 创建 RBAC模型
+绑定权限请看[创建 RBAC模型](#创建 RBAC模型)
+### 创建 RBAC模型
 **注意：更复杂的操作请看[官方文档](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/)**
-### API 对象
+#### API 对象
 RBAC API 声明了四种 Kubernetes 对象：**Role**、**ClusterRole**、**RoleBinding** 和 **ClusterRoleBinding**。
 #### [Role 和 ClusterRole的区别](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#role-and-clusterole)
 
@@ -192,7 +194,7 @@ EOF
 | `delete`           | 删除指定资源实例。                   |
 | `patch`            | 更新资源的部分内容，通常是通过合并更新来修改部分属性。 |
 | `deletecollection` | 删除资源集合中的多个资源实例。             |
-### RoleBinding 和 ClusterRoleBinding
+#### RoleBinding 和 ClusterRoleBinding
 [RoleBinding 和 ClusterRoleBinding区别](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding)
 - 创建RoleBinding
 ```

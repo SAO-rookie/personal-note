@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "运维/Kubernetes/kubernetes技巧.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -178,16 +178,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89d3ca6b8590a1ae",
+  "active": "231a839d4c5586ad",
   "lastOpenFiles": [
-    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
+    "运维/Kubernetes/kubernetes工具.md",
     "运维/Kubernetes/kubernetes技巧.md",
+    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/Kubernetes/kubernetes解决方案.md",
     "运维/NFS安装.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/容器/containerd/Containerd配置.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
-    "运维/Kubernetes/kubernetes工具.md",
     "运维/Kubernetes/minio.md",
     "Krew的安装.md",
     "运维/jenkins/jenkins技巧.md",
