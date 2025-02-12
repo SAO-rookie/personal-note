@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/kubernetes工具.md",
-                "mode": "source",
+                "file": "运维/Kubernetes/kubernetes技巧.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kubernetes工具"
+              "title": "kubernetes技巧"
             }
           }
         ]
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -180,8 +180,8 @@
   },
   "active": "93b95ce0a1bca1b2",
   "lastOpenFiles": [
-    "运维/Kubernetes/krew的安装.md",
     "运维/Kubernetes/kubernetes工具.md",
+    "运维/Kubernetes/krew的安装.md",
     "运维/jenkins/jenkins技巧.md",
     "运维/Kubernetes/kubernetes技巧.md",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
