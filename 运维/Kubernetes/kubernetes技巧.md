@@ -111,32 +111,33 @@ chmod +x create-user.sh
 	- `USERNAME`
 	- `NAMESPACE`
 ## 创建 RBAC模型
-莫
+[官方文档](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/)
+### API 对象
+RBAC API 声明了四种 Kubernetes 对象：**Role**、**ClusterRole**、**RoleBinding** 和 **ClusterRoleBinding**。
+### [Role 和 ClusterRole](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#role-and-clusterole)
 ```
+#创建一个可以在default命令空间下只能操作pods的Role
 cat <<EOF | kubectl apply -f -
 apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
+kind: Role 
 metadata:
   namespace: default
   name: dev-user-role
 rules:
-- apiGroups: ["", "apps", "networking.k8s.io"]
-  resources: ["pods", "deployments", "services", "ingresses"]
+- apiGroups: ["", ]
+  resources: ["pods"]
   verbs: ["get", "list", "watch", "create", "update", "delete"]
----
+EOF
+#创建一个可以在default命令空间下只能操作pods的Role
+cat <<EOF | kubectl apply -f -
 apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
+kind: ClusterRole 
 metadata:
-  namespace: dev-user
-  name: dev-user-role-binding
-subjects:
-- kind: User
-  name: dev-user
-  apiGroup: rbac.authorization.k8s.io
-roleRef:
-  kind: Role
-  name: dev-user-role
-  apiGroup: rbac.authorization.k8s.io
+  name: dev-user-cluster-role
+rules:
+- apiGroups: ["", ]
+  resources: ["pods"]
+  verbs: ["get", "list", "watch", "create", "update", "delete"]
 EOF
 ```
 # k8s的CRI配置
