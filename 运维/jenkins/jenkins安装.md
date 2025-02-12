@@ -56,7 +56,9 @@ docker compose -f docker-compose.yaml up -d
 - Git plugin 用于安装 git
 - Maven Integration 用于安装 maven
 - NodeJs 用于安装Node.js
-- Docker 打包时可以使用docker命令
+其他插件，按需选择
+- Docker 使用jenkins封装好的docker api 打包
+- publish over SSH 用于远程操作和传输文件到其他服务器
 ### 修改全局工具配置
 进入*全局工具配置*的点击流程
 **系统管理-># 全局工具配置**
