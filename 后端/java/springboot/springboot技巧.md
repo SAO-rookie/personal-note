@@ -1,6 +1,6 @@
 # springboot技巧 
-**注意springboot版本是3.2.1,优先根据[官方文档](https://springdoc.cn/spring/index.html)为主**
-## 使用h2作为内置数据库
+**注意：优先根据[官方文档](https://springdoc.cn/spring/index.html)为主**
+## 使用h2作为内置数据库,并且初始化
 1.  maven依赖
 ```
         <dependency>
@@ -27,5 +27,8 @@ spring:
       encoding: UTF-8 # 脚本种字符集解码 
       schema-locations: classpath:data/schema.sql #  优先data-locations执行，一般建表语句。
       data-locations: classpath:data/data.sql  # 一般插入数据语句。
+    
 ```
+**注意：表结构必须原生，参考以下biao'ji**
 后面就可以正常使用
+
