@@ -258,7 +258,7 @@ pipeline {
 }
 ```
 # jenkins监听分支和tag自动化打包
-**注意：必须有Generic Webhook Trigger Plugin才可以使用**
+**注意：必须有Generic Webhook Trigger 才可以使用**
 
 ```
 pipeline {
