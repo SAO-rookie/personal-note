@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -178,12 +178,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "231a839d4c5586ad",
+  "active": "89d3ca6b8590a1ae",
   "lastOpenFiles": [
-    "运维/jenkins/jenkins解决方案.md",
-    "运维/jenkins/jenkins技巧.md",
-    "运维/jenkins/jenkins安装.md",
     "运维/jenkins/pipline脚本.md",
+    "运维/jenkins/jenkins技巧.md",
+    "运维/jenkins/jenkins解决方案.md",
+    "运维/jenkins/jenkins安装.md",
     "运维/jenkins/image/jenkins-install/9.png",
     "运维/jenkins/image/jenkins-install/0.png",
     "未命名.canvas",

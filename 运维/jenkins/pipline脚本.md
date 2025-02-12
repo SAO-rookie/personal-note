@@ -1,3 +1,4 @@
+[参考文献](https://www.cnblogs.com/anliven/p/13688484.html#_labelTop)
 # pipline流水线脚本模板
 **使用这个脚本：必须要 Generic Webhook Trigger，Maven Integration，Git plugin，DingTalk 插件**
 ```
