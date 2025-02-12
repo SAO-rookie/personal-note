@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0b1f11c-660b-4dae-a29a-cc6badbf0e93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/..md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Krew的安装.md" beforeDir="false" afterPath="$PROJECT_DIR$/运维/Kubernetes/Krew的安装.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work-space\work-space\idea-space\personal-note\运维\Kubernetes" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
