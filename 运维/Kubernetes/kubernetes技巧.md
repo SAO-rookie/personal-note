@@ -111,13 +111,15 @@ chmod +x create-user.sh
 	- `CA_CERT` 和 `CA_KEY` 证书路径
 	- `USERNAME`
 	- `NAMESPACE`
-绑定权限请看[创建 RBAC模型](./kubernetes技巧.md#创建 RBAC模型)
+绑定权限请看**创建 RBAC模型**
+
 ### 创建ServiceAccount
 [官方文档](https://kubernetes.io/zh-cn/docs/concepts/security/service-accounts/)
 ```
 kubectl create serviceaccount <sa-name> -n <namespace>
 ```
-绑定权限请看[创建 RBAC模型](#创建 RBAC模型)
+绑定权限请看**创建 RBAC模型**
+
 ### 创建 RBAC模型
 **注意：更复杂的操作请看[官方文档](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/)**
 #### API 对象

@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "运维/Kubernetes/kubernetes技巧.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -178,7 +178,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "231a839d4c5586ad",
+  "active": "89d3ca6b8590a1ae",
   "lastOpenFiles": [
     "运维/Kubernetes/kubernetes工具.md",
     "运维/Kubernetes/kubernetes技巧.md",
