@@ -27,8 +27,15 @@ spring:
       encoding: UTF-8 # 脚本种字符集解码 
       schema-locations: classpath:data/schema.sql #  优先data-locations执行，一般建表语句。
       data-locations: classpath:data/data.sql  # 一般插入数据语句。
-    
+      continue-on-error: false # 发生错误时是否应继续初始化。默认false
 ```
-**注意：表结构必须原生，参考以下biao'ji**
-后面就可以正常使用
+**注意：表结构必须原生，参考以下表结构**
+```
+CREATE TABLE user (
+	id BIGINT NOT NULL AUTO_INCREMENT, 
+	user_name VARCHAR(50) NOT NULL, 
+	PRIMARY KEY (id) 
+);
+```
+按照上述所说就没问题了，
 
