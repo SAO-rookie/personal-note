@@ -14,7 +14,8 @@ kubectl label node node1 node-role.kubernetes.io/master=master
 kubectl taint nodes <节点> node-role.kubernetes.io/master:NoSchedule-
 kubectl taint nodes <节点> node-role.kubernetes.io/control-plane:NoSchedule-
 ```
-# kubernetes创建新用户
+# k8s创建新用户
+## 创建基本用户
 **注意：公网ip必须要要SSL证书**
 - 创建create-user.sh文件
 ```
@@ -86,14 +87,12 @@ kubectl config set-credentials ${USERNAME} \
 
 kubectl config set-context ${USERNAME}-context \
   --cluster=${CLUSTER_NAME} \
-  --namespace=${NAMESPACE} \
+  --namespace=${NAMESPACE} \  # 设置ClusterRole可以不创建
   --user=${USERNAME} \
   --kubeconfig=${USERNAME}.kubeconfig
 
 kubectl config use-context ${USERNAME}-context \
   --kubeconfig=${USERNAME}.kubeconfig
-
-
 
 echo "用户创建完成！"
 echo "Kubeconfig 文件: ${USERNAME}.kubeconfig"
@@ -111,15 +110,15 @@ chmod +x create-user.sh
 	- `CA_CERT` 和 `CA_KEY` 证书路径
 	- `USERNAME`
 	- `NAMESPACE`
-# 创建 r
-Role 和 RoleBinding 或 ClusterRole  和 ClusterRoleBinding ，以下是 Role 和 RoleBinding的例子
+## 创建 RBAC模型
+莫
 ```
 cat <<EOF | kubectl apply -f -
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  namespace: ${NAMESPACE}
-  name: ${USERNAME}-role
+  namespace: default
+  name: dev-user-role
 rules:
 - apiGroups: ["", "apps", "networking.k8s.io"]
   resources: ["pods", "deployments", "services", "ingresses"]
@@ -128,15 +127,15 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  namespace: ${NAMESPACE}
-  name: ${USERNAME}-role-binding
+  namespace: dev-user
+  name: dev-user-role-binding
 subjects:
 - kind: User
-  name: ${USERNAME}
+  name: dev-user
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
-  name: ${USERNAME}-role
+  name: dev-user-role
   apiGroup: rbac.authorization.k8s.io
 EOF
 ```
