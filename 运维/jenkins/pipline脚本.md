@@ -1,5 +1,5 @@
 # pipline流水线脚本模板
-**使用这个脚本：必须要 Generic Webhook Trigger，Maven Integration，Git plugin**
+**使用这个脚本：必须要 Generic Webhook Trigger，Maven Integration，Git plugin，DingTalk 插件**
 ```
 pipeline {
     agent any
@@ -102,7 +102,7 @@ pipeline {
         stage('build-docker-image'){
             steps{
                 script{
-                    if("develop".equals(BRANCH) || "Started by user root".equals(CAUSE)){
+                    if("develop".equals(BRANCH) || "Started by user".contains(CAUSE)){
                         sh "docker build -t ${REPOSITORY_URL}/${JOB_NAME}-test:v1.0.${BUILD_NUMBER} --build-arg envType=test ${WORKSPACE}"
                     }
                     if("master".equals(BRANCH)){
@@ -114,7 +114,7 @@ pipeline {
         stage('push-image'){
             steps{
                 script{
-                    if("develop".equals(BRANCH) || "Started by user root".equals(CAUSE)){
+                    if("develop".equals(BRANCH) || "Started by user".contains(CAUSE)){
                         echo '测试环境'
 
                         echo '上传项目镜像'
@@ -137,7 +137,7 @@ pipeline {
                 sh 'git config --global user.email "2542823317@qq.com"'
                 script{
                     if (env.CUSTOM_TAG){
-                        if("develop".equals(BRANCH) || "Started by user root".equals(CAUSE)){
+                        if("develop".equals(BRANCH) || "Started by user".contains(CAUSE)){
                             sh 'git push origin release'
                         }
                     }
@@ -148,7 +148,7 @@ pipeline {
         stage('deploy'){
             steps{
                 script{
-                    if("develop".equals(BRANCH) || "Started by user root".equals(CAUSE)){
+                    if("develop".equals(BRANCH) || "Started by user".contains(CAUSE)){
                         echo '测试环境'
 
                         echo '部署项目'
@@ -247,7 +247,7 @@ pipeline {
         }
         always{
             script{
-                if("develop".equals(BRANCH) || "Started by user root".equals(CAUSE)){
+                if("develop".equals(BRANCH) || "Started by user".contains(CAUSE)){
                     sh "docker rmi ${REPOSITORY_URL}/${JOB_NAME}-test:v1.0.${BUILD_NUMBER}"
                 }
                 if("master".equals(BRANCH)){
