@@ -1,33 +1,5 @@
 # minio k8s集群版
 ## 安装前置环境
-
-### Krew的安装
-
-```
-# 安装git
-yum install -y git
-
-# 下载krew-linux_amd64.tar.gz
-wget https://github.com/kubernetes-sigs/krew/releases/download/v0.4.3/krew-linux_amd64.tar.gz
-
-# 解压下载krew-linux_amd64.tar.gz
-tar -zxvf krew-linux_amd64.tar.gz
-
-# 编写配置文件
-cat >> ~/.bashrc <<EOF
-export PATH="${PATH}:${HOME}/.krew/bin"
-EOF
-
-# 刷新配置
-source ~/.bashrc
-
-#注意在解压出来的目录执行
-./krew-linux_amd64 install krew
-
-#验证安装是否成功
-kubectl krew list
-```
-
 ### 安装Minio DirectPV
 根据文档安装，第六步不需要做
 [DirectPV文档](https://min.io/directpv)
