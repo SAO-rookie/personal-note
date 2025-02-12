@@ -16,7 +16,7 @@ wget https://github.com/derailed/k9s/releases/download/{版本号}/k9s_linux_amd
 yum install -y ./k9s_linux_amd64.deb
 ```
 ## 二进制安装
-# Krew的安装
+# krew的安装
 
 ```
 # 安装git
