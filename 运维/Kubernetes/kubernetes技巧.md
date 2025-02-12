@@ -14,7 +14,7 @@ kubectl label node node1 node-role.kubernetes.io/master=master
 kubectl taint nodes <节点> node-role.kubernetes.io/master:NoSchedule-
 kubectl taint nodes <节点> node-role.kubernetes.io/control-plane:NoSchedule-
 ```
-# k8s的CRD配置
+# k8s的CRI配置
 ## deployment 等运行时 修改hosts文件
 ```
 apiVersion: apps/v1
