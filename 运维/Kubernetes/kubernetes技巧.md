@@ -14,8 +14,8 @@ kubectl label node node1 node-role.kubernetes.io/master=master
 kubectl taint nodes <节点> node-role.kubernetes.io/master:NoSchedule-
 kubectl taint nodes <节点> node-role.kubernetes.io/control-plane:NoSchedule-
 ```
-# k8s创建新用户
-## 创建基本用户
+## k8s创建新用户
+### 创建基本用户
 **注意：公网ip必须要要SSL证书**
 - 创建create-user.sh文件
 ```
@@ -110,11 +110,12 @@ chmod +x create-user.sh
 	- `CA_CERT` 和 `CA_KEY` 证书路径
 	- `USERNAME`
 	- `NAMESPACE`
-## 创建 RBAC模型
-[官方文档](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/)
-### API 对象
+
+### 创建 RBAC模型
+**注意：更复杂的操作请看[官方文档](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/)**
+#### API 对象
 RBAC API 声明了四种 Kubernetes 对象：**Role**、**ClusterRole**、**RoleBinding** 和 **ClusterRoleBinding**。
-### [Role 和 ClusterRole的区别](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#role-and-clusterole)
+#### [Role 和 ClusterRole的区别](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#role-and-clusterole)
 
 | **属性**   | **Role**                     | **ClusterRole**                    |
 | -------- | ---------------------------- | ---------------------------------- |
@@ -186,10 +187,10 @@ EOF
 | `delete`           | 删除指定资源实例。                   |
 | `patch`            | 更新资源的部分内容，通常是通过合并更新来修改部分属性。 |
 | `deletecollection` | 删除资源集合中的多个资源实例。             |
-### [RoleBinding 和 ClusterRoleBinding区别](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding)
-案例
+#### RoleBinding 和 ClusterRoleBinding
+[RoleBinding 和 ClusterRoleBinding区别](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding)
+- 创建RoleBinding
 ```
-# 创建RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
@@ -204,6 +205,23 @@ roleRef:
   name: dev-user-role
   apiGroup: rbac.authorization.k8s.io
 ```
+- 创建ClusterRoleBinding
+```
+apiVersion: rbac.authorization.k8s.io/v1
+# 此集群角色绑定允许 “manager” 组中的任何人访问任何名字空间中的 Secret 资源
+kind: ClusterRoleBinding
+metadata:
+  name: read-secrets-global
+subjects:
+- kind: Group
+  name: manager      # 'name' 是区分大小写的
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: secret-reader
+  apiGroup: rbac.authorization.k8s.io
+```
+
 # k8s的CRI配置
 ## deployment 等运行时 修改hosts文件
 ```
