@@ -23,13 +23,13 @@ pipeline {
         BRANCH = env.ref.split("/")[2].trim()
         WORKSPACE = "/opt/workspace/${JOB_NAME}"
         REPOSITORY_URL = 'harbor.cn/public'
-        CAUSE = "${currentBuild.getBuildCauses()[0].shortDescription}"
+        CAUSE = "${currentBuild.getBuildCauses()}"
     }
     stages {
         stage('pull-code') {
             steps {
                 script{
-                    if("develop".equals(BRANCH) || "Started by user root".equals(CAUSE)){
+                    if("develop".equals(BRANCH) || "Started by user".equals(CAUSE)){
                         echo '测试环境'
                         git branch: 'develop', url: 'https://zengxh:zengXh_8702@gitlabland-mass-service.git'
                         sh '''

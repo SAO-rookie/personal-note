@@ -15,7 +15,8 @@ Jenkins 中有许多常量可以在脚本中使用，以下是一些常见的常
 这些常量可用于 Jenkins 中的任何脚本（例如构建步骤、后置操作等），以帮助您编写更灵活和可重用的脚本。
 
 # 判断是否时手动构建
-使用以下命令能看到相关信息
+使用以下函数能看到相关信息
 ```
 currentBuild.getBuildCauses()
 ```
+包含 *Generic Cause* 字段表示webhook触发，包含 *Started by user* 字段表示手动触发
