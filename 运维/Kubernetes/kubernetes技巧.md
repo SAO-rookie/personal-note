@@ -114,7 +114,16 @@ chmod +x create-user.sh
 [官方文档](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/)
 ### API 对象
 RBAC API 声明了四种 Kubernetes 对象：**Role**、**ClusterRole**、**RoleBinding** 和 **ClusterRoleBinding**。
-### [Role 和 ClusterRole](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#role-and-clusterole)
+### [Role 和 ClusterRole的区别](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#role-and-clusterole)
+
+| **属性**   | **Role**                     | **ClusterRole**                    |
+| -------- | ---------------------------- | ---------------------------------- |
+| **作用范围** | 限定于某个命名空间（namespace）         | 覆盖整个 Kubernetes 集群（cluster-wide）   |
+| **资源类型** | 只限于命名空间内的资源                  | 可以访问命名空间资源和集群级别的资源（如 `nodes`）      |
+| **绑定方式** | 通过 `RoleBinding` 绑定到命名空间中的用户 | 通过 `ClusterRoleBinding` 绑定到集群级别的用户 |
+| **适用场景** | 适用于命名空间级别的权限控制               | 适用于集群级别的权限控制，或者跨命名空间控制权限           |
+| **例子**   | 限制开发人员只能访问某个命名空间中的资源         | 允许某个用户查看所有命名空间的 `pods` 或集群级别资源     |
+
 ```
 #创建一个可以在default命令空间下只能操作pods的Role
 cat <<EOF | kubectl apply -f -
@@ -139,6 +148,61 @@ rules:
   resources: ["pods"]
   verbs: ["get", "list", "watch", "create", "update", "delete"]
 EOF
+```
+ rules的三个参数解释 
+1. `apiGroups` 表
+
+| **API Group**                  | **描述**                                                             |
+| ------------------------------ | ------------------------------------------------------------------ |
+| `""` (core API group)          | 核心 API 组，包含最基本的资源，如 `pods`, `services`, `namespaces` 等。            |
+| `apps`                         | 与应用相关的资源，如 `deployments`, `statefulsets`, `replicasets` 等。         |
+| `batch`                        | 与批处理相关的资源，如 `jobs`, `cronjobs` 等。                                  |
+| `networking.k8s.io`            | 与网络相关的资源，如 `ingresses`, `networkpolicies` 等。                       |
+| `rbac.authorization.k8s.io`    | 与角色和权限相关的资源，如 `roles`, `rolebindings` 等。                           |
+| `admissionregistration.k8s.io` | 与 Kubernetes admission 控制器相关的资源，如 `mutatingwebhookconfigurations`。 |
+2. `resources` 表
+
+| **资源**            | **描述**                         |
+| ----------------- | ------------------------------ |
+| `pods`            | Pod 资源，用于描述运行的容器。              |
+| `deployments`     | 部署资源，用于声明和管理应用程序的部署。           |
+| `services`        | 服务资源，用于定义应用程序访问点。              |
+| `ingresses`       | 入口资源，用于外部访问 Kubernetes 集群中的服务。 |
+| `jobs`            | 作业资源，用于批处理任务的管理。               |
+| `statefulsets`    | 有状态集资源，管理有状态应用程序的副本。           |
+| `replicasets`     | 副本集资源，确保某些副本数的 Pods 存在。        |
+| `networkpolicies` | 网络策略资源，用于定义 Pods 之间的通信规则。      |
+| `roles`           | 角色资源，定义对资源的访问控制规则（命名空间级别）。     |
+| `rolebindings`    | 角色绑定资源，将 `Role` 绑定到具体用户或服务账户。  |
+3. `verbs` 表
+
+| **操作（Verb）**       | **描述**                      |
+| ------------------ | --------------------------- |
+| `get`              | 查看资源的详细信息。                  |
+| `list`             | 列出指定资源的所有实例。                |
+| `watch`            | 监听资源的变更，实时获取资源的更新。          |
+| `create`           | 创建新的资源实例。                   |
+| `update`           | 更新已有资源实例的配置或状态。             |
+| `delete`           | 删除指定资源实例。                   |
+| `patch`            | 更新资源的部分内容，通常是通过合并更新来修改部分属性。 |
+| `deletecollection` | 删除资源集合中的多个资源实例。             |
+### [RoleBinding 和 ClusterRoleBinding区别](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding)
+案例
+```
+# 创建RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  namespace: default
+  name: dev-user-role
+subjects:
+- kind: User
+  name: dev-user-role
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: dev-user-role
+  apiGroup: rbac.authorization.k8s.io
 ```
 # k8s的CRI配置
 ## deployment 等运行时 修改hosts文件
