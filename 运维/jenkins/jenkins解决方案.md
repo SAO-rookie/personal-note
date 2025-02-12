@@ -19,4 +19,36 @@ Jenkins 中有许多常量可以在脚本中使用，以下是一些常见的常
 ```
 currentBuild.getBuildCauses()
 ```
-包含 *Generic Cause* 字段表示webhook触发，包含 *Started by user* 字段表示手动触发
+包含 *Generic Cause* 字段表示webhook触发，包含 *Started by user* 字段表示手动触发 以下是简单脚本展示
+```
+pipeline {
+    agent any
+    // 这是使用了Generic Webhook Trigger插件
+    triggers {
+        GenericTrigger(
+            genericVariables: [
+                [key: 'ref', value: '$.ref']
+            ],
+            token: 'test',
+            regexpFilterExpression: '^refs/heads/(master|develop)$',
+            regexpFilterText: '$ref',
+        )
+    }
+    environment {
+        CAUSE = "${currentBuild.getBuildCauses()}"
+    }
+    stages {
+        stage('pull-code') {
+            steps {
+                script{
+                    if(CAUSE.contains("Started by user")){
+                        echo "手动触发"
+                    }else{
+                        echo "webhook"
+                    }
+                }
+            }
+        }
+    }
+}
+```

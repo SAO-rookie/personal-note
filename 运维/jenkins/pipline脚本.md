@@ -1,4 +1,5 @@
 # pipline流水线脚本模板
+**使用这个脚本：必须要 Generic Webhook Trigger，Maven Integration，Git plugin**
 ```
 pipeline {
     agent any
@@ -29,7 +30,7 @@ pipeline {
         stage('pull-code') {
             steps {
                 script{
-                    if("develop".equals(BRANCH) || "Started by user".equals(CAUSE)){
+                    if("develop".equals(BRANCH) || "Started by user".contains(CAUSE)){
                         echo '测试环境'
                         git branch: 'develop', url: 'https://zengxh:zengXh_8702@gitlabland-mass-service.git'
                         sh '''
@@ -258,7 +259,7 @@ pipeline {
 }
 ```
 # jenkins监听分支和tag自动化打包
-**注意：必须有Generic Webhook Trigger 才可以使用**
+**注意：必须有Generic Webhook Trigger  插件才可以使用**
 
 ```
 pipeline {
