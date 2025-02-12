@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/jenkins/jenkins技巧.md",
+                "file": "运维/Kubernetes/minio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "jenkins技巧"
+              "title": "minio"
             }
           }
         ]
@@ -178,10 +178,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89d3ca6b8590a1ae",
+  "active": "231a839d4c5586ad",
   "lastOpenFiles": [
-    "运维/jenkins/pipline脚本.md",
+    "运维/Kubernetes/kubernetes技巧.md",
+    "运维/Kubernetes/kubernetes解决方案.md",
     "运维/jenkins/jenkins技巧.md",
+    "运维/jenkins/pipline脚本.md",
     "运维/jenkins/jenkins解决方案.md",
     "运维/jenkins/jenkins安装.md",
     "运维/jenkins/image/jenkins-install/9.png",
@@ -215,8 +217,6 @@
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
-    "运维/Kubernetes/kubernetes技巧.md",
-    "运维/Kubernetes/kubernetes解决方案.md",
     "运维/Kubernetes/minio.md",
     "运维/jenkins/image",
     "运维/jenkins",
