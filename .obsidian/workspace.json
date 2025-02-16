@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端/java/springboot/springboot技巧.md",
+                "file": "运维/linux解决方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "springboot技巧"
+              "title": "linux解决方案"
             }
           }
         ]
@@ -178,8 +178,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89d3ca6b8590a1ae",
+  "active": "93b95ce0a1bca1b2",
   "lastOpenFiles": [
+    "后端/java/springboot/springboot技巧.md",
     "运维/Kubernetes/kubernetes技巧.md",
     "运维/Kubernetes/kubernetes工具.md",
     "运维/Kubernetes/krew的安装.md",
@@ -211,7 +212,6 @@
     "运维/Kubernetes/helm/openvpn.md",
     "后端/mysql/mysql配置.md",
     "后端/mysql/mysql技巧.md",
-    "后端/java/springboot/springboot技巧.md",
     "后端/go/go技巧.md",
     "后端/消息队列/kafka技巧.md",
     "工具/杂物.md",
