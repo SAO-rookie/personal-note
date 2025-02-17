@@ -18,13 +18,21 @@ yum install -y ipset ipvsadm
     libcrc32c              12644  4 xfs,ip_vs,nf_nat,nf_conntrack
 ```
 - 没有参数，则运行以下命令， 临时开启
-```
+```powershell
     modprobe ip_vs && modprobe ip_vs_rr && modprobe ip_vs_wrr && modprobe ip_vs_sh
 ```
 - 永久开启
-```
+```powershell
     echo "ip_vs" >> /etc/modules-load.d/ipvs.conf
     echo "ip_vs_rr" >> /etc/modules-load.d/ipvs.conf
     echo "ip_vs_wrr" >> /etc/modules-load.d/ipvs.conf
     echo "ip_vs_sh" >> /etc/modules-load.d/ipvs.conf
+```
+# Debian系统下VIM不能使用鼠标复制
+```powershell
+# 在vim 配置文件添加以下信息接口 文件地址/etc/vim/vimrc
+let skip_defaults_vim = 1
+if has('mouse')
+        set mouse-=a
+endif
 ```
