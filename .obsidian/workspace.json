@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/helm/prometheus.md",
+                "file": "运维/Kubernetes/helm/ingress-nginx.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "prometheus"
+              "title": "ingress-nginx"
             }
           }
         ]
@@ -180,6 +180,7 @@
   },
   "active": "231a839d4c5586ad",
   "lastOpenFiles": [
+    "运维/Kubernetes/helm/prometheus.md",
     "后端/java/springboot/springboot技巧.md",
     "conflict-files-obsidian-git.md",
     "运维/Kubernetes/kubernetes工具.md",
@@ -217,7 +218,6 @@
     "运维/容器/PostgreSql.md",
     "运维/容器/minio.md",
     "运维/容器/docker/Docker配置.md",
-    "前端/前端技巧.md",
     "运维/jenkins/image",
     "运维/jenkins",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx",

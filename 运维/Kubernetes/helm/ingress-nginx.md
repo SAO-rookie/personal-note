@@ -82,7 +82,7 @@ type: ClusterIP
         ## for backwards compatibility consider setting the full image url via the repository value below
         ## use *either* current default registry/image or repository format or installing chart by providing the values.yaml will fail
         ## repository:
-        tag: v20220916-gd32f8c343
+        tag: v1.5.1
         #digest: sha256:39c5b2e3310dc4264d638ad28d9d1d96c4cbb2b2dcfb52368fe4e3c63f61e10f
         pullPolicy: IfNotPresent
 
