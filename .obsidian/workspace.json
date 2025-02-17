@@ -178,10 +178,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ebb606fe73b47b68",
+  "active": "231a839d4c5586ad",
   "lastOpenFiles": [
-    "运维/Kubernetes/helm/ingress-nginx.md",
+    "运维/容器/docker/ocker配置.md",
     "运维/Kubernetes/helm/prometheus.md",
+    "运维/Kubernetes/helm/ingress-nginx.md",
     "后端/java/springboot/springboot技巧.md",
     "conflict-files-obsidian-git.md",
     "运维/Kubernetes/kubernetes工具.md",
@@ -217,7 +218,6 @@
     "后端/消息队列/kafka技巧.md",
     "工具/杂物.md",
     "运维/容器/PostgreSql.md",
-    "运维/容器/minio.md",
     "运维/jenkins/image",
     "运维/jenkins",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx",
