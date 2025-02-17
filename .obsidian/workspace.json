@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/helm/ingress-nginx.md",
+                "file": "运维/Kubernetes/helm/prometheus.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ingress-nginx"
+              "title": "prometheus"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/Kubernetes/kubernetes技巧.md",
+                "file": "运维/Kubernetes/helm/prometheus.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "kubernetes技巧 的大纲"
+              "title": "prometheus 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -178,8 +178,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "231a839d4c5586ad",
+  "active": "ebb606fe73b47b68",
   "lastOpenFiles": [
+    "运维/Kubernetes/helm/ingress-nginx.md",
     "运维/Kubernetes/helm/prometheus.md",
     "后端/java/springboot/springboot技巧.md",
     "conflict-files-obsidian-git.md",
@@ -217,7 +218,6 @@
     "工具/杂物.md",
     "运维/容器/PostgreSql.md",
     "运维/容器/minio.md",
-    "运维/容器/docker/Docker配置.md",
     "运维/jenkins/image",
     "运维/jenkins",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx",
