@@ -26,6 +26,7 @@ apt install -y wget gnupg curl openvpn vim cron psmisc
 VOLUME ["/storage"]
 ```
 根据需求下载软件
--  samba-client 连接window共享文件
-- minioclient minio客户端
+- samba-client smb协议连接window共享文件
+- cifs-utils smb协议将window共享文件挂载到容器里
 - mysql-client  mysq客户端
+- nfs-common nfs客户端挂载linux共享文件到容器里
