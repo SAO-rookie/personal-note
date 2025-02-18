@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/jenkins/jenkins安装.md",
+                "file": "运维/容器/docker/docker-file仓库.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "jenkins安装"
+              "title": "docker-file仓库"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/jenkins/jenkins安装.md",
+                "file": "运维/容器/docker/docker-file仓库.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "jenkins安装 的大纲"
+              "title": "docker-file仓库 的大纲"
             }
           },
           {
@@ -181,6 +181,14 @@
   "active": "231a839d4c5586ad",
   "lastOpenFiles": [
     "运维/容器/minio.md",
+    "运维/容器/docker/docker-file仓库.md",
+    "运维/容器/docker/docker配置.md",
+    "运维/NFS安装.md",
+    "运维/容器/未命名",
+    "运维/linux解决方案.md",
+    "运维/nginx.md",
+    "运维/容器/PostgreSql.md",
+    "运维/jenkins/jenkins安装.md",
     "前端/前端技巧.md",
     "运维/容器/containerd/Containerd配置.md",
     "运维/Kubernetes/helm/cert-manager.md",
@@ -189,22 +197,16 @@
     "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "运维/Kubernetes/helm/prometheus.md",
     "运维/Kubernetes/helm/openvpn.md",
-    "运维/容器/docker/ocker配置.md",
     "后端/java/springboot/springboot技巧.md",
     "conflict-files-obsidian-git.md",
     "运维/Kubernetes/kubernetes工具.md",
     "运维/Kubernetes/kubernetes技巧.md",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/Kubernetes/kubernetes解决方案.md",
-    "运维/NFS安装.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
     "运维/Kubernetes/minio.md",
     "Krew的安装.md",
-    "运维/jenkins/jenkins技巧.md",
-    "运维/jenkins/pipline脚本.md",
-    "运维/jenkins/jenkins解决方案.md",
-    "运维/jenkins/jenkins安装.md",
     "运维/jenkins/image/jenkins-install/9.png",
     "运维/jenkins/image/jenkins-install/0.png",
     "未命名.canvas",
@@ -217,7 +219,6 @@
     "运维/jenkins/image/jenkins-install/3.png",
     "运维/jenkins/image/jenkins-install/2.png",
     "运维/jenkins/image/jenkins-install",
-    "后端/mysql/mysql配置.md",
     "运维/jenkins/image",
     "运维/jenkins",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx",
@@ -225,7 +226,6 @@
     "运维/Kubernetes/helm/监控",
     "运维/Kubernetes/helm",
     "运维/Kubernetes/kubernetes安装",
-    "后端/消息队列",
-    "运维/Kubernetes"
+    "后端/消息队列"
   ]
 }
