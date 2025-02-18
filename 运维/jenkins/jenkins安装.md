@@ -1,10 +1,5 @@
 # jenkins安装
-## 原有镜像没有权限 自制作带权限的镜像
-```
-构建镜像给与授权
-FROM jenkins/jenkins:2.492.1
-USER root
-```
+
 ## 使用docker compose 安装
 ```
 version: '3.9'
@@ -13,6 +8,7 @@ services:
     container_name: jenkins
     image: jenkins/jenkins:2.492.1
     restart: always
+    user: root
     environment:
      - JAVA_OPTS=-Duser.timezone=Asia/Shanghai
     volumes:
