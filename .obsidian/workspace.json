@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#samba-client",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +103,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -207,10 +208,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7fdfc679097f4ff8",
+  "active": "e4f154717c4c17e2",
   "lastOpenFiles": [
-    "运维/Kubernetes/helm/openvpn.md",
+    "后端/mysql/mysql配置.md",
+    "后端/mysql/mysql技巧.md",
     "运维/容器/docker/docker-file仓库.md",
+    "运维/Kubernetes/helm/openvpn.md",
     "运维/容器/minio.md",
     "运维/容器/docker/docker配置.md",
     "运维/NFS安装.md",
@@ -234,8 +237,6 @@
     "运维/Kubernetes/kubernetes解决方案.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
-    "运维/Kubernetes/minio.md",
-    "Krew的安装.md",
     "运维/jenkins/image/jenkins-install/9.png",
     "运维/jenkins/image/jenkins-install/0.png",
     "未命名.canvas",

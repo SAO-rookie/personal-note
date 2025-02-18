@@ -21,7 +21,11 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN sed -i 's|http://deb.debian.org|http://mirrors.tuna.tsinghua.edu.cn/|g' /etc/apt/sources.list.d/debian.sources && \
 apt update && \
-apt install -y wget gnupg curl openvpn vim cron psmisc samba-client
+apt install -y wget gnupg curl openvpn vim cron psmisc
 
 VOLUME ["/storage"]
 ```
+根据需求下载软件
+-  samba-client 连接window共享文件
+- minioclient minio客户端
+- mysql-client  mysq客户端
