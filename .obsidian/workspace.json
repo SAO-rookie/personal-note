@@ -13,6 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "运维/Kubernetes/helm/openvpn.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "openvpn"
+            }
+          },
+          {
+            "id": "7fdfc679097f4ff8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "运维/容器/docker/docker-file仓库.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "docker-file仓库"
+            }
+          },
+          {
+            "id": "d1b3e0d01c0ea450",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "运维/容器/docker/docker-file仓库.md",
                 "mode": "source",
                 "source": false
@@ -21,7 +49,8 @@
               "title": "docker-file仓库"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,7 +207,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "231a839d4c5586ad",
+  "active": "7fdfc679097f4ff8",
   "lastOpenFiles": [
     "运维/Kubernetes/helm/openvpn.md",
     "运维/容器/docker/docker-file仓库.md",

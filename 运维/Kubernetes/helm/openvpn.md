@@ -273,22 +273,8 @@ killall openvpn
 
 ```
 ### 自定义docker客户端
-1. Dockerfile
-```
-FROM ubuntu:24.10
+1. [Dockerfile](../../容器/docker/docker-file仓库.md#自定义Openvpn镜像)
 
-# 修改时区
-ENV TZ=Asia/Shanghai
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
-RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
-RUN sed -i 's/security.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
-
-RUN apt update && apt install -y wget gnupg curl openvpn vim cron psmisc
-
-VOLUME ["/storage","/back-script","/vpn"]
-
-```
 2. docker-compose.yml
 ```
 version: '3.9'

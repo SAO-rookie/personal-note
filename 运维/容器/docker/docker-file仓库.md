@@ -1,5 +1,5 @@
 # 自定义minio client镜像
-```dockeFile
+```DockeFile
 FROM debian:bookworm
 
 RUN sed -i 's|http://deb.debian.org|http://mirrors.tuna.tsinghua.edu.cn/|g' /etc/apt/sources.list.d/debian.sources && \
@@ -12,7 +12,7 @@ RUN chmod +x /usr/bin/mc
 ```
 
 # 自定义Openvpn镜像
-```
+```DockeFile
 FROM debian:bookworm
 
 # 修改时区
