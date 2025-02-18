@@ -180,8 +180,9 @@
   },
   "active": "231a839d4c5586ad",
   "lastOpenFiles": [
-    "运维/容器/minio.md",
+    "运维/Kubernetes/helm/openvpn.md",
     "运维/容器/docker/docker-file仓库.md",
+    "运维/容器/minio.md",
     "运维/容器/docker/docker配置.md",
     "运维/NFS安装.md",
     "运维/容器/未命名",
@@ -196,7 +197,6 @@
     "运维/Kubernetes/helm/loki.md",
     "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "运维/Kubernetes/helm/prometheus.md",
-    "运维/Kubernetes/helm/openvpn.md",
     "后端/java/springboot/springboot技巧.md",
     "conflict-files-obsidian-git.md",
     "运维/Kubernetes/kubernetes工具.md",
