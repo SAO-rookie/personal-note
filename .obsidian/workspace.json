@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/前端技巧.md",
+                "file": "运维/容器/minio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "前端技巧"
+              "title": "minio"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端/前端技巧.md",
+                "file": "运维/容器/minio.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "前端技巧 的大纲"
+              "title": "minio 的大纲"
             }
           },
           {
@@ -180,6 +180,7 @@
   },
   "active": "231a839d4c5586ad",
   "lastOpenFiles": [
+    "前端/前端技巧.md",
     "运维/容器/containerd/Containerd配置.md",
     "运维/Kubernetes/helm/cert-manager.md",
     "运维/Kubernetes/helm/ingress-nginx.md",
@@ -217,7 +218,6 @@
     "运维/jenkins/image/jenkins-install",
     "后端/mysql/mysql配置.md",
     "后端/mysql/mysql技巧.md",
-    "后端/go/go技巧.md",
     "运维/jenkins/image",
     "运维/jenkins",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx",
