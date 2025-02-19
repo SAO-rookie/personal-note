@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "92eab5d7cb598388",
+        "id": "faf5a37cdcd62680",
         "type": "tabs",
         "children": [
           {
-            "id": "231a839d4c5586ad",
+            "id": "dc63acb9c9358fef",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "运维/Kubernetes/helm/cert-manager.md",
-                "mode": "preview",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "cert-manager"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -178,7 +178,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "231a839d4c5586ad",
+  "active": "dc63acb9c9358fef",
   "lastOpenFiles": [
     "后端/postgreSql/postgresql技巧.md",
     "后端/mysql/mysql配置.md",
