@@ -31,6 +31,6 @@ VOLUME ["/storage","vpn-config","back-script"]
 ```
 根据需求下载软件
 - cifs-utils smb协议将window共享文件挂载到容器里
-- mysql-client  mysq客户端
+- default-mysql-client  mysq客户端
 - postgresql-client  postgresql客户端
 - nfs-common nfs客户端挂载linux共享文件到容器里

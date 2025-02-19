@@ -31,6 +31,8 @@ sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY
    yum -y install mysql
    # ubuntu 下载安装 mysql客户端
    sudo apt install mysql-client
+   # debian 下载mysql客户端
+   apt install default-mysql-client
  ```
 **编写定时备份脚本**
  ```
