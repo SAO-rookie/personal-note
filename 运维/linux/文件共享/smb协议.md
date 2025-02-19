@@ -29,3 +29,20 @@ vim /etc/samba/smb.conf
 - `valid users`: 设置允许访问的用户。
 - `read only`: 设置为 `no` 允许写入。
 - `public`: 设置为 `yes` 表示任何人都可以访问。
+## 创建 Samba 用户
+为了能通过 SMB 访问，您需要为用户创建一个 Samba 用户。首先，你可以创建一个 Linux 用户：
+
+```bash
+adduser sambauser
+```
+
+然后，使用以下命令为该用户设置 Samba 密码：
+```bash
+smbpasswd -a sambauser &&  smbpasswd -e sambauser
+```
+- -a: 添加新用户
+- -e: 启用该用户
+## 重启 Samba 服务
+```
+systemctl restart smbd
+```
