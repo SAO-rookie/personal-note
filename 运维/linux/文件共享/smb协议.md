@@ -67,11 +67,18 @@ smbpasswd -e sambauser
 ```
 systemctl restart smbd
 ```
-## 客户端挂载
-### 安装 
+# 客户端挂载
+### 安装 cifs-utils
 ```bash
 # centos
-yum install smaba
+yum install cifs-utils
 # debian
-apt install samba
+apt install cifs-utils
+```
+### 挂载文件
+```bash
+# 挂载
+mount -t cifs //172.16.0.88/data-backup /storage -o username=账号,password=密码
+# 卸载
+umount  //172.16.0.88/data-backup /storage
 ```

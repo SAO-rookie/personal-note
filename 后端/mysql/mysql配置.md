@@ -25,48 +25,6 @@ sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY
 
 ```
 
-# linux MySQL 数据备份
- ```
-   # centos下载安装 mysql客户端
-   yum -y install mysql
-   # ubuntu 下载安装 mysql客户端
-   sudo apt install mysql-client
-   # debian 下载mysql客户端
-   apt install default-mysql-client
- ```
-**编写定时备份脚本**
- ```
-# 定义MySQL数据库的连接信息
-DB_HOST="127.0.0.1"
-DB_PORT="3306"
-DB_USER="backupserver"
-DB_PASS="gTz_2021"
-# 备份地址
-BACKUP_DIR="public-server"
-
-# 定义要备份的数据库列表和对应的备份目录
-declare -A DATABASES=(
-    ["public_api"]="/opt/mysql-backup/${BACKUP_DIR}/data/public_api"
-    ["public_file"]="/opt/mysql-backup/${BACKUP_DIR}/data/public_file"
-    ["public_secrets"]="/opt/mysql-backup/${BACKUP_DIR}/data/public_secrets"
-    ["public_security"]="/opt/mysql-backup/${BACKUP_DIR}/data/public_security"
-)
-
-# 创建备份目录
-mkdir -p ${DATABASES[@]}
-
-# 循环遍历数据库列表并备份每个数据库
-for DB_NAME in "${!DATABASES[@]}"; do
-    # 定义备份文件名
-    BACKUP_FILE="${DATABASES[$DB_NAME]}/${DB_NAME}-`date +%Y-%m-%d-%H-%M-%S`.sql"
-
-    # 备份MySQL数据库
-    /usr/bin/mysqldump -h $DB_HOST -u $DB_USER -p$DB_PASS -P$DB_PORT  $DB_NAME > $BACKUP_FILE
-done
-
-find /opt/mysql-backup/${BACKUP_DIR}/data  -type f -name "*.sql" -mtime +90 -delete
- ```
- 
 # Mysql 添加新用户
 
 ```

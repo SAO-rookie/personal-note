@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/linux/文件共享/smb协议.md",
+                "file": "运维/容器/docker/docker-file仓库.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "smb协议"
-            }
-          },
-          {
-            "id": "681f9bb963046f8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "运维/linux/文件共享/nfs协议.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "nfs协议"
+              "title": "docker-file仓库"
             }
           }
         ]
@@ -127,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "运维/linux/文件共享/smb协议.md",
+                "file": "运维/容器/docker/docker-file仓库.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "smb协议 的出链列表"
+              "title": "docker-file仓库 的出链列表"
             }
           },
           {
@@ -156,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/linux/文件共享/smb协议.md",
+                "file": "运维/容器/docker/docker-file仓库.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "smb协议 的大纲"
+              "title": "docker-file仓库 的大纲"
             }
           },
           {
@@ -194,23 +180,23 @@
   },
   "active": "231a839d4c5586ad",
   "lastOpenFiles": [
+    "后端/mysql/mysql技巧.md",
+    "后端/mysql/mysql配置.md",
+    "运维/容器/docker/docker-file仓库.md",
+    "运维/linux/文件共享/smb协议.md",
+    "运维/容器/minio.md",
+    "运维/容器/PostgreSql.md",
     "运维/linux/文件共享/nfs协议.md",
     "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "前端/前端技巧.md",
     "前端/nginx.md",
-    "运维/linux/文件共享/smb协议.md",
     "运维/linux/文件共享",
     "运维/linux/linux解决方案.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
     "运维/linux",
-    "运维/容器/docker/docker-file仓库.md",
-    "后端/mysql/mysql配置.md",
     "运维/Kubernetes/helm/openvpn.md",
-    "后端/mysql/mysql技巧.md",
-    "运维/容器/minio.md",
     "运维/容器/docker/docker配置.md",
     "运维/容器/未命名",
-    "运维/容器/PostgreSql.md",
     "运维/jenkins/jenkins安装.md",
     "运维/容器/containerd/Containerd配置.md",
     "运维/Kubernetes/helm/cert-manager.md",

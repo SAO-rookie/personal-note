@@ -49,7 +49,7 @@ systemctl enable nfs-server --now
 [root@k8s~]# exportfs
 /nfs/data/   <world>
 ```
-## 客户端挂载NFS 共享，看情况使用
+# 客户端挂载
 * 临时挂载
 ```
 mount <NFS服务器IP>:/{暴露目录} /{本地目录}

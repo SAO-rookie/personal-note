@@ -31,7 +31,7 @@ apt install -y wget gnupg curl openvpn vim cron psmisc
 VOLUME ["/storage","vpn-config","back-script"]
 ```
 根据需求下载软件
-- cifs-utils smb协议将window共享文件挂载到容器里
+- [cifs-utils](../../linux/文件共享/smb协议.md#客户端挂载) smb协议将window共享文件挂载到容器里
 - default-mysql-client  mysq客户端
 - postgresql-client  postgresql客户端
 - nfs-common nfs客户端挂载linux共享文件到容器里
