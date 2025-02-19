@@ -79,7 +79,6 @@ remote {ip} {port} tcp
 将以.ovpn结尾的密钥文件导入即可
 ## linux命令行请按照以下策略
 **注意：在云服务器千万别使用，否则无法连接服务器。服务器网络都被VPN接管了**
-**注意：docker容器用VPN 别用host模式和端口，单机运行即可**
 ### 安装openvpn客户端
 ```
 # centos 
@@ -272,26 +271,7 @@ openvpn --daemon openvpn  --config /path/prod-client.ovpn
 killall openvpn
 
 ```
-### 自定义docker客户端
+### docker客户端
+**注意：docker容器用VPN 别用host模式和端口，单机运行即可**
 1. [Dockerfile](../../容器/docker/docker-file仓库.md#自定义Openvpn镜像)
-
-2. 
-```
-
-```
-**注意：定义初始化脚本用于安装自定义软件和定时任务**
-```
-#!/bin/bash
-sleep 10
-crontab /back-script/crontab.txt
-
-# 其他软件安装写在下面
-```
-
-```
-# crontab.txt 配置
-0 1 * * * /back-script/backup-script.sh
-
-0 1 1 * *  /back-script/mysql-node-long-time-back-up.sh
-```
 

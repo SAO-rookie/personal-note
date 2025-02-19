@@ -2,6 +2,10 @@
 ```DockeFile
 FROM debian:bookworm
 
+# 修改时区
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 RUN sed -i 's|http://deb.debian.org|http://mirrors.tuna.tsinghua.edu.cn/|g' /etc/apt/sources.list.d/debian.sources && \
 apt update && \
 apt install -y vim cron
@@ -21,12 +25,11 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN sed -i 's|http://deb.debian.org|http://mirrors.tuna.tsinghua.edu.cn/|g' /etc/apt/sources.list.d/debian.sources && \
 apt update && \
-apt install -y wget gnupg curl openvpn vim cron psmisc
+apt install -y wget gnupg curl openvpn vim cron psmisc 
 
-VOLUME ["/storage"]
+VOLUME ["/storage","vpn-config","back-script"]
 ```
 根据需求下载软件
-- samba-client smb协议连接window共享文件
 - cifs-utils smb协议将window共享文件挂载到容器里
 - mysql-client  mysq客户端
 - nfs-common nfs客户端挂载linux共享文件到容器里
