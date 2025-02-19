@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端/postgreSql/postgresql技巧.md",
+                "file": "运维/Kubernetes/helm/cert-manager.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "postgresql技巧"
+              "title": "cert-manager"
             }
           }
         ]
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "后端/postgreSql/postgresql技巧.md",
+                "file": "运维/Kubernetes/helm/cert-manager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "postgresql技巧 的出链列表"
+              "title": "cert-manager 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "后端/postgreSql/postgresql技巧.md",
+                "file": "运维/Kubernetes/helm/cert-manager.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "postgresql技巧 的大纲"
+              "title": "cert-manager 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -180,17 +180,17 @@
   },
   "active": "231a839d4c5586ad",
   "lastOpenFiles": [
+    "后端/postgreSql/postgresql技巧.md",
+    "后端/mysql/mysql配置.md",
+    "后端/mysql/mysql技巧.md",
+    "前端/前端技巧.md",
     "运维/容器/docker/docker-file仓库.md",
     "运维/容器/postgresql.md",
-    "后端/postgreSql/postgresql技巧.md",
-    "后端/mysql/mysql技巧.md",
-    "后端/mysql/mysql配置.md",
     "后端/postgreSql",
     "运维/容器/minio.md",
     "运维/linux/文件共享/smb协议.md",
     "运维/linux/文件共享/nfs协议.md",
     "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
-    "前端/前端技巧.md",
     "前端/nginx.md",
     "运维/linux/文件共享",
     "运维/linux/linux解决方案.md",
