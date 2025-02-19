@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/容器/docker/docker-file仓库.md",
+                "file": "后端/postgreSql/postgresql技巧.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker-file仓库"
+              "title": "postgresql技巧"
             }
           }
         ]
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "运维/容器/docker/docker-file仓库.md",
+                "file": "后端/postgreSql/postgresql技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "docker-file仓库 的出链列表"
+              "title": "postgresql技巧 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/容器/docker/docker-file仓库.md",
+                "file": "后端/postgreSql/postgresql技巧.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "docker-file仓库 的大纲"
+              "title": "postgresql技巧 的大纲"
             }
           },
           {
@@ -180,12 +180,14 @@
   },
   "active": "231a839d4c5586ad",
   "lastOpenFiles": [
+    "运维/容器/docker/docker-file仓库.md",
+    "运维/容器/postgresql.md",
+    "后端/postgreSql/postgresql技巧.md",
     "后端/mysql/mysql技巧.md",
     "后端/mysql/mysql配置.md",
-    "运维/容器/docker/docker-file仓库.md",
-    "运维/linux/文件共享/smb协议.md",
+    "后端/postgreSql",
     "运维/容器/minio.md",
-    "运维/容器/PostgreSql.md",
+    "运维/linux/文件共享/smb协议.md",
     "运维/linux/文件共享/nfs协议.md",
     "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "前端/前端技巧.md",
@@ -224,7 +226,6 @@
     "运维/jenkins",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx",
     "运维/Kubernetes/kubernetes流量入口",
-    "运维/Kubernetes/helm/监控",
-    "运维/Kubernetes/helm"
+    "运维/Kubernetes/helm/监控"
   ]
 }
