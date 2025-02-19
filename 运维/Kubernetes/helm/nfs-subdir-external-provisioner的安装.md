@@ -2,7 +2,7 @@
 *作用：搭建nfs客户端，统一管理存储，实现存储分离*
 *环境：k8s 1.24.5，nfs系统,helm 3.11.0*
 **注意：所有工作节点，必须安装nfs工具包，否则无法使用nfs**
-* [NFS安装文档](../../linux/nfs安装.md)
+* [NFS安装文档](../../linux/文件共享/nfs协议.md)
 * [HELM安装文档](https://helm.sh/zh/docs/intro/install/)
 * [nfs-subdir-external-provisioner安装文档](https://github.com/kubernetes-sigs/nfs-subdir-external-provisioner/blob/master/charts/nfs-subdir-external-provisioner/README.md)
 ## 以命令行方式安装
