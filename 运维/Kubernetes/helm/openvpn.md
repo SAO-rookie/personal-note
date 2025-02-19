@@ -275,25 +275,9 @@ killall openvpn
 ### 自定义docker客户端
 1. [Dockerfile](../../容器/docker/docker-file仓库.md#自定义Openvpn镜像)
 
-2. docker-compose.yml
+2. 
 ```
-version: '3.9'
-services:
-  back-server: 
-    container_name: back-server
-    image: harbor.changtech.cn/common/data-back-server:v1
-    restart: always
-    stdin_open: true # 简写为 -i
-    tty: true  # 简写为 -t
-    command: /bin/sh -c "/back-script/init-container.sh && service cron start && tail -f /dev/null"
-    cap_add:
-      - NET_ADMIN
-    devices:
-      - "/dev/net/tun:/dev/net/tun"
-    volumes:
-      - "/data-back/back-script/:/back-script"
-      - "/data-back/data/:/storage"
-      - "/data-back/vpn-info/:/vpn-info"
+
 ```
 **注意：定义初始化脚本用于安装自定义软件和定时任务**
 ```
