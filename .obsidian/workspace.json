@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "faf5a37cdcd62680",
+        "id": "b02dc083d2d4c038",
         "type": "tabs",
         "children": [
           {
-            "id": "dc63acb9c9358fef",
+            "id": "9ad29e08d0e78411",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "运维/容器/minio.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-file",
+              "title": "minio"
             }
           }
         ]
@@ -178,29 +178,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dc63acb9c9358fef",
+  "active": "9ad29e08d0e78411",
   "lastOpenFiles": [
+    "运维/容器/docker/docker配置.md",
+    "运维/容器/docker/docker-file仓库.md",
+    "运维/容器/containerd/Containerd配置.md",
+    "前端/nginx.md",
+    "前端/前端技巧.md",
+    "工具/杂物.md",
     "后端/postgreSql/postgresql技巧.md",
     "后端/mysql/mysql配置.md",
     "后端/mysql/mysql技巧.md",
-    "前端/前端技巧.md",
-    "运维/容器/docker/docker-file仓库.md",
     "运维/容器/postgresql.md",
     "后端/postgreSql",
     "运维/容器/minio.md",
     "运维/linux/文件共享/smb协议.md",
     "运维/linux/文件共享/nfs协议.md",
     "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
-    "前端/nginx.md",
     "运维/linux/文件共享",
     "运维/linux/linux解决方案.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
     "运维/linux",
     "运维/Kubernetes/helm/openvpn.md",
-    "运维/容器/docker/docker配置.md",
     "运维/容器/未命名",
     "运维/jenkins/jenkins安装.md",
-    "运维/容器/containerd/Containerd配置.md",
     "运维/Kubernetes/helm/cert-manager.md",
     "运维/Kubernetes/helm/ingress-nginx.md",
     "运维/Kubernetes/helm/loki.md",
@@ -209,7 +210,6 @@
     "conflict-files-obsidian-git.md",
     "运维/Kubernetes/kubernetes工具.md",
     "运维/Kubernetes/kubernetes技巧.md",
-    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/jenkins/image/jenkins-install/9.png",
     "运维/jenkins/image/jenkins-install/0.png",
     "未命名.canvas",
