@@ -229,7 +229,7 @@ kind: ClusterRoleBinding
 metadata:
   name: read-secrets-global
 subjects:
-- kind: User
+- kind: Group
   name: dev-user-role  # 'name' 是区分大小写的
   apiGroup: rbac.authorization.k8s.io
 roleRef:
