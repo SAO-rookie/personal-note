@@ -223,11 +223,11 @@ metadata:
   name: read-secrets-global
 subjects:
 - kind: Group
-  name: manager      # 'name' 是区分大小写的
+  name: dev-user-role  # 'name' 是区分大小写的
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
-  name: secret-reader
+  name: dev-user-role
   apiGroup: rbac.authorization.k8s.io
 ```
 
