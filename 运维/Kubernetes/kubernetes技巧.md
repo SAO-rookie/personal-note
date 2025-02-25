@@ -16,7 +16,7 @@ kubectl taint nodes <节点> node-role.kubernetes.io/control-plane:NoSchedule-
 ```
 ## k8s权限
 ### k8s创建.kubeconfig文件
-#### 创建基本用户
+#### 创建基本用户脚本
 **注意：公网ip必须要要SSL证书**
 - 创建create-user.sh文件
 ```

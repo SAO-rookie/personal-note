@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/容器/docker/docker配置.md",
+                "file": "运维/Kubernetes/kubernetes技巧.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker配置"
+              "title": "kubernetes技巧"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/容器/docker/docker配置.md",
+                "file": "运维/Kubernetes/kubernetes技巧.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "docker配置 的大纲"
+              "title": "kubernetes技巧 的大纲"
             }
           },
           {
@@ -180,6 +180,7 @@
   },
   "active": "9ad29e08d0e78411",
   "lastOpenFiles": [
+    "运维/容器/docker/docker配置.md",
     "运维/Kubernetes/kubernetes解决方案.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/Kubernetes/kubernetes工具.md",
@@ -187,7 +188,6 @@
     "运维/容器/minio.md",
     "运维/容器/docker/docker-file仓库.md",
     "运维/容器/containerd/Containerd配置.md",
-    "运维/容器/docker/docker配置.md",
     "前端/nginx.md",
     "前端/前端技巧.md",
     "工具/杂物.md",
