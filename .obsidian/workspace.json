@@ -35,8 +35,7 @@
               "title": "Kubernetes安装"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
+                "file": "运维/Kubernetes/kubernetes技巧.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Kubernetes安装 的大纲"
+              "title": "kubernetes技巧 的大纲"
             }
           },
           {
@@ -193,10 +192,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ca0d44979741bc11",
+  "active": "9ad29e08d0e78411",
   "lastOpenFiles": [
-    "运维/Kubernetes/kubernetes技巧.md",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
+    "运维/Kubernetes/kubernetes技巧.md",
     "运维/容器/docker/docker配置.md",
     "运维/Kubernetes/kubernetes解决方案.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
