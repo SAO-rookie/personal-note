@@ -198,6 +198,13 @@ EOF
 | `deletecollection` | 删除资源集合中的多个资源实例。             |
 #### RoleBinding 和 ClusterRoleBinding
 [RoleBinding 和 ClusterRoleBinding区别](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding)
+
+|​**主体**​|​**管理方**​|​**作用范围**​|​**典型用途**​|​**是否需要命名空间**​|
+|---|---|---|---|---|
+|​**User**​|外部认证系统|全局|自然人用户、外部系统|否|
+|​**Group**​|外部认证系统|全局|批量授权给团队|否|
+|​**ServiceAccount**​|Kubernetes 集群|命名空间|Pod 或集群内服务访问 API|是|
+
 - 创建RoleBinding
 ```
 apiVersion: rbac.authorization.k8s.io/v1
@@ -222,7 +229,7 @@ kind: ClusterRoleBinding
 metadata:
   name: read-secrets-global
 subjects:
-- kind: ServiceAccount
+- kind: User
   name: dev-user-role  # 'name' 是区分大小写的
   apiGroup: rbac.authorization.k8s.io
 roleRef:
