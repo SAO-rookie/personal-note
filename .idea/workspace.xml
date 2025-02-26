@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0b1f11c-660b-4dae-a29a-cc6badbf0e93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Krew的安装.md" beforeDir="false" afterPath="$PROJECT_DIR$/运维/Kubernetes/Krew的安装.md" afterDir="false" />
-    </list>
+    <list default="true" id="c0b1f11c-660b-4dae-a29a-cc6badbf0e93" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +12,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -63,8 +62,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
       </set>
     </attachedChunks>
   </component>
@@ -81,6 +80,7 @@
       <workItem from="1739196664893" duration="21000" />
       <workItem from="1739233316737" duration="8000" />
       <workItem from="1739320993827" duration="133000" />
+      <workItem from="1740570143552" duration="118000" />
     </task>
     <servers />
   </component>
