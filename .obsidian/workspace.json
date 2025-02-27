@@ -177,7 +177,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -193,7 +193,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ca0d44979741bc11",
+  "active": "ebb606fe73b47b68",
   "lastOpenFiles": [
     "运维/Kubernetes/kubernetes技巧.md",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
