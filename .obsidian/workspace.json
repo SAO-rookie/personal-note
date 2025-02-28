@@ -11,12 +11,14 @@
             "id": "9ad29e08d0e78411",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "运维/CI-CD/drone ci/image/5.png"
+                "file": "运维/CI-CD/drone ci/drone ci.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "5"
+              "icon": "lucide-file",
+              "title": "drone ci"
             }
           },
           {
@@ -152,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/CI-CD/drone ci/image/5.png",
+                "file": "运维/CI-CD/drone ci/drone ci.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "5 的大纲"
+              "title": "drone ci 的大纲"
             }
           },
           {
@@ -188,11 +190,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b1ee5468c9d26b96",
+  "active": "9ad29e08d0e78411",
   "lastOpenFiles": [
-    "运维/CI-CD/drone ci/drone ci.md",
     "运维/CI-CD/drone ci/image/5.png",
     "运维/CI-CD/drone ci/image/4.png",
+    "运维/CI-CD/drone ci/drone ci.md",
     "运维/容器/docker/docker-file仓库.md",
     "运维/Kubernetes/kubernetes技巧.md",
     "运维/CI-CD/drone ci/image/3.png",
@@ -232,7 +234,6 @@
     "未命名.canvas",
     "运维/CI-CD/jenkins/image/jenkins-install/10.png",
     "运维/CI-CD/jenkins/image/jenkins-install/8.png",
-    "运维/CI-CD/jenkins/image/jenkins-install/7.png",
     "运维/CI-CD/jenkins/image/jenkins-install",
     "运维/CI-CD/jenkins/image",
     "运维/CI-CD/jenkins"
