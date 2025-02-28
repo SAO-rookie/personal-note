@@ -52,11 +52,11 @@ services:
 # 编写配置文件
 在项目的根路径下编写`Dockerfile`和`.drone.yaml` 文件
 Dockerfile编写请参考[官方文档](https://docs.docker.com/reference/dockerfile/) 这里就不写了
-以下是java 的后端CI/CD脚本
+* 以下是java 的后端CI/CD脚本
 ```
 kind: pipeline  
 type: docker  
-name: test-minio-test  
+name: test
   
 trigger:  
   branch:  
@@ -81,7 +81,7 @@ steps:
       - name: docker-socket  
         path: /var/run/docker.sock  
     environment:  
-      HARBOR_URL: harbor.changtech.cn  
+      HARBOR_URL: harbor.com  
       HARBOR_GROUP: test  
       HARBOR_USER:  
         from_secret: HARBOR_USERNAME  
@@ -110,13 +110,13 @@ steps:
       script:  
         # 定义变量  
         - NAME_SPACE=default  
-        - PROJECT_NAME=${DRONE_STAGE_NAME}  
         - HARBOR_URL=harbor.changtech.cn  
-        - HARBOR_GROUP=test  
+        - HARBOR_GROUP=test
+        - PROJECT_NAME=${DRONE_STAGE_NAME}  
         - TAG=test-ci-${DRONE_BUILD_NUMBER}  
         - IMAGE_URL=$HARBOR_URL/$HARBOR_GROUP/$PROJECT_NAME:$TAG  
         # 开始部署  
-		
+		- docker compose up -d
   
   - name: ding-talk  
     image: lddsb/drone-dingtalk-message:1.2.9  
@@ -151,3 +151,104 @@ volumes:
     host:  
       path: /storage/drone-workspace-volume/ding-talk/test-template.tpl
 ```
+* 以下是node 前端CI/CD脚本
+```
+kind: pipeline  
+type: docker  
+name: login-platfrom-vue-test  
+  
+trigger:  
+  branch:  
+    - develop  
+  event:  
+    - push  
+  
+steps:  
+  - name: compile  
+    image: node:22.12.0  
+    volumes:  
+      - name: yarn-cache  
+        path: /opt/yarn-cache  
+    commands:  
+      - yarn config set cache-folder "/opt/yarn-cache"  
+      - yarn config set registry https://registry.npmmirror.com  
+      - yarn install  
+      - yarn run test-build  
+  
+  - name: build-push-image  
+    image: docker:dind  
+    volumes:  
+      - name: docker-socket  
+        path: /var/run/docker.sock  
+    environment:  
+      HARBOR_URL: harbor.changtech.cn  
+      HARBOR_PROJECT: public-server  
+      HARBOR_USER:  
+        from_secret: HARBOR_USERNAME  
+      HARBOR_PASSWORD:  
+        from_secret: HARBOR_PASSWORD  
+    commands:  
+      # 登录 Harbor      
+      - docker login -u $HARBOR_USER -p $HARBOR_PASSWORD $HARBOR_URL  
+      - IMAGE_URL=$HARBOR_URL/$HARBOR_PROJECT/${DRONE_STAGE_NAME}:test-ci-${DRONE_BUILD_NUMBER}
+      # 构建镜像  
+      - docker build -t $IMAGE_URL --build-arg envType=test .  
+      # 推送镜像  
+      - docker push $IMAGE_URL  
+      # 删除镜像  
+      - docker rmi $IMAGE_URL  
+  
+  - name: test-deploy  
+    image: appleboy/drone-ssh:1.8  
+    settings:  
+      host:  
+        - 172.16.0.1  
+      username: drone  
+      password:  
+        from_secret: SERVER_PASSWORD  
+      command_timeout: 2m  
+      script:  
+        # 定义变量  
+        - NAME_SPACE=public-space  
+        - HARBOR_URL=harbor.changtech.cn  
+        - HARBOR_GROUP=public-server 
+        - PROJECT_NAME=${DRONE_STAGE_NAME%-test}   
+        - TAG=${DRONE_TAG}  
+        - IMAGE_URL=$HARBOR_URL/$HARBOR_GROUP/${DRONE_STAGE_NAME}:test-ci-${DRONE_BUILD_NUMBER}  
+        # 开始部署  
+        - kubectl set image deployment/$PROJECT_NAME $PROJECT_NAME=$IMAGE_URL -n $NAME_SPACE  
+        - kubectl rollout status deployment/$PROJECT_NAME --timeout=300s -n $NAME_SPACE  
+  
+  - name: ding-talk  
+    image: lddsb/drone-dingtalk-message:1.2.9  
+    settings:  
+      token:  
+        from_secret: DING_TALK_ACCESS_TOKEN  
+      secret:  
+        from_secret: DING_TALK_SECRET  
+      type: markdown  
+      success_color: 00a5ff  
+      failure_color: e60000  
+      tpl_build_status_success: '成功'  
+      tpl_build_status_failure: '失败'  
+      tpl: /opt/ding-talk-template.tpl  
+    volumes:  
+      - name: ding-talk-template  
+        path: /opt/ding-talk-template.tpl  
+    when:  
+      status: [success,failure]  
+  
+volumes:  
+  - name: docker-socket  
+    host:  
+      path: /var/run/docker.sock  
+  - name: yarn-cache  
+    host:  
+      path: /node/yarn-cache  
+  - name: ding-talk-template  
+    host:  
+      path: /ding-talk/test-template.tpl
+```
+**注意**
+-  获取drone变量要使用 ${值} 方法，自定义变量使用 $值 方法
+
