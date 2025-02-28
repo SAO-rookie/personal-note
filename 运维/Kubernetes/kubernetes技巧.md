@@ -29,7 +29,7 @@ set -e
 
 # 配置变量
 USERNAME="dev-user"
-NAMESPACE="development"
+NAMESPACE="development"  # 设置ClusterRole可以不创建
 CLUSTER_NAME="my-cluster"
 API_SERVER="https://api-server:6443" # 替换为你的API服务器地址
 CA_CERT="/etc/kubernetes/pki/ca.crt" # CA证书路径
@@ -41,7 +41,7 @@ openssl genrsa -out ${USERNAME}.key 2048
 
 # 创建证书签名请求 (CSR)
 openssl req -new -key ${USERNAME}.key \
-  -subj "/CN=${USERNAME}/O=developers" \
+  -subj "/CN=${USERNAME}/O=developers" \ # /O=developers 如何使用user时 删除它
   -out ${USERNAME}.csr
 
 # Base64 编码 CSR
@@ -199,12 +199,6 @@ EOF
 #### RoleBinding 和 ClusterRoleBinding
 [RoleBinding 和 ClusterRoleBinding区别](https://kubernetes.io/zh-cn/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding)
 
-|​**主体**​|​**管理方**​|​**作用范围**​|​**典型用途**​|​**是否需要命名空间**​|
-|---|---|---|---|---|
-|​**User**​|外部认证系统|全局|自然人用户、外部系统|否|
-|​**Group**​|外部认证系统|全局|批量授权给团队|否|
-|​**ServiceAccount**​|Kubernetes 集群|命名空间|Pod 或集群内服务访问 API|是|
-
 - 创建RoleBinding
 ```
 apiVersion: rbac.authorization.k8s.io/v1
@@ -237,6 +231,13 @@ roleRef:
   name: dev-user-role
   apiGroup: rbac.authorization.k8s.io
 ```
+subjects.kind 属性区别
+
+| ​**主体**​             | ​**管理方**​     | ​**作用范围**​ | ​**典型用途**​       | ​**是否需要命名空间**​ |
+| -------------------- | ------------- | ---------- | ---------------- | -------------- |
+| ​**User**​           | 外部认证系统        | 全局         | 自然人用户、外部系统       | 否              |
+| ​**Group**​          | 外部认证系统        | 全局         | 批量授权给团队          | 否              |
+| ​**ServiceAccount**​ | Kubernetes 集群 | 命名空间       | Pod 或集群内服务访问 API | 是              |
 
 # k8s的CRI配置
 ## deployment 等运行时 修改hosts文件
