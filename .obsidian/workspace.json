@@ -193,8 +193,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ca0d44979741bc11",
+  "active": "b1ee5468c9d26b96",
   "lastOpenFiles": [
+    "运维/CI-CD",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "前端/前端技巧.md",
     "运维/Kubernetes/kubernetes技巧.md",
@@ -224,7 +225,6 @@
     "运维/jenkins/jenkins安装.md",
     "运维/Kubernetes/helm/cert-manager.md",
     "运维/Kubernetes/helm/ingress-nginx.md",
-    "运维/Kubernetes/helm/loki.md",
     "运维/jenkins/image/jenkins-install/9.png",
     "运维/jenkins/image/jenkins-install/0.png",
     "未命名.canvas",
