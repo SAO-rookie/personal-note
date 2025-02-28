@@ -49,9 +49,18 @@ services:
 ![](./image/2.png)
 进入以下界面表示配置完成
 ![](./image/3.png)
+# 配置监听仓库
+随便点击一个仓库会出现以下界面,点击激活即可
+![](./image/4.png)
+修改配置
+![](./image/5.png)
+
 # 编写配置文件
 在项目的根路径下编写`Dockerfile`和`.drone.yaml` 文件
 Dockerfile编写请参考[官方文档](https://docs.docker.com/reference/dockerfile/) 这里就不写了
+[drone的变量文档](https://docs.drone.io/pipeline/environment/reference/)
+[drone的pipeline文档](https://docs.drone.io/pipeline/docker/syntax/)
+[drone的插件市场](https://plugins.drone.io/)
 * 以下是java 的后端CI/CD脚本
 ```
 kind: pipeline  
@@ -110,7 +119,7 @@ steps:
       script:  
         # 定义变量  
         - NAME_SPACE=default  
-        - HARBOR_URL=harbor.changtech.cn  
+        - HARBOR_URL=harbor.com
         - HARBOR_GROUP=test
         - PROJECT_NAME=${DRONE_STAGE_NAME}  
         - TAG=test-ci-${DRONE_BUILD_NUMBER}  
@@ -143,13 +152,13 @@ volumes:
       path: /var/run/docker.sock  
   - name: maven-repository-cache  
     host:  
-      path: /storage/drone-workspace-volume/maven/repository  
+      path: /maven/repository  
   - name: maven-setting-file  
     host:  
-      path: /storage/drone-workspace-volume/maven/settings.xml  
+      path: /maven/settings.xml  
   - name: ding-talk-template  
     host:  
-      path: /storage/drone-workspace-volume/ding-talk/test-template.tpl
+      path: /ding-talk/test-template.tpl
 ```
 * 以下是node 前端CI/CD脚本
 ```
@@ -210,7 +219,7 @@ steps:
       script:  
         # 定义变量  
         - NAME_SPACE=public-space  
-        - HARBOR_URL=harbor.changtech.cn  
+        - HARBOR_URL=harbor.com  
         - HARBOR_GROUP=public-server 
         - PROJECT_NAME=${DRONE_STAGE_NAME%-test}   
         - TAG=${DRONE_TAG}  
@@ -251,4 +260,5 @@ volumes:
 ```
 **注意**
 -  获取drone变量要使用 ${值} 方法，自定义变量使用 $值 方法
+- 可以使用 `---` 作为分割线，写多个流水线
 
