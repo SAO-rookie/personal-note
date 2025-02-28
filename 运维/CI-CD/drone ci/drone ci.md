@@ -54,7 +54,7 @@ services:
 ![](./image/4.png)
 修改配置
 ![](./image/5.png)
-
+**注意**：密钥
 # 编写配置文件
 在项目的根路径下编写`Dockerfile`和`.drone.yaml` 文件
 Dockerfile编写请参考[官方文档](https://docs.docker.com/reference/dockerfile/) 这里就不写了
