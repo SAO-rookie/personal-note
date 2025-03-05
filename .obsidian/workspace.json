@@ -174,7 +174,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -190,7 +190,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9ad29e08d0e78411",
+  "active": "b1ee5468c9d26b96",
   "lastOpenFiles": [
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/CI-CD/drone ci/drone ci.md",
