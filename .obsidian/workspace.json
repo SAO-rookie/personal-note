@@ -20,18 +20,6 @@
               "icon": "lucide-file",
               "title": "cert-manager"
             }
-          },
-          {
-            "id": "ca0d44979741bc11",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "运维/CI-CD/drone ci/image/3.png"
-              },
-              "icon": "lucide-image",
-              "title": "3"
-            }
           }
         ]
       }
@@ -190,15 +178,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b1ee5468c9d26b96",
+  "active": "9ad29e08d0e78411",
   "lastOpenFiles": [
+    "运维/CI-CD/drone ci/image/3.png",
+    "运维/Kubernetes/helm/cert-manager.md",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/CI-CD/drone ci/drone ci.md",
     "运维/CI-CD/drone ci/image/5.png",
     "运维/CI-CD/drone ci/image/4.png",
     "运维/容器/docker/docker-file仓库.md",
     "运维/Kubernetes/kubernetes技巧.md",
-    "运维/CI-CD/drone ci/image/3.png",
     "运维/CI-CD/drone ci/image/2.png",
     "运维/CI-CD/drone ci/image/1.png",
     "运维/CI-CD/drone ci/image",
@@ -228,7 +217,6 @@
     "运维/Kubernetes/helm/openvpn.md",
     "运维/容器/未命名",
     "运维/CI-CD/jenkins/jenkins安装.md",
-    "运维/Kubernetes/helm/cert-manager.md",
     "运维/CI-CD/jenkins/image/jenkins-install/9.png",
     "运维/CI-CD/jenkins/image/jenkins-install/0.png",
     "未命名.canvas",
