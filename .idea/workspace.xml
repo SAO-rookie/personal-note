@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c0b1f11c-660b-4dae-a29a-cc6badbf0e93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/运维/Kubernetes/kubernetes解决方案.md" beforeDir="false" afterPath="$PROJECT_DIR$/运维/Kubernetes/kubernetes解决方案.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/运维/容器/docker/docker-file仓库.md" beforeDir="false" afterPath="$PROJECT_DIR$/运维/容器/docker/docker-file仓库.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +54,12 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/work-space/work-space/idea-space&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -65,8 +71,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
       </set>
     </attachedChunks>
   </component>
@@ -89,6 +95,14 @@
       <workItem from="1741246964425" duration="2000" />
       <workItem from="1741246982164" duration="125000" />
       <workItem from="1741247113915" duration="1000" />
+      <workItem from="1741247625290" duration="45000" />
+      <workItem from="1741247681979" duration="47000" />
+      <workItem from="1741247750415" duration="61000" />
+      <workItem from="1741252598912" duration="460000" />
+      <workItem from="1741253291804" duration="17000" />
+      <workItem from="1741253452727" duration="2000" />
+      <workItem from="1741307807544" duration="518000" />
+      <workItem from="1741308458628" duration="293000" />
     </task>
     <servers />
   </component>
