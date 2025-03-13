@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/前端技巧.md",
+                "file": "运维/Kubernetes/kubernetes解决方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "前端技巧"
+              "title": "kubernetes解决方案"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端/前端技巧.md",
+                "file": "运维/Kubernetes/kubernetes解决方案.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "前端技巧 的大纲"
+              "title": "kubernetes解决方案 的大纲"
             }
           },
           {
@@ -178,8 +178,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b1ee5468c9d26b96",
+  "active": "9ad29e08d0e78411",
   "lastOpenFiles": [
+    "运维/Kubernetes/kubernetes技巧.md",
+    "前端/前端技巧.md",
     "运维/Kubernetes/helm/openvpn.md",
     "运维/Kubernetes/kubernetes解决方案.md",
     "运维/容器/docker/docker-file仓库.md",
@@ -189,13 +191,11 @@
     "运维/CI-CD/drone ci/drone ci.md",
     "运维/CI-CD/drone ci/image/5.png",
     "运维/CI-CD/drone ci/image/4.png",
-    "运维/Kubernetes/kubernetes技巧.md",
     "运维/CI-CD/drone ci/image/2.png",
     "运维/CI-CD/drone ci/image/1.png",
     "运维/CI-CD/drone ci/image",
     "运维/CI-CD/drone ci",
     "运维/CI-CD",
-    "前端/前端技巧.md",
     "运维/容器/docker/docker配置.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/Kubernetes/kubernetes工具.md",
