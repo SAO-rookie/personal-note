@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0b1f11c-660b-4dae-a29a-cc6badbf0e93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/运维/Kubernetes/kubernetes解决方案.md" beforeDir="false" afterPath="$PROJECT_DIR$/运维/Kubernetes/kubernetes解决方案.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/运维/容器/docker/docker-file仓库.md" beforeDir="false" afterPath="$PROJECT_DIR$/运维/容器/docker/docker-file仓库.md" afterDir="false" />
-    </list>
+    <list default="true" id="c0b1f11c-660b-4dae-a29a-cc6badbf0e93" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,5 +127,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
