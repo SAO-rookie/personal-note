@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/容器/docker/docker配置.md",
+                "file": "运维/Kubernetes/helm/prometheus.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker配置"
+              "title": "prometheus"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/容器/docker/docker配置.md",
+                "file": "运维/Kubernetes/helm/prometheus.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "docker配置 的大纲"
+              "title": "prometheus 的大纲"
             }
           },
           {
@@ -180,6 +180,7 @@
   },
   "active": "4e0de6094b3aeb9b",
   "lastOpenFiles": [
+    "运维/容器/docker/docker配置.md",
     "运维/Kubernetes/helm/prometheus.md",
     "ocker配置.md",
     "运维/Kubernetes/kubernetes解决方案.md",
@@ -201,7 +202,6 @@
     "运维/CI-CD/drone ci/image",
     "运维/CI-CD/drone ci",
     "运维/CI-CD",
-    "运维/容器/docker/docker配置.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/Kubernetes/kubernetes工具.md",
     "运维/容器/minio.md",
