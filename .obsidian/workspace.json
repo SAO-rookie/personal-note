@@ -11,14 +11,14 @@
             "id": "9ad29e08d0e78411",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "运维/Kubernetes/kubernetes解决方案.md",
-                "bFile": "运维/Kubernetes/kubernetes解决方案.md",
-                "aRef": ""
+                "file": "运维/Kubernetes/kubernetes解决方案.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: kubernetes解决方案"
+              "icon": "lucide-file",
+              "title": "kubernetes解决方案"
             }
           }
         ]
@@ -142,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "运维/Kubernetes/kubernetes解决方案.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "kubernetes解决方案 的大纲"
             }
           },
           {
@@ -161,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -177,13 +178,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89d3ca6b8590a1ae",
+  "active": "9ad29e08d0e78411",
   "lastOpenFiles": [
+    "运维/Kubernetes/kubernetes技巧.md",
     "conflict-files-obsidian-git.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "运维/Kubernetes/kubernetes解决方案.md",
-    "运维/Kubernetes/kubernetes技巧.md",
     "前端/前端技巧.md",
     "运维/Kubernetes/helm/openvpn.md",
     "运维/容器/docker/docker-file仓库.md",
