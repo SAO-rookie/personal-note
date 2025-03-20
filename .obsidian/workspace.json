@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/容器/docker/docker配置.md",
+                "file": "运维/Kubernetes/helm/ingress-nginx.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker配置"
+              "title": "ingress-nginx"
             }
           }
         ]
@@ -180,10 +180,10 @@
   },
   "active": "4e0de6094b3aeb9b",
   "lastOpenFiles": [
+    "运维/容器/docker/docker配置.md",
     "运维/Kubernetes/helm/cert-manager.md",
     "运维/Kubernetes/helm/ingress-nginx.md",
     "运维/Kubernetes/helm/prometheus.md",
-    "运维/容器/docker/docker配置.md",
     "ocker配置.md",
     "运维/Kubernetes/kubernetes解决方案.md",
     "运维/Kubernetes/kubernetes技巧.md",
