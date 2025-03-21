@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
+                "file": "运维/容器/docker/docker配置.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kubernetes安装"
+              "title": "docker配置"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/Kubernetes/helm/prometheus.md",
+                "file": "运维/容器/docker/docker配置.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "prometheus 的大纲"
+              "title": "docker配置 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -180,8 +180,11 @@
   },
   "active": "4e0de6094b3aeb9b",
   "lastOpenFiles": [
-    "运维/Kubernetes/helm/ingress-nginx.md",
+    "运维/容器/docker/docker-file仓库.md",
     "运维/容器/docker/docker配置.md",
+    "运维/Kubernetes/kubernetes安装/服务器初始化.md",
+    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
+    "运维/Kubernetes/helm/ingress-nginx.md",
     "运维/Kubernetes/helm/cert-manager.md",
     "运维/Kubernetes/helm/prometheus.md",
     "ocker配置.md",
@@ -192,9 +195,7 @@
     "未命名.canvas",
     "前端/前端技巧.md",
     "运维/Kubernetes/helm/openvpn.md",
-    "运维/容器/docker/docker-file仓库.md",
     "运维/CI-CD/drone ci/image/3.png",
-    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/CI-CD/drone ci/drone ci.md",
     "运维/CI-CD/drone ci/image/5.png",
     "运维/CI-CD/drone ci/image/4.png",
@@ -216,7 +217,6 @@
     "后端/postgreSql",
     "运维/linux/文件共享/smb协议.md",
     "运维/linux/文件共享/nfs协议.md",
-    "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "运维/linux/文件共享",
     "运维/linux",
     "运维/容器/未命名",
