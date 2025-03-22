@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/kubernetes安装/服务器初始化.md",
+                "file": "运维/容器/containerd/Containerd配置.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "服务器初始化"
+              "title": "Containerd配置"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "运维/linux解决方案.md",
+                "file": "运维/容器/containerd/Containerd配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "linux解决方案 的反向链接列表"
+              "title": "Containerd配置 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "运维/Kubernetes/helm/cert-manager.md",
+                "file": "运维/容器/containerd/Containerd配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "cert-manager 的出链列表"
+              "title": "Containerd配置 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/Kubernetes/helm/prometheus.md",
+                "file": "运维/容器/containerd/Containerd配置.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "prometheus 的大纲"
+              "title": "Containerd配置 的大纲"
             }
           },
           {
@@ -161,8 +161,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -180,8 +179,11 @@
   },
   "active": "fc47f8456975051e",
   "lastOpenFiles": [
-    "运维/Kubernetes/helm/prometheus.md",
+    "运维/Kubernetes/kubernetes安装/服务器初始化.md",
+    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/容器/docker/docker配置.md",
+    "运维/容器/containerd/Containerd配置.md",
+    "运维/Kubernetes/helm/prometheus.md",
     "ocker配置.md",
     "运维/Kubernetes/kubernetes解决方案.md",
     "运维/Kubernetes/kubernetes技巧.md",
@@ -193,7 +195,6 @@
     "运维/容器/docker/docker-file仓库.md",
     "运维/Kubernetes/helm/cert-manager.md",
     "运维/CI-CD/drone ci/image/3.png",
-    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/CI-CD/drone ci/drone ci.md",
     "运维/CI-CD/drone ci/image/5.png",
     "运维/CI-CD/drone ci/image/4.png",
@@ -205,7 +206,6 @@
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/Kubernetes/kubernetes工具.md",
     "运维/容器/minio.md",
-    "运维/容器/containerd/Containerd配置.md",
     "前端/nginx.md",
     "工具/杂物.md",
     "后端/postgreSql/postgresql技巧.md",
@@ -217,7 +217,6 @@
     "运维/linux/文件共享/nfs协议.md",
     "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "运维/linux/文件共享",
-    "运维/linux/linux解决方案.md",
     "运维/linux",
     "运维/容器/未命名",
     "运维/CI-CD/jenkins/image/jenkins-install/9.png",
