@@ -28,14 +28,15 @@
               "type": "markdown",
               "state": {
                 "file": "运维/容器/containerd/Containerd配置.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Containerd配置"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
+                "file": "运维/容器/containerd/Containerd配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Kubernetes安装 的反向链接列表"
+              "title": "Containerd配置 的反向链接列表"
             }
           },
           {
@@ -127,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
+                "file": "运维/容器/containerd/Containerd配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Kubernetes安装 的出链列表"
+              "title": "Containerd配置 的出链列表"
             }
           },
           {
@@ -156,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
+                "file": "运维/容器/containerd/Containerd配置.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Kubernetes安装 的大纲"
+              "title": "Containerd配置 的大纲"
             }
           },
           {
@@ -191,11 +192,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fc47f8456975051e",
+  "active": "ec16f0848013c4d6",
   "lastOpenFiles": [
+    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
     "运维/容器/containerd/Containerd配置.md",
-    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/容器/docker/docker配置.md",
     "运维/Kubernetes/helm/prometheus.md",
     "ocker配置.md",
