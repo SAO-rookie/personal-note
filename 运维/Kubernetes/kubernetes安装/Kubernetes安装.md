@@ -43,7 +43,7 @@ systemctl enable kubelet && systemctl start kubelet
 # 初始化k8s集群
 ## 1. 创建k8s主节点
 ```
-kubeadm init --control-plane-endpoint="k8s.master.org" --kubernetes-version=1.24.5 --pod-network-cidr=10.244.0.0/16 --token-ttl=0  --image-repository=registry.aliyuncs.com/google_containers --upload-certs
+kubeadm init --control-plane-endpoint="k8s.master.org" --kubernetes-version=1.24.5 --pod-network-cidr=10.244.0.0/16 --token-ttl=0  --upload-certs
 ```
 **注意：--control-plane-endpoint是主机名称 ，也就是hostnamectl命名名字**
 **注意：使用flannel网络插件时 网络命令为 --pod-network-cidr=10.244.0.0/16 --service-cidr=10.96.0.0/12**
