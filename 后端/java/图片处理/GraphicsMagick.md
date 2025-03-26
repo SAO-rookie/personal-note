@@ -19,7 +19,7 @@ apt install -y graphicsmagick
 代码
 ```java
 public static void main(String[] args)throws IOException {  
-    CommandLine cmd = new CommandLine("gm.exe");  
+    CommandLine cmd = new CommandLine("gm");  
     cmd.addArgument("convert");  
     cmd.addArgument("1079629.png");  
     cmd.addArgument("-resize");  
