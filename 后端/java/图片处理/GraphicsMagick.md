@@ -31,7 +31,7 @@ public static void main(String[] args)throws IOException {
     int exitCode = executor.execute(cmd);  
   
     if (exitCode != 0) {  
-        throw new IOException("生产失败 " + exitCode);  
+        throw new IOException("生成失败 " + exitCode);  
     }  
 }
 ```
