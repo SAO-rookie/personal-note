@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8771cb065a1ae66e",
+        "id": "63a485cbb416ffd4",
         "type": "tabs",
         "children": [
           {
-            "id": "4e0de6094b3aeb9b",
+            "id": "21d7fc96348aca28",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -178,10 +178,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4e0de6094b3aeb9b",
+  "active": "21d7fc96348aca28",
   "lastOpenFiles": [
-    "运维/容器/docker/docker配置.md",
+    "[GraphicsMagick.md",
     "后端/java/图片处理/GraphicsMagick.md",
+    "运维/容器/docker/docker配置.md",
     "后端/java/图片处理",
     "运维/容器/docker/docker-file仓库.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
@@ -217,7 +218,6 @@
     "后端/mysql/mysql技巧.md",
     "运维/容器/postgresql.md",
     "后端/postgreSql",
-    "运维/linux/文件共享/smb协议.md",
     "运维/linux/文件共享",
     "运维/linux",
     "运维/容器/未命名",

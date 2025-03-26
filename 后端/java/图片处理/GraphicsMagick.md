@@ -5,7 +5,7 @@
 apt install -y graphicsmagick
 ```
 ## 命令文档
-[官方文档]([GraphicsMagick Utilities](http://www.graphicsmagick.org/utilities.html))
+[官方文档](http://www.graphicsmagick.org/utilities.html)
 
 ## java 调用
 添加命令行调用工具包
@@ -15,4 +15,23 @@ apt install -y graphicsmagick
     <artifactId>commons-exec</artifactId>  
     <version>1.4.0</version>  
 </dependency>
+```
+代码
+```java
+public static void main(String[] args)throws IOException {  
+    CommandLine cmd = new CommandLine("gm.exe");  
+    cmd.addArgument("convert");  
+    cmd.addArgument("1079629.png");  
+    cmd.addArgument("-resize");  
+    cmd.addArgument("600x600");  
+    cmd.addArgument("1.jpg");  
+  
+    DefaultExecutor executor = DefaultExecutor.builder().get();  
+    executor.setStreamHandler(new PumpStreamHandler(System.out, System.err)); // 重定向输出  
+    int exitCode = executor.execute(cmd);  
+  
+    if (exitCode != 0) {  
+        throw new IOException("生产失败 " + exitCode);  
+    }  
+}
 ```
