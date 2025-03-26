@@ -8,6 +8,7 @@ apt install -y graphicsmagick
 [官方文档](http://www.graphicsmagick.org/utilities.html)
 
 ## java 调用
+**原生：ProcessBuilder类，工具包 commons-exec，建议使用工具包**
 添加命令行调用工具包
 ```xml
 <dependency>  
