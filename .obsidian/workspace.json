@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/容器/docker/docker配置.md",
+                "file": "后端/java/图片处理/GraphicsMagick.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker配置"
+              "title": "GraphicsMagick"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/容器/docker/docker配置.md",
+                "file": "后端/java/图片处理/GraphicsMagick.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "docker配置 的大纲"
+              "title": "GraphicsMagick 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -180,8 +180,10 @@
   },
   "active": "4e0de6094b3aeb9b",
   "lastOpenFiles": [
-    "运维/容器/docker/docker-file仓库.md",
     "运维/容器/docker/docker配置.md",
+    "后端/java/图片处理/GraphicsMagick.md",
+    "后端/java/图片处理",
+    "运维/容器/docker/docker-file仓库.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/Kubernetes/helm/ingress-nginx.md",
@@ -216,7 +218,6 @@
     "运维/容器/postgresql.md",
     "后端/postgreSql",
     "运维/linux/文件共享/smb协议.md",
-    "运维/linux/文件共享/nfs协议.md",
     "运维/linux/文件共享",
     "运维/linux",
     "运维/容器/未命名",
@@ -225,7 +226,6 @@
     "运维/CI-CD/jenkins/image/jenkins-install/10.png",
     "运维/CI-CD/jenkins/image/jenkins-install/8.png",
     "运维/CI-CD/jenkins/image/jenkins-install",
-    "运维/CI-CD/jenkins/image",
-    "运维/CI-CD/jenkins"
+    "运维/CI-CD/jenkins/image"
   ]
 }
