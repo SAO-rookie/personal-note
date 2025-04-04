@@ -25,4 +25,11 @@ ls -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 ### 配置镜像仓库地址文件
 **文档地址: [私有镜像仓库配置参考 | Rancher文档](https://docs.rancher.cn/docs/k3s/installation/private-registry/_index)**
-# 简单创建 
+# 单节点创建 
+```bash
+curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn sh -
+```
+
+# 多节点创建
+**注意：不建议使用默认的网络插件**
+[快速创建单节点k3s | Calico Documentation](https://docs.tigera.io/calico/latest/getting-started/kubernetes/k3s/quickstart)
