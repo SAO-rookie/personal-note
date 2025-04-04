@@ -23,5 +23,6 @@ apt install ntpdate -y
 ntpdate cn.pool.ntp.org 
 ls -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
 ```
-### 配置仓库地址文件
-**文档地址: []()**
+### 配置镜像仓库地址文件
+**文档地址: [私有镜像仓库配置参考 | Rancher文档](https://docs.rancher.cn/docs/k3s/installation/private-registry/_index)**
+# 简单创建 
