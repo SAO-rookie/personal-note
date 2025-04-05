@@ -69,4 +69,6 @@ iface 网卡 inet static
     netmask 255.255.255.0
     gateway 192.168.2.1
     dns-nameservers 8.8.8.8 8.8.4.4
+
+systemctl restart networking
 ```
