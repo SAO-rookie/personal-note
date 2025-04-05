@@ -178,8 +178,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "21d7fc96348aca28",
+  "active": "b1ee5468c9d26b96",
   "lastOpenFiles": [
+    "运维/组网",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
     "运维/Kubernetes/kubernetes安装/k3s安装.md",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
@@ -216,7 +217,6 @@
     "工具/杂物.md",
     "后端/postgreSql/postgresql技巧.md",
     "后端/mysql/mysql配置.md",
-    "后端/mysql/mysql技巧.md",
     "后端/postgreSql",
     "运维/linux/文件共享",
     "运维/linux",
