@@ -63,8 +63,8 @@ systemctl restart sshd
 ```bash
 vim /etc/network/interfaces
 # 添加静态ip
-auto eth1
-iface eth1 inet static
+auto 网卡
+iface 网卡 inet static
     address 192.168.2.100
     netmask 255.255.255.0
     gateway 192.168.2.1
