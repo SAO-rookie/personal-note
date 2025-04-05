@@ -36,3 +36,37 @@ if has('mouse')
         set mouse-=a
 endif
 ```
+
+# SSH 配置
+## 配置密码登录
+```bash
+vim /etc/ssh/sshd_config
+## 配置
+PermitRootLogin yes #允许root登录
+PasswordAuthentication yes # 设置是否使用口令验证。
+
+PermitEmptyPasswords no #不允许空密码登录
+```
+## 配置密钥登录登录
+```bash
+vim /etc/ssh/sshd_config
+## 配置
+RSAAuthentication yes
+PubkeyAuthentication yes
+```
+重启命令
+```bash
+systemctl restart sshd
+```
+
+# Debian双网卡配置静态ip
+```bash
+vim /etc/network/interfaces
+# 添加静态ip
+auto eth1
+iface eth1 inet static
+    address 192.168.2.100
+    netmask 255.255.255.0
+    gateway 192.168.2.1
+    dns-nameservers 8.8.8.8 8.8.4.4
+```

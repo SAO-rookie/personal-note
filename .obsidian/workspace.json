@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/kubernetes安装/k3s安装.md",
+                "file": "运维/linux/linux解决方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "k3s安装"
+              "title": "linux解决方案"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/Kubernetes/kubernetes安装/k3s安装.md",
+                "file": "运维/linux/linux解决方案.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "k3s安装 的大纲"
+              "title": "linux解决方案 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -178,13 +178,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b1ee5468c9d26b96",
+  "active": "21d7fc96348aca28",
   "lastOpenFiles": [
+    "运维/容器/docker/docker.md",
+    "运维/linux/linux解决方案.md",
+    "运维/Kubernetes/kubernetes安装/k3s安装.md",
     "运维/组网",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
-    "运维/Kubernetes/kubernetes安装/k3s安装.md",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
-    "运维/容器/docker/docker.md",
     "运维/容器/docker/docker-file仓库.md",
     "后端/java/图片处理/GraphicsMagick.md",
     "[GraphicsMagick.md",
@@ -225,7 +226,6 @@
     "运维/CI-CD/jenkins/image/jenkins-install/0.png",
     "运维/CI-CD/jenkins/image/jenkins-install/10.png",
     "运维/CI-CD/jenkins/image/jenkins-install/8.png",
-    "运维/CI-CD/jenkins/image/jenkins-install",
-    "运维/CI-CD/jenkins/image"
+    "运维/CI-CD/jenkins/image/jenkins-install"
   ]
 }
