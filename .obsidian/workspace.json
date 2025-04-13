@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/CI-CD/drone ci/drone ci.md",
+                "file": "工具/杂物.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "drone ci"
+              "title": "杂物"
             }
           }
         ]
@@ -180,6 +180,7 @@
   },
   "active": "21d7fc96348aca28",
   "lastOpenFiles": [
+    "运维/CI-CD/drone ci/drone ci.md",
     "运维/容器/docker/docker.md",
     "运维/容器/docker/docker-file仓库.md",
     "后端/java/图片处理/GraphicsMagick.md",
@@ -199,7 +200,6 @@
     "前端/前端技巧.md",
     "运维/Kubernetes/helm/openvpn.md",
     "运维/CI-CD/drone ci/image/3.png",
-    "运维/CI-CD/drone ci/drone ci.md",
     "运维/CI-CD/drone ci/image/5.png",
     "运维/CI-CD/drone ci/image/4.png",
     "运维/CI-CD/drone ci/image/2.png",
