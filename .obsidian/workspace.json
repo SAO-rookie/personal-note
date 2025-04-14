@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "63a485cbb416ffd4",
+        "id": "c692525023f9bda4",
         "type": "tabs",
         "children": [
           {
-            "id": "21d7fc96348aca28",
+            "id": "6879e68f3d76ce11",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端/mysql/mysql配置.md",
-                "mode": "preview",
+                "file": "运维/容器/minio.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mysql配置"
+              "title": "minio"
             }
           }
         ]
@@ -178,13 +178,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "21d7fc96348aca28",
+  "active": "6879e68f3d76ce11",
   "lastOpenFiles": [
-    "后端/mysql/mysql技巧.md",
-    "后端/mysql/mysql配置.md",
     "运维/容器/postgresql.md",
+    "运维/容器/minio.md",
     "运维/容器/docker/docker-file仓库.md",
     "运维/容器/docker/docker.md",
+    "后端/mysql/mysql配置.md",
+    "后端/mysql/mysql技巧.md",
     "工具/杂物.md",
     "运维/CI-CD/drone ci/drone ci.md",
     "后端/java/图片处理/GraphicsMagick.md",
@@ -213,7 +214,6 @@
     "运维/CI-CD",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/Kubernetes/kubernetes工具.md",
-    "运维/容器/minio.md",
     "运维/容器/containerd/Containerd配置.md",
     "前端/nginx.md",
     "后端/postgreSql/postgresql技巧.md",
