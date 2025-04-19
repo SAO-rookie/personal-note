@@ -86,3 +86,35 @@ gzip_vary on;
 # 禁用IE 6 gzip
 gzip_disable "MSIE [1-6]\.";
 ```
+# nginx配置https
+```
+server {
+     listen  443 ssl;
+     server_name  office.hello.cn;
+
+     # SSL 证书配置
+     ssl_certificate /cert/office-view/cert.pem;
+     ssl_certificate_key /cert/office-view/cert.key;
+
+  
+
+     # ssl验证相关配置
+     ssl_session_timeout  5m;  
+     ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;  
+     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;  
+     ssl_prefer_server_ciphers on;  
+
+  
+     location / {
+         proxy_pass  http://172.17.0.1:8080;
+     }
+}
+
+  
+
+server {
+     listen 80;
+     server_name office.hello.cn;
+     return 301 https://office.hello.cn;
+}
+```
