@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/linux/linux解决方案.md",
+                "file": "运维/Kubernetes/kubernetes技巧.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "linux解决方案"
+              "title": "kubernetes技巧"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/linux/linux解决方案.md",
+                "file": "运维/Kubernetes/kubernetes技巧.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "linux解决方案 的大纲"
+              "title": "kubernetes技巧 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -180,6 +180,10 @@
   },
   "active": "bf3f75f7c87988db",
   "lastOpenFiles": [
+    "运维/Kubernetes/kubernetes工具.md",
+    "运维/Kubernetes/minio.md",
+    "运维/Kubernetes/kubernetes解决方案.md",
+    "运维/Kubernetes/kubernetes技巧.md",
     "运维/linux/linux解决方案.md",
     "运维/容器/docker/docker.md",
     "运维/Kubernetes/kubernetes安装/k3s安装.md",
@@ -194,8 +198,6 @@
     "运维/Kubernetes/helm/cert-manager.md",
     "运维/Kubernetes/helm/prometheus.md",
     "ocker配置.md",
-    "运维/Kubernetes/kubernetes解决方案.md",
-    "运维/Kubernetes/kubernetes技巧.md",
     "conflict-files-obsidian-git.md",
     "未命名 1.canvas",
     "未命名.canvas",
@@ -211,13 +213,11 @@
     "运维/CI-CD/drone ci",
     "运维/CI-CD",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
-    "运维/Kubernetes/kubernetes工具.md",
     "运维/容器/minio.md",
     "运维/容器/containerd/Containerd配置.md",
     "前端/nginx.md",
     "工具/杂物.md",
     "后端/postgreSql/postgresql技巧.md",
-    "后端/mysql/mysql配置.md",
     "后端/postgreSql",
     "运维/linux/文件共享",
     "运维/linux",
