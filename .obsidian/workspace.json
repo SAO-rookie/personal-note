@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/kubernetes技巧.md",
+                "file": "前端/nginx.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kubernetes技巧"
+              "title": "nginx"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/Kubernetes/kubernetes技巧.md",
+                "file": "前端/nginx.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "kubernetes技巧 的大纲"
+              "title": "nginx 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -178,13 +178,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bf3f75f7c87988db",
+  "active": "b1ee5468c9d26b96",
   "lastOpenFiles": [
     "运维/Kubernetes/kubernetes工具.md",
+    "运维/Kubernetes/kubernetes技巧.md",
     "运维/Kubernetes/kubernetes解决方案.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
-    "运维/Kubernetes/kubernetes技巧.md",
     "运维/容器/docker/docker.md",
     "运维/容器/docker/docker-file仓库.md",
     "运维/Kubernetes/minio.md",

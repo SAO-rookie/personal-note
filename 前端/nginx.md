@@ -118,3 +118,33 @@ server {
      return 301 https://office.hello.cn;
 }
 ```
+# Vue使用HTML5模式 nginx配置
+```
+worker_processes  1;
+
+
+events {
+  worker_connections  1024;
+}
+
+
+http {
+  include       mime.types;
+  default_type  application/octet-stream;
+  
+  sendfile        on;
+  keepalive_timeout  65;
+  
+  server {
+    listen       80;
+    server_name  localhost;
+  
+  
+    location / {
+      root   /opt/dist/;             
+      try_files $uri $uri/ /index.html;  
+      index index.html index.htm;
+    }
+  }
+}
+```
