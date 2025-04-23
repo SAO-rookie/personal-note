@@ -4,6 +4,7 @@
 [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/#writing-tests-annotations)
 # springboot测试
 ## web测试
+[参考文档-MockMvc :: Spring Framework](https://docs.spring.io/spring-framework/reference/testing/mockmvc.html)
 1.开启测试
 需要开启web接口测试，需要在类头上使用以下注解
 ```java
@@ -28,16 +29,36 @@ public testControllerTest {
 }
 ```
 2.使用MockMvc测试接口
-当使用MockMVC，请静态导入
+当使用MockMVC，请静态导入以下类
+- `MockMvcBuilders.*`
+- `MockMvcRequestBuilders.*`
+- `MockMvcResultMatchers.*`
+- `MockMvcResultHandlers.*`
+```java
+@Test
+void whenBuildingDoNotExistPageCraftDocumentReturnNull() throws Exception {}
+	mockMvc.perform(get("/craft/document/page/15/1/10"))  
+	                .andExpect(status().isOk());
+}
 ```
-
-```
-
 ## 业务测试
+1.开启测试
+```java
+@SpringBootTest
+public testControllerTest {
+	@MockBean  
+	private FileInfoService fileInfoService;
+}
+```
+2.测试
+```java
+@Test  
+void test(){  
+    Assertions.assertThrows(ServiceException.class,()->fileInfoService.checkFileInfoExistsByMd5("4ec2ca9723cba50d8843b042836b951b"));  
+}
+```
 
 
-
-# Mockito的使用
 
 
 
