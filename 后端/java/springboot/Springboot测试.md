@@ -15,7 +15,7 @@ public testControllerTest {
 	private MockMvc mockMvc;
 }
 ```
-或者 用以下方式
+或者 用以下方式,使用指定控制器
 ```java
 @SpringBootTest
 public testControllerTest {
@@ -28,7 +28,10 @@ public testControllerTest {
 }
 ```
 2.使用MockMvc测试接口
+当使用MockMVC，请静态导入
+```
 
+```
 
 ## 业务测试
 
