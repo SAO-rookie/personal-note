@@ -6,12 +6,28 @@
 ## web测试
 1.开启测试
 需要开启web接口测试，需要在类头上使用以下注解
-```
+```java
 @EnableWebMvc  
 @AutoConfigureMockMvc  
 @SpringBootTest
-public testControllerTest {}
+public testControllerTest {
+	@Autowired  
+	private MockMvc mockMvc;
+}
 ```
+或者 用以下方式
+```java
+@SpringBootTest
+public testControllerTest {
+	private MockMvc mockMvc;
+	
+	@BeforeEach 
+	public void setup() { 
+		this.mockMvc = MockMvcBuilders.standaloneSetup(new AccountController()).build();
+	}
+}
+```
+2.
 ## 业务测试
 
 
