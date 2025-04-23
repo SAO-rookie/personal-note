@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端/java/springboot/Springboot测试工具.md",
+                "file": "后端/java/springboot/springboot技巧.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Springboot测试工具"
+              "title": "springboot技巧"
             }
           }
         ]
