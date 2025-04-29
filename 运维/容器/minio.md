@@ -2,7 +2,7 @@
 [参考文献](https://47log.com/teng-xun-yun-dui-xiang-cun-chu-zeng-jia-dao-minio/)
 **注意：虽然腾讯云遵行s3协议 但是也必须添加相关参数，链接必须去除桶名**
 * example 
- https://test-1311321123.cos.ap-shanghai.myqcloud.com ==> https://.cos.ap-shanghai.myqcloud.com 
+ https://test-1311321123.cos.ap-shanghai.myqcloud.com ==> https://cos.ap-shanghai.myqcloud.com 
 ```
 mc alias set tc https://cos.ap-shanghai.myqcloud.com $accessKey $secretKey --api "s3v4" --path "off"
 ```
