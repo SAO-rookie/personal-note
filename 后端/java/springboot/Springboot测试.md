@@ -2,6 +2,8 @@
 [Spring Boot的Testing文档](https://docs.spring.io/spring-boot/reference/testing/index.html)
 [Mockito 系列 |贝尔东 --- Mockito Series | Baeldung](https://www.baeldung.com/mockito-series)
 [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/#writing-tests-annotations)
+[JsonPath: 文档](https://github.com/json-path/JsonPath)
+[Matchers (Hamcrest 3.0 API)](https://hamcrest.org/JavaHamcrest/javadoc/3.0/org/hamcrest/Matchers.html)
 # springboot测试
 ## web测试
 [参考文档-MockMvc :: Spring Framework](https://docs.spring.io/spring-framework/reference/testing/mockmvc.html)
