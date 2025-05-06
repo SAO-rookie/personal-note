@@ -36,9 +36,11 @@ public testControllerTest {
 - `MockMvcResultHandlers.*`
 ```java
 @Test
-void whenBuildingDoNotExistPageCraftDocumentReturnNull() throws Exception {}
-	mockMvc.perform(get("/craft/document/page/15/1/10"))  
-	                .andExpect(status().isOk());
+void whenBuildingDoNotExistPageCraftDocumentReturnNull() throws Exception {
+	mockMvc.perform(get("/craft/registration/page/1/10"))  
+	        .andExpect(status().isOk())  
+	        .andExpect(jsonPath("$.code").value(0))  
+	        .andExpect(jsonPath("$.data.total").value(0));
 }
 ```
 ## 业务测试
@@ -53,8 +55,9 @@ public testControllerTest {
 2.测试
 ```java
 @Test  
-void test(){  
-    Assertions.assertThrows(ServiceException.class,()->fileInfoService.checkFileInfoExistsByMd5("4ec2ca9723cba50d8843b042836b951b"));  
+void test(){
+	when(fileInfoService.checkFileInfoExistsByMd5(anyString())).thenReturn(null)
+    Assertions.assertNull(fileInfoService.checkFileInfoExistsByMd5("4ec2ca9723cba50d8843b042836b951b"));  
 }
 ```
 
