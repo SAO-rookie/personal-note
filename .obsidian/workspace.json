@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "df3a7f63964a3c44",
+        "id": "f320dee56385a36e",
         "type": "tabs",
         "children": [
           {
-            "id": "bf3f75f7c87988db",
+            "id": "506440c08606d827",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/容器/docker/docker.md",
+                "file": "后端/java/springboot/Springboot测试.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker"
-            }
-          },
-          {
-            "id": "a4ca14d950f88c96",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "工具/杂物.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "杂物"
+              "title": "Springboot测试"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工具/杂物.md",
+                "file": "后端/java/springboot/Springboot测试.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "杂物 的大纲"
+              "title": "Springboot测试 的大纲"
             }
           },
           {
@@ -193,12 +178,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a4ca14d950f88c96",
+  "active": "506440c08606d827",
   "lastOpenFiles": [
+    "运维/容器/docker/docker.md",
+    "工具/杂物.md",
     "前端/nginx.md",
     "运维/容器/minio.md",
     "运维/Kubernetes/minio.md",
-    "运维/容器/docker/docker.md",
     "运维/Kubernetes/kubernetes技巧.md",
     "运维/Kubernetes/kubernetes解决方案.md",
     "前端/前端技巧.md",
@@ -223,7 +209,6 @@
     "运维/Kubernetes/helm/cert-manager.md",
     "运维/Kubernetes/helm/prometheus.md",
     "ocker配置.md",
-    "conflict-files-obsidian-git.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "运维/CI-CD/drone ci/image/3.png",
