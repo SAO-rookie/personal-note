@@ -39,7 +39,7 @@ docker exec acme acme.sh --set-default-ca --server letsencrypt
 docker exec acme acme.sh --register-account -m your_email@example.com
 ```
 ## 编写配置nginx验证文件
-```
+```conf
 server {
     listen 80;
     server_name example.com;
@@ -57,6 +57,59 @@ docker exec acme --issue -d example.com --webroot /acme-sh-html
 ```
 * 安装证书
 ```bash
-docker exec acme --install-cert -d example.com --key-file /acme.sh/example.com.key --fullchain-file /acme.sh/example.com.crt
+docker exec acme --install-cert -d example.com --key-file /acme.sh/example.com.key --fullchain-file /acme.sh/example.com.crt --reloadcmd "docker exec nginx nginx -s reload"
 ```
 ## 修改nginx配置文件
+```conf
+server {
+    listen 80;
+    server_name example.com;
+
+    location / {
+        return 301 https://example.com;
+}
+
+server {
+   listen  443 ssl;
+   server_name  example.com;
+
+   # Allow special characters in headers
+   ignore_invalid_headers off;
+   # Allow any size file to be uploaded.
+   # Set to a value such as 1000m; to restrict file size to a specific value
+   client_max_body_size 0;
+   # Disable buffering
+   proxy_buffering off;
+   proxy_request_buffering off;
+
+  
+
+   # SSL 证书配置
+
+   ssl_certificate /cert/example.com.crt;
+
+   ssl_certificate_key /cert/example.com.key;
+
+  
+
+   # SSL 会话设置
+   ssl_session_timeout 1d;                  # 超时时间建议设为 1 天
+   ssl_session_cache shared:SSL:10m;       # 添加会话缓存提高性能
+
+   # 加密套件配置（更安全的现代配置）
+   ssl_ciphers 'ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES256-GCM-SHA384';
+   ssl_prefer_server_ciphers on;
+   # 协议版本（建议禁用 TLSv1.0/1.1）
+   ssl_protocols TLSv1.2 TLSv1.3;          # 禁用不安全的 TLSv1.0/1.1
+
+  
+
+   location / {
+      proxy_pass http://minio_s3; #
+   }
+}
+```
+重启docker
+```bash
+docker restart nginx
+```
