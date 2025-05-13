@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/nginx.md",
+                "file": "前端/Acme.sh自动化配置证书.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nginx"
+              "title": "Acme.sh自动化配置证书"
             }
           }
         ]
@@ -180,17 +180,18 @@
   },
   "active": "506440c08606d827",
   "lastOpenFiles": [
+    "前端/nginx.md",
+    "前端/Acme.sh自动化配置证书.md",
+    "前端/前端技巧.md",
     "运维/容器/docker/docker.md",
     "运维/容器/docker/docker-file仓库.md",
     "运维/容器/minio.md",
     "运维/linux/linux解决方案.md",
     "后端/java/springboot/Springboot测试.md",
     "工具/杂物.md",
-    "前端/nginx.md",
     "运维/Kubernetes/minio.md",
     "运维/Kubernetes/kubernetes技巧.md",
     "运维/Kubernetes/kubernetes解决方案.md",
-    "前端/前端技巧.md",
     "后端/go/go技巧.md",
     "后端/消息队列/kafka技巧.md",
     "后端/java/springboot/springboot技巧.md",
@@ -208,7 +209,6 @@
     "运维/Kubernetes/helm/ingress-nginx.md",
     "运维/Kubernetes/helm/cert-manager.md",
     "运维/Kubernetes/helm/prometheus.md",
-    "ocker配置.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "运维/CI-CD/drone ci/image/3.png",

@@ -66,7 +66,7 @@ services:
     }
 ```
 
-# nginx 开启
+# nginx 开启gzip
 ```
 # 开启gzip
 gzip on;
@@ -98,11 +98,24 @@ server {
 
   
 
-     # ssl验证相关配置
-     ssl_session_timeout  5m;  
-     ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;  
-     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;  
-     ssl_prefer_server_ciphers on;  
+	 # SSL 会话设置
+
+     ssl_session_timeout 1d;                  # 超时时间建议设为 1 天
+
+     ssl_session_cache shared:SSL:10m;       # 添加会话缓存提高性能
+
+  
+
+     # 加密套件配置（更安全的现代配置）
+     ssl_ciphers 'ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES256-GCM-SHA384';
+
+     ssl_prefer_server_ciphers on;
+
+  
+
+     # 协议版本（建议禁用 TLSv1.0/1.1）
+
+     ssl_protocols TLSv1.2 TLSv1.3;          # 禁用不安全的 TLSv1.0/1.1
 
   
      location / {
