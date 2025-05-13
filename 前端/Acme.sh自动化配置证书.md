@@ -73,19 +73,7 @@ server {
    listen  443 ssl;
    server_name  example.com;
 
-   # Allow special characters in headers
-   ignore_invalid_headers off;
-   # Allow any size file to be uploaded.
-   # Set to a value such as 1000m; to restrict file size to a specific value
-   client_max_body_size 0;
-   # Disable buffering
-   proxy_buffering off;
-   proxy_request_buffering off;
-
-  
-
    # SSL 证书配置
-
    ssl_certificate /cert/example.com.crt;
 
    ssl_certificate_key /cert/example.com.key;
