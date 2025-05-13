@@ -24,6 +24,7 @@ services:
     volumes:
       - "/storage/nginx-volume/cert/:/acme.sh"  # 证书
       - "/storage/nginx-volume/html:/acme-sh-html"      # acme验证工作文件夹
+      - "/var/run/docker.sock:/var/run/docker.sock"
     command: daemon           
     networks:
       - local_network
