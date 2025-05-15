@@ -6,7 +6,7 @@
 FROM neilpang/acme.sh:3.1.1 
 RUN apk add --no-cache docker-cli
 ```
-
+2.编写docker-compose.yaml
 
 ```yaml
 services:
