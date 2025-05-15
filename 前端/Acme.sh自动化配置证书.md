@@ -104,7 +104,3 @@ server {
    }
 }
 ```
-重启docker
-```bash
-docker restart nginx
-```
