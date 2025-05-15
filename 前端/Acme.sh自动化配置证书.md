@@ -1,6 +1,12 @@
 **注意：全部使用docker维护**
 ## 安装Acme
 **注意：安装nginx和acme，使用[nginx多配置文件管理](./nginx.md#nginx多配置文件)**
+1.编写有docker客户端的acme镜像
+```Dockerfile
+FROM neilpang/acme.sh:3.1.1 
+RUN apk add --no-cache docker-cli
+```
+
 
 ```yaml
 services:
@@ -19,7 +25,7 @@ services:
     networks:
       - local_network
   acme:
-    image: neilpang/acme.sh:3.1.1
+    image: acme.sh:v1
     container_name: acme
     volumes:
       - "/storage/nginx-volume/cert/:/acme.sh"  # 证书
