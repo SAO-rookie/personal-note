@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/Acme.sh自动化配置证书.md",
+                "file": "运维/CI-CD/drone ci/drone ci.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Acme.sh自动化配置证书"
+              "title": "drone ci"
             }
           }
         ],
@@ -195,8 +195,8 @@
   },
   "active": "d32918a474c6a2bb",
   "lastOpenFiles": [
-    "前端/nginx.md",
     "前端/Acme.sh自动化配置证书.md",
+    "前端/nginx.md",
     "运维/CI-CD/drone ci/drone ci.md",
     "前端/前端技巧.md",
     "运维/容器/docker/docker.md",
