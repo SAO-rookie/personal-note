@@ -74,6 +74,7 @@ server {
 
     location / {
         return 301 https://example.com;
+    }
 }
 
 server {
