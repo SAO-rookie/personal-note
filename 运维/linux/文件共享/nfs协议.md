@@ -26,7 +26,7 @@ chmod 777 /nfs/data/
 * nfs 暴露目录配置
 ```
 # 暴露文件夹
-echo "/nfs/data/ *(insecure,rw,sync,no_root_squash)" > /etc/exports
+echo "/nfs/data/ 172.16.0.0/24(rw,sync,no_subtree_check,insecure,no_root_squash)" > /etc/exports
 # 使上述配置生效
 exportfs -r
 ```
