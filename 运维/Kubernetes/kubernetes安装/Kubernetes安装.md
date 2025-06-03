@@ -3,7 +3,7 @@
 [参考文献](https://developer.aliyun.com/mirror/kubernetes)
 ## 使用apt或apt-get 安装
 ###  配置k8s下载地址
-```
+```bash
 apt-get update && apt-get install -y apt-transport-https
 curl -fsSL https://mirrors.aliyun.com/kubernetes-new/core/stable/v1.28/deb/Release.key |
     gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
@@ -15,7 +15,7 @@ apt-get update
 
 
 ###  安装kubelet kubeadm kubectl
-```
+```bash
 apt install -y kubelet kubeadm kubectl
 
 systemctl enable kubelet && systemctl start kubelet
@@ -23,26 +23,30 @@ systemctl enable kubelet && systemctl start kubelet
 ## 2.使用yum安装
 ### 配置k8s下载地址
 
-    cat <<EOF > /etc/yum.repos.d/kubernetes.repo
-    [kubernetes]
-    name=Kubernetes
-    baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64/
-    enabled=1
-    gpgcheck=1
-    repo_gpgcheck=1
-    gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
-    EOF
+```bash
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64/
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
+EOF
+```
 
 
 ###  安装kubelet kubeadm kubectl
 
-    yum install -y kubelet kubeadm kubectl
-    # yum install -y kubelet-1.28.2-0 kubeadm-1.28.2-0 kubectl-1.28.2-0 下载指定版本
-    # 运行kubectl
-    systemctl enable kubelet && systemctl start kubelet
+```bash
+yum install -y kubelet kubeadm kubectl
+# yum install -y kubelet-1.28.2-0 kubeadm-1.28.2-0 kubectl-1.28.2-0 下载指定版本
+# 运行kubectl
+systemctl enable kubelet && systemctl start kubelet
+```
 # 初始化k8s集群
 ## 1. 创建k8s主节点
-```
+```bash
 kubeadm init --control-plane-endpoint="k8s.master.org" --kubernetes-version=1.24.5 --pod-network-cidr=10.244.0.0/16 --token-ttl=0  --upload-certs
 ```
 **注意：--control-plane-endpoint是主机名称 ，也就是hostnamectl命名名字**
@@ -93,7 +97,7 @@ kubeadm join k8s.master.org:6443 --token bniqon.k14qk0j5947oefvg \
 ```
 运行以下命令
 
-```
+```bash
   mkdir -p $HOME/.kube
   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
   sudo chown $(id -u):$(id -g) $HOME/.kube/config
@@ -104,7 +108,7 @@ kubeadm join k8s.master.org:6443 --token bniqon.k14qk0j5947oefvg \
 **注意：使用docker作为运行时 所有命令后面 必须加 --cri-socket=unix:///var/run/cri-dockerd.sock**
 参考以下命令，*该命令必须是从第一个主节点控制台打印的*
 * 需要将目标服务器设置为新的主节点
-```
+```bash
   kubeadm join k8s.master.org:6443 --token bniqon.k14qk0j5947oefvg \
         --discovery-token-ca-cert-hash sha256:df6202efc0382a91d87e77c15101f9ccae12f0a0748315f129292ef8562752ee \
         --control-plane --certificate-key 7131a2ac937780fee006c3b938ddbb6145a7d4c4925d92afb4e739aa269d5fd1 
@@ -119,11 +123,11 @@ kubeadm join k8s.master.org:6443 --token bniqon.k14qk0j5947oefvg \
 ## 3. 在主节点安装网络插件
 * flannel网络插件
 [flannel下载地址](https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml)
-```
+```bash
 kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml
 ```
 自定义pod ip 网络端
-```
+```bash
 # 修改配置文件kube-flannel.yml 内容
 vim kube-flannel.yml
 # 文件内容截取
@@ -209,13 +213,13 @@ image: registry.cn-hangzhou.aliyuncs.com/google_containers/metrics-server:v0.6.2
 /etc/kubernetes/pki/front-proxy-ca.crt
 ```
 然后运行配置文件 命令如下
-```
+```bash
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 
 ## 6. 安装可视化面板Kuboard
 * 配置节点角色
-```
+```bash
 kubectl label node node5 node-role.kubernetes.io/worker=worker
 master节点若缺少角色标签，执行：
 kubectl label node node1 node-role.kubernetes.io/master=master
