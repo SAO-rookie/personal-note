@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
+                "file": "运维/linux/文件共享/nfs协议.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nfs-subdir-external-provisioner的安装"
+              "title": "nfs协议"
             }
           }
         ]
@@ -180,10 +180,10 @@
   },
   "active": "506440c08606d827",
   "lastOpenFiles": [
+    "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "运维/容器/docker/docker.md",
     "运维/Kubernetes/minio.md",
     "运维/Kubernetes/kubernetes安装/服务器初始化.md",
-    "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "运维/Kubernetes/helm/ingress-nginx.md",
     "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/Kubernetes/kubernetes安装/k3s安装.md",
