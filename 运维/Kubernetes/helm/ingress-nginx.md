@@ -94,7 +94,8 @@ type: ClusterIP
 ```
 8. 修改controller.service.type的业务类型
 ```yaml
-# 根据自身业务需求修改成 LoadBalancer，NodePort，ClusterIp
+# 根据自身业务需求修改成 LoadBalancer，NodePort，ClusterIP
+# 使用NodePort，端口可以自定义选择
 	service
 	    type: LoadBalancer
 ```
