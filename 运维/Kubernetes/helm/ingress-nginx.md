@@ -15,50 +15,42 @@ helm pull ingress-nginx/ingress-nginx
 # 解压chart压缩包
 tar -zxvf ingress-nginx-x.x.x.tgz
 ```
+
 ### 有LoadBalance IP
-1.  修改66行，修改 dnsPolicy 的值为 ClusterFirstWithHostNet
+1.  修改 controller.dnsPolicy 的值为 ClusterFirstWithHostNet
 ```yaml
-
-    # -- Optionally change this to ClusterFirstWithHostNet in case you have 'hostNetwork: true'.
-
-    # By default, while using host network, name resolution uses the host's DNS. If you wish nginx-controller
-
-    # to keep resolving names inside the k8s network, use ClusterFirstWithHostNet.
-
+controller:
     dnsPolicy: ClusterFirstWithHostNet
 ```
-2.  修改89行 修改 hostNetwork 的值为 true
+2.  修改 controller.hostNetwork 的值为 true
 ```yaml
-
-    # -- Required for use with CNI based kubernetes installations (such as ones set up by kubeadm),
-
-    # since CNI and hostport don't mix yet. Can be deprecated once <https://github.com/kubernetes/kubernetes/issues/23920>
-
-    # is merged
-
+controller:
     hostNetwork: true
 ```
-3.  修改194行 修改 kind 类型为 DaemonSet
+3.  修改 controller.kind 类型为 DaemonSet
 ```yaml
     # -- Use a `DaemonSet` or `Deployment`
-
+controller:
     kind: DaemonSet
 ```
 4.  修改controller.service.type的业务类型
 ```yaml
 # 根据自身业务需求修改成 LoadBalancer，NodePort，ClusterIP
 # 使用NodePort，端口可以自定义选择
-	service
-	    type: LoadBalancer
+controller:
+	service:
+	    type: ClusterIP
 ```
-
-5. 修改292行文件，在kubernetes.io/os: linux 后面添加一行 ingress: true
+ 5. 修改controller.nodeSelector，在kubernetes.io/os: linux 后面添加一行 ingress: true
 ```yaml
+controller:
   nodeSelector:
     kubernetes.io/os: linux
     ingress: "true"
 ```
 ### 无LoadBalance IP
+
+
 
 ## 使用helm启动
 ```
