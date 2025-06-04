@@ -57,7 +57,7 @@ controller:
 ```yaml
 controller:
 	service:
-	    type: LoadBalancer
+	    type: NodePort
 ```
 ### 无LoadBalance IP
  1. 修改controller.service.type 的业务类型
