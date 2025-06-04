@@ -5,20 +5,20 @@
 
 
 ## helm 增加仓库地址
-```
+```bash
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 ```
 ## 下载对应chart压缩包
-```
+```bash
 helm pull ingress-nginx/ingress-nginx
 ```
 ## 修改配置文件
-```
+```bash
 # 解压chart压缩包
 tar -zxvf ingress-nginx-x.x.x.tgz
 ```
 1. 修改第22行和第23行镜像地址**registry.cn-hangzhou.aliyuncs.com\google\_containers\nginx-ingress-controller\:v1.5.1** 注释27、28行
-```
+```yaml
 
     controller:
     name: controller
@@ -39,7 +39,7 @@ tar -zxvf ingress-nginx-x.x.x.tgz
     allowPrivilegeEscalation: true
 ```
 2.  修改66行，修改 dnsPolicy 的值为 ClusterFirstWithHostNet
-```
+```yaml
 
     # -- Optionally change this to ClusterFirstWithHostNet in case you have 'hostNetwork: true'.
 
@@ -50,7 +50,7 @@ tar -zxvf ingress-nginx-x.x.x.tgz
     dnsPolicy: ClusterFirstWithHostNet
 ```
 3.  修改89行 修改 hostNetwork 的值为 true
-```
+```yaml
 
     # -- Required for use with CNI based kubernetes installations (such as ones set up by kubeadm),
 
@@ -61,8 +61,7 @@ tar -zxvf ingress-nginx-x.x.x.tgz
     hostNetwork: true
 ```
 4.  修改194行 修改 kind 类型为 DaemonSet
-```
-
+```yaml
     # -- Use a `DaemonSet` or `Deployment`
 
     kind: DaemonSet
@@ -73,7 +72,7 @@ type: ClusterIP
 ```
 6. 修改660行和661行还有665行，修改 kube-webhook-certgen 的镜像地址为国内仓库 **registry.cn-hangzhou.aliyuncs.com/google_containers/kube-webhook-certgen\:v20220916-gd32f8c343**
 
-```
+```yaml
     patch:
       enabled: true
       image:
@@ -88,10 +87,16 @@ type: ClusterIP
 
 ```
 7. 修改292行文件，在kubernetes.io/os: linux 后面添加一行 ingress: true
-```
+```yaml
   nodeSelector:
     kubernetes.io/os: linux
     ingress: true
+```
+8. 修改controller.service.type的业务类型
+```yaml
+# 根据自身业务需求修改成 LoadBalancer，NodePort，ClusterIp
+	service
+	    type: LoadBalancer
 ```
 ## 使用helm启动
 ```
@@ -101,7 +106,7 @@ kubectl label node node5 ingress=true
 helm install ingress-nginx -n ingress-nginx --create-namespace .
 ```
 ## 使用ingress
-```
+```yaml
 # 编写配置文件
 cat > /opt/test-ingress.yaml << EOF
 apiVersion: networking.k8s.io/v1
