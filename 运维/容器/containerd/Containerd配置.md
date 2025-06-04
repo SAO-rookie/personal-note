@@ -1,4 +1,3 @@
-# 配置私有仓库的帐号密码
 1. 进入修改需要的文件
 ```
 vim /etc/containerd/config.toml
