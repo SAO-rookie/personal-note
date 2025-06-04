@@ -17,6 +17,7 @@ tar -zxvf ingress-nginx-x.x.x.tgz
 ```
 
 ### 有LoadBalance IP
+**方法一：使用主机网络**
 1.  修改 controller.dnsPolicy 的值为 ClusterFirstWithHostNet
 ```yaml
 controller:
@@ -29,14 +30,11 @@ controller:
 ```
 3.  修改 controller.kind 类型为 DaemonSet
 ```yaml
-    # -- Use a `DaemonSet` or `Deployment`
 controller:
     kind: DaemonSet
 ```
 4.  修改controller.service.type的业务类型
 ```yaml
-# 根据自身业务需求修改成 LoadBalancer，NodePort，ClusterIP
-# 使用NodePort，端口可以自定义选择
 controller:
 	service:
 	    type: ClusterIP
@@ -48,9 +46,31 @@ controller:
     kubernetes.io/os: linux
     ingress: "true"
 ```
+**方法二：使用NodePort服务类型**
+1. 修改controller.service.type的业务类型
+```yaml
+controller:
+	service:
+	    type: ClusterIP
+```
+2. 修改controller.service.type 的业务类型
+```yaml
+controller:
+	service:
+	    type: LoadBalancer
+```
 ### 无LoadBalance IP
-
-
+ 1. 修改controller.service.type 的业务类型
+```yaml
+controller:
+	service:
+	    type: LoadBalancer
+```
+2. 修改controller.replicaCount 的副本数
+```yaml
+controller:
+	replicaCount: 3
+```
 
 ## 使用helm启动
 ```
