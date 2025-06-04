@@ -15,7 +15,7 @@ helm pull ingress-nginx/ingress-nginx
 # 解压chart压缩包
 tar -zxvf ingress-nginx-x.x.x.tgz
 ```
-
+### 有LoadBalance IP
 1.  修改66行，修改 dnsPolicy 的值为 ClusterFirstWithHostNet
 ```yaml
 
@@ -58,6 +58,7 @@ tar -zxvf ingress-nginx-x.x.x.tgz
     kubernetes.io/os: linux
     ingress: "true"
 ```
+### 无LoadBalance IP
 
 ## 使用helm启动
 ```
