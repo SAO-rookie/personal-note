@@ -51,13 +51,41 @@ controller:
 ```yaml
 controller:
 	service:
-	    type: ClusterIP
+	    type: NodePort
+	    nodePorts:
+		    http: 30080
+		    https: 30443
 ```
-2. 修改controller.service.type 的业务类型
+2. 修改 controller.kind 类型为 DaemonSet
 ```yaml
 controller:
-	service:
-	    type: NodePort
+    kind: DaemonSet
+```
+3. 修改controller.nodeSelector，在kubernetes.io/os: linux 后面添加一行 ingress: true
+```yaml
+controller:
+  nodeSelector:
+    kubernetes.io/os: linux
+    ingress: "true"
+ ```  
+ 4. 需要对外提供服务的服务器，都要配置 iptables 转发规则​
+```bash
+#如果安装成功就别运行了
+echo "net.ipv4.ip_forward = 1" | sudo tee -a /etc/sysctl.conf
+sysctl -p
+#配置iptables
+# HTTP: 80 -> 30080
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 30080
+# HTTPS: 443 -> 30443
+iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 30443
+# 本地回环接口访问 (可选) 
+iptables -t nat -A OUTPUT -o lo -p tcp --dport 80 -j REDIRECT --to-port 30080 
+iptables -t nat -A OUTPUT -o lo -p tcp --dport 443 -j REDIRECT --to-port 30443
+```
+5. 保存 iptables 规则（永久生效）
+```bash
+apt-get install iptables-persistent -y 
+netfilter-persistent save
 ```
 ### 无LoadBalance IP
  1. 修改controller.service.type 的业务类型
