@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/helm/ingress-nginx.md",
+                "file": "运维/Kubernetes/kubernetes安装/服务器初始化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ingress-nginx"
+              "title": "服务器初始化"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "后端/java/springboot/Springboot测试.md",
+                "file": "运维/Kubernetes/kubernetes安装/服务器初始化.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Springboot测试 的大纲"
+              "title": "服务器初始化 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -180,16 +180,17 @@
   },
   "active": "506440c08606d827",
   "lastOpenFiles": [
+    "运维/容器/containerd/Containerd配置.md",
+    "运维/Kubernetes/kubernetes安装/服务器初始化.md",
+    "运维/Kubernetes/kubernetes安装/k3s安装.md",
+    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
+    "运维/Kubernetes/helm/ingress-nginx.md",
     "运维/容器/docker/docker.md",
     "运维/容器/docker/docker-file仓库.md",
     "运维/容器/minio.md",
-    "运维/Kubernetes/kubernetes安装/Kubernetes安装.md",
     "运维/linux/文件共享/nfs协议.md",
     "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "运维/Kubernetes/minio.md",
-    "运维/Kubernetes/kubernetes安装/服务器初始化.md",
-    "运维/Kubernetes/helm/ingress-nginx.md",
-    "运维/Kubernetes/kubernetes安装/k3s安装.md",
     "运维/Kubernetes/kubernetes工具.md",
     "运维/CI-CD/drone ci/drone ci.md",
     "前端/前端技巧.md",
@@ -207,7 +208,6 @@
     "后端/java/未命名",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/组网",
-    "后端/java/图片处理/GraphicsMagick.md",
     "后端/java/图片处理",
     "未命名 1.canvas",
     "未命名.canvas",
