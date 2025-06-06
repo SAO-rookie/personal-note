@@ -42,6 +42,7 @@ metadata:
   name: server-dns
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /$2  # 加上重写注解
+    
 spec:
   rules:
   - host: test-survey.changtech.cn
@@ -59,13 +60,6 @@ spec:
         backend:
           service:
             name: gtz-human-server
-            port:
-              number: 80
-      - path: /vehicle(/|$)(.*) # 加上匹配规则
-        pathType: Prefix
-        backend:
-          service:
-            name: vehicle-server
             port:
               number: 80
   ingressClassName: nginx
