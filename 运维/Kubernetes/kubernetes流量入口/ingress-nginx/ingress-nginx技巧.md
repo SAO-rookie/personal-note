@@ -41,7 +41,8 @@ kind: Ingress
 metadata:
   name: server-dns
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$2  # 加上重写注解
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/use-regex: 'true'  # 加上重写注解
     
 spec:
   rules:
@@ -49,14 +50,14 @@ spec:
     http:
       paths:
       - path: /gtz_project(/|$)(.*) # 加上匹配规则
-        pathType: Prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: gtz-project-server
             port:
               number: 80
       - path: /human(/|$)(.*) # 加上匹配规则
-        pathType: Prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: gtz-human-server
