@@ -107,53 +107,29 @@ API_SERVER=$(kubectl config view --minify -o jsonpath='{.clusters[0].cluster.ser
 CA_DATA=$(kubectl config view --raw --minify -o jsonpath='{.clusters[0].cluster.certificate-authority-data}')
 
 # 6. 获取 ServiceAccount Token (k8s 1.24+)
-
 TOKEN=$(kubectl create token $SERVICEACCOUNT_NAME -n $NAMESPACE)
 
-  
-
 # 7. 生成 kubeconfig 文件
-
 cat > $KUBECONFIG_OUTPUT <<EOF
-
 apiVersion: v1
-
 kind: Config
-
 clusters:
-
 - name: k3s-cluster
-
   cluster:
-
     server: ${API_SERVER}
-
     certificate-authority-data: ${CA_DATA}
-
 contexts:
-
 - name: vpn-context
-
   context:
-
     cluster: k3s-cluster
-
     user: vpn-user
-
 current-context: vpn-context
-
 users:
-
 - name: vpn-user
-
   user:
-
     token: ${TOKEN}
-
 EOF
-
   
-
 echo "生成 kubeconfig 完成: $KUBECONFIG_OUTPUT"
 ```
 2. 使用命令连接
