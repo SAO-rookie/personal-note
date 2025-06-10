@@ -1,4 +1,4 @@
-# openvpn
+# openvpn服务端
 ## 使用helm安装openvpn
 [参考文档](https://artifacthub.io/packages/helm/devtron/openvpn?modal=install)
 ### 服务端配置
