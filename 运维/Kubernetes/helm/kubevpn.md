@@ -30,8 +30,6 @@ SERVICEACCOUNT_NAME="vpn-dev"
 CLUSTERROLE_NAME="kubevpn-dev"
 KUBECONFIG_OUTPUT="./kubeconfig-vpn.yaml"
 
-  
-
 # 1. 创建命名空间（如果不存在）
 kubectl get ns $NAMESPACE >/dev/null 2>&1 || kubectl create ns $NAMESPACE 
 
