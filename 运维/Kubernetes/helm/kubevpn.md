@@ -43,53 +43,19 @@ kind: Role
 metadata:
   name: $CLUSTERROLE_NAME
   namespace: $NAMESPACE
-rules:
-  - apiGroups: [""]
-    resources:
-      - pods
-      - pods/exec
-      - pods/portforward
-    verbs:
-      - get
-      - list
-      - watch
-      - create 
-  # 读取 Services、Endpoints、Namespaces
-  - apiGroups: [""]
-    resources:
-      - services
-      - endpoints
-      - namespaces
-    verbs:
-      - get
-      - list
-      - watch
-  # 读取 ConfigMaps（含更新）
-  - apiGroups: [""]
-    resources:
-      - configmaps
-    verbs:
-      - get
-      - list
-      - watch
-      - update
-      - patch
-  # 读取 Secrets
-  - apiGroups: [""]
-    resources:
-      - secrets
-    verbs:
-      - get
-      - list
-      - watch
-  # 读取 Deployments
-  - apiGroups: ["apps"]
-    resources:
-      - deployments
-    verbs:
-      - get
-      - list
-      - watch
+rules:  
+	- apiGroups: [ "apps", "" ]  
+	  resources: [ "deployments", "services", "pods", "secrets" ]  
+	  verbs: [ "get", "list" ]  
+	- apiGroups: [ "" ]  
+	  resources: [ "namespaces" ]  
+	  verbs: [ "get" ]  
+	- apiGroups: [ "" ]  
+	  resources: [ "configmaps" ]  
+	  verbs: [ "update", "get", "list" ]  
+	- apiGroups: [ "" ]  
+	  resources: [ "pods/portforward" , "pods/exec" ]  
+	  verbs: [ "create" ]
 EOF 
 
 # 4. 创建 ClusterRoleBinding
