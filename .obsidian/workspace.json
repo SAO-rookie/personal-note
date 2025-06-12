@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
+                "file": "运维/Kubernetes/helm/kubevpn.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ingress-nginx技巧"
+              "title": "kubevpn"
             }
           },
           {
@@ -192,12 +192,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89d3ca6b8590a1ae",
+  "active": "506440c08606d827",
   "lastOpenFiles": [
+    "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/Kubernetes/kubernetes解决方案.md",
     "运维/Kubernetes/kubernetes技巧.md",
     "前端/nginx.md",
-    "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "运维/Kubernetes/kubernetes工具.md",
     "运维/容器/docker/docker.md",
     "运维/Kubernetes/helm/kubevpn.md",
