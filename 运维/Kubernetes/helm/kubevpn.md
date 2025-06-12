@@ -16,7 +16,7 @@ helm install kubevpn kubevpn/kubevpn -n kubevpn --create-namespace
 ```url
 https://github.com/kubenetworks/kubevpn/releases
 ```
-2. 使用脚本，在服务端生成.kube/config文件
+2. 编写kubevpn.sh脚本，在服务端生成.kube/config文件
 ```
 #!/bin/bash
 set -e
