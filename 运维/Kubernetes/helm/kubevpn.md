@@ -4,11 +4,11 @@
 ## 使用helm安装kubevpn的服务端
 **注意：记得更换[镜像源](../../容器/docker/docker.md#docker 源)**
 1. 添加kubevpn下载地址
-```bash
+```shell
 helm repo add kubevpn https://raw.githubusercontent.com/kubenetworks/kubevpn/master/charts
 ```
 2. 使用命令安装
-```bash
+```shell
 helm install kubevpn kubevpn/kubevpn -n kubevpn --create-namespace
 ```
 # 安装kubevpn客户端
@@ -115,6 +115,6 @@ echo "生成长期有效的 kubeconfig 完成: $KUBECONFIG_OUTPUT"
 echo "Token 有效期设置为: $TOKEN_EXPIRATION"
 ```
 2. 使用命令连接
-```bash
+```shell
 kubevpn connect --kubeconfig .\kubeconfig-vpn.yaml -n kubevpn
 ```
