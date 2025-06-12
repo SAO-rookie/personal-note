@@ -49,8 +49,7 @@ metadata:
 
 k8s版本升级要一级一级的升 [文档](https://kubernetes.io/zh-cn/docs/reference/setup-tools/kubeadm/kubeadm-upgrade/)
 ## k8s添加新节点
-TOKEN过期后 重新生产TOKEN
-* 先使用命令重新生成证书
+* TOKEN过期后 重新生产TOKEN，先使用命令重新生成证书
 ```
 kubeadm token create --print-join-command
 ```
