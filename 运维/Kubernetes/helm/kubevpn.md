@@ -17,8 +17,9 @@ helm install kubevpn kubevpn/kubevpn -n kubevpn --create-namespace
 https://github.com/kubenetworks/kubevpn/releases
 ```
 2. 编写kubevpn.sh脚本，在服务端生成.kube/config文件
-```
+```bash
 #!/bin/bash
+
 set -e
 
 # 配置区域，按需修改
@@ -27,15 +28,15 @@ SERVICEACCOUNT_NAME="wangyl-dev"
 CLUSTERROLE_NAME="kubevpn-dev"
 KUBECONFIG_OUTPUT="./wangyl-dev-vpn.yaml"
 TOKEN_EXPIRATION="8760h"  # 1年有效期（8760小时）
+
   
+
 # 1. 创建命名空间（如果不存在）
 kubectl get ns $NAMESPACE >/dev/null 2>&1 || kubectl create ns $NAMESPACE
 
 # 2. 创建 ServiceAccount
 kubectl get sa $SERVICEACCOUNT_NAME -n $NAMESPACE >/dev/null 2>&1 || kubectl create sa $SERVICEACCOUNT_NAME -n $NAMESPACE
-
   
-
 # 3. 创建 ClusterRole（自定义权限）
 cat <<EOF | kubectl apply -f -
 apiVersion: rbac.authorization.k8s.io/v1
@@ -43,20 +44,34 @@ kind: Role
 metadata:
   name: $CLUSTERROLE_NAME
   namespace: $NAMESPACE
-rules:  
-	- apiGroups: [ "apps", "" ]  
-	  resources: [ "deployments", "services", "pods", "secrets" ]  
-	  verbs: [ "get", "list" ]  
-	- apiGroups: [ "" ]  
-	  resources: [ "namespaces" ]  
-	  verbs: [ "get" ]  
-	- apiGroups: [ "" ]  
-	  resources: [ "configmaps" ]  
-	  verbs: [ "update", "get", "list" ]  
-	- apiGroups: [ "" ]  
-	  resources: [ "pods/portforward" , "pods/exec" ]  
-	  verbs: [ "create" ]
-EOF 
+rules:
+  - apiGroups: [""]
+    resources:
+      - pods/exec
+      - pods/portforward
+    verbs:
+      - create
+      
+  # 读取 Services、Endpoints、Namespaces
+  - apiGroups: ["","apps"]
+    resources:
+      - secrets
+      - pods
+      - services
+      - endpoints
+      - namespaces
+      - deployments
+    verbs:
+      - get
+      - list
+      - watch
+  # 读取 ConfigMaps（含更新）
+  - apiGroups: [""]
+    resources:
+      - configmaps
+    verbs:
+      - update
+EOF
 
 # 4. 创建 ClusterRoleBinding
 kubectl get rolebinding ${SERVICEACCOUNT_NAME}-binding -n ${NAMESPACE} >/dev/null 2>&1 || \
@@ -93,7 +108,10 @@ users:
     token: ${TOKEN}
 EOF
 
+  
+
 echo "生成长期有效的 kubeconfig 完成: $KUBECONFIG_OUTPUT"
+
 echo "Token 有效期设置为: $TOKEN_EXPIRATION"
 ```
 2. 使用命令连接
