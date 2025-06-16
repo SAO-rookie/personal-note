@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/helm/kubevpn.md",
-                "mode": "source",
+                "file": "运维/Kubernetes/kubernetes安装/k3s安装.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kubevpn"
+              "title": "k3s安装"
             }
           },
           {
@@ -192,17 +192,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89d3ca6b8590a1ae",
+  "active": "506440c08606d827",
   "lastOpenFiles": [
+    "运维/容器/docker/docker.md",
+    "运维/Kubernetes/helm/kubevpn.md",
     "后端/mysql/mysql技巧.md",
     "后端/mysql/mysql配置.md",
     "运维/Kubernetes/kubernetes解决方案.md",
     "运维/Kubernetes/kubernetes工具.md",
     "运维/Kubernetes/kubernetes技巧.md",
-    "运维/Kubernetes/helm/kubevpn.md",
     "运维/Kubernetes/kubernetes流量入口/ingress-nginx/ingress-nginx技巧.md",
     "前端/nginx.md",
-    "运维/容器/docker/docker.md",
     "运维/Kubernetes/helm/ingress-nginx.md",
     "运维/容器/docker/docker-file仓库.md",
     "运维/Kubernetes/helm/openvpn.md",
