@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/Kubernetes/helm/kubevpn.md",
+                "file": "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "kubevpn 的大纲"
+              "title": "nfs-subdir-external-provisioner的安装 的大纲"
             }
           },
           {
@@ -192,7 +192,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "506440c08606d827",
+  "active": "89d3ca6b8590a1ae",
   "lastOpenFiles": [
     "运维/linux/文件共享/nfs协议.md",
     "运维/容器/docker/docker-file仓库.md",
