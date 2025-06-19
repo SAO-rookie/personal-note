@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/容器/docker/docker.md",
+                "file": "后端/消息队列/kafka技巧.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker"
+              "title": "kafka技巧"
             }
           },
           {
@@ -194,13 +194,13 @@
   },
   "active": "506440c08606d827",
   "lastOpenFiles": [
+    "运维/容器/docker/docker.md",
     "后端/消息队列/kafka技巧.md",
     "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
     "运维/linux/文件共享/nfs协议.md",
     "运维/容器/docker/docker-file仓库.md",
     "运维/容器/minio.md",
     "运维/Kubernetes/kubernetes安装/k3s安装.md",
-    "运维/容器/docker/docker.md",
     "运维/Kubernetes/helm/kubevpn.md",
     "后端/mysql/mysql技巧.md",
     "后端/mysql/mysql配置.md",
