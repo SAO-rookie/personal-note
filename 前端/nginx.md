@@ -66,6 +66,43 @@ services:
     }
 ```
 
+# nginx 一个域名多个后端配置
+```
+server {
+
+   listen  80;
+   server_name  xz-api.t.cn;
+   
+   location ^~ /a/ {
+      # 关键修改：在 proxy_pass 目标地址末尾添加斜杠 "/"
+      proxy_pass http://a:9090/;
+
+      # 可选：确保路径转换正确
+      rewrite ^/a/(.*)$ /$1 break;
+
+      # 推荐添加的通用代理头配置
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+   }
+   
+   location ^~ /b/ {
+      # 关键修改：在 proxy_pass 目标地址末尾添加斜杠 "/"
+      proxy_pass http://b:9090/;
+
+      # 可选：确保路径转换正确
+      rewrite ^/b/(.*)$ /$1 break;
+
+      # 推荐添加的通用代理头配置
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+   }
+
+}
+```
 # nginx 开启gzip
 ```
 # 开启gzip
