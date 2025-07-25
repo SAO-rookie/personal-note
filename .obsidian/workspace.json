@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/Acme.sh自动化配置证书.md",
+                "file": "运维/Kubernetes/kubernetes解决方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Acme.sh自动化配置证书"
+              "title": "kubernetes解决方案"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/Kubernetes/helm/nfs-subdir-external-provisioner的安装.md",
+                "file": "运维/Kubernetes/kubernetes解决方案.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "nfs-subdir-external-provisioner的安装 的大纲"
+              "title": "kubernetes解决方案 的大纲"
             }
           },
           {
@@ -176,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -192,11 +192,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "506440c08606d827",
+  "active": "ebb606fe73b47b68",
   "lastOpenFiles": [
+    "前端/Acme.sh自动化配置证书.md",
     "运维/Kubernetes/helm/cert-manager.md",
     "前端/nginx.md",
-    "前端/Acme.sh自动化配置证书.md",
     "前端/前端技巧.md",
     "运维/linux/文件共享/smb协议.md",
     "运维/CI-CD/drone ci/drone ci.md",
