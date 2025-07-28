@@ -1,5 +1,5 @@
 # minio k8s集群版
-**注意[安装前置环境:Krew](./kubernetes工具.md#Krew的安装)**
+**注意[安装前置环境:Krew](../kubernetes工具.md#Krew的安装)**
 ### 安装Minio DirectPV
 根据文档安装，第六步不需要做
 [DirectPV文档](https://min.io/directpv)
