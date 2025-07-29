@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/nginx/nginx解决方案.md",
+                "file": "运维/CI-CD/jenkins/pipline脚本.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nginx解决方案"
+              "title": "pipline脚本"
             }
           }
         ],
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端/nginx/nginx解决方案.md",
+                "file": "运维/CI-CD/jenkins/pipline脚本.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "nginx解决方案 的大纲"
+              "title": "pipline脚本 的大纲"
             }
           },
           {
@@ -209,12 +209,14 @@
   },
   "active": "c56682278e601346",
   "lastOpenFiles": [
+    "运维/CI-CD/jenkins/jenkins解决方案.md",
+    "运维/CI-CD/jenkins/jenkins技巧.md",
+    "运维/CI-CD/jenkins/jenkins安装.md",
+    "前端/nginx/nginx解决方案.md",
     "前端/nginx/Acme.sh自动化配置证书.md",
     "前端/前端技巧.md",
-    "前端/nginx/nginx解决方案.md",
     "前端/nginx",
     "前端/未命名.md",
-    "运维/CI-CD/jenkins/jenkins安装.md",
     "后端/postgreSql/postgresql技巧.md",
     "后端/mysql/mysql配置.md",
     "后端/mysql/mysql技巧.md",
@@ -235,7 +237,6 @@
     "运维/Kubernetes/kubernetes综合/kubernetes技巧.md",
     "运维/Kubernetes/helm/kubevpn.md",
     "运维/Kubernetes/kubernetes综合/kubernetes解决方案.md",
-    "运维/Kubernetes/kubernetes综合/容器安装/minio.md",
     "运维/Kubernetes/kubernetes综合/容器安装",
     "后端/java/未命名",
     "运维/组网",
