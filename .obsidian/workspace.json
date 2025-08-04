@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/CI-CD/jenkins/pipline脚本.md",
+                "file": "运维/linux/文件共享/nfs协议.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "pipline脚本 的大纲"
+              "title": "nfs协议 的大纲"
             }
           },
           {
@@ -191,7 +191,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -207,7 +207,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c56682278e601346",
+  "active": "ebb606fe73b47b68",
   "lastOpenFiles": [
     "运维/CI-CD/jenkins/pipline脚本.md",
     "运维/CI-CD/jenkins/jenkins解决方案.md",
