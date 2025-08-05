@@ -81,9 +81,15 @@ vim /etc/dhcp/dhclient.conf
 supersede domain-name-servers 114.114.114.114, 223.6.6.6;
 ```
 ## 方案二
-### 修改DNF
+### 修改DNS配置文件
 ```bash
 vim /etc/resolv.conf
 # 在文件添加以下配置
 nameserver 114.114.114.114
+```
+### 锁定文件
+```bash
+chattr +i /etc/resolv.conf
+# 解除锁定 
+chattr -i /etc/resolv.conf
 ```
