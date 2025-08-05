@@ -72,3 +72,10 @@ iface 网卡 inet static
 
 systemctl restart networking
 ```
+
+# Debian修改DNS配置
+```bash
+vim /etc/dhcp/dhclient.conf
+# 在最后，添加以下这行
+supersede domain-name-servers 114.114.114.114, 223.6.6.6;
+```

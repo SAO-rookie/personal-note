@@ -191,7 +191,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -207,7 +207,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c56682278e601346",
+  "active": "89d3ca6b8590a1ae",
   "lastOpenFiles": [
     "运维/linux/文件共享/nfs协议.md",
     "运维/CI-CD/jenkins/pipline脚本.md",
