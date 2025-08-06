@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/linux/linux解决方案.md",
+                "file": "运维/容器/docker/docker.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "linux解决方案 的大纲"
+              "title": "docker 的大纲"
             }
           },
           {
@@ -191,7 +191,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -207,7 +207,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c56682278e601346",
+  "active": "ebb606fe73b47b68",
   "lastOpenFiles": [
     "运维/容器/docker/docker-file仓库.md",
     "运维/linux/linux解决方案.md",
