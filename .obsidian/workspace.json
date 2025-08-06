@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/容器/docker/docker.md",
-                "mode": "source",
+                "file": "前端/nginx/nginx解决方案.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "docker"
+              "title": "nginx解决方案"
             }
           }
         ],
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/容器/docker/docker.md",
+                "file": "前端/nginx/nginx解决方案.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "docker 的大纲"
+              "title": "nginx解决方案 的大纲"
             }
           },
           {
@@ -207,8 +207,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ebb606fe73b47b68",
+  "active": "c56682278e601346",
   "lastOpenFiles": [
+    "运维/容器/docker/docker.md",
     "运维/容器/docker/docker-file仓库.md",
     "运维/linux/linux解决方案.md",
     "运维/linux/文件共享/nfs协议.md",
@@ -229,7 +230,6 @@
     "后端/java/图片处理/GraphicsMagick.md",
     "后端/go/go技巧.md",
     "后端/消息队列/kafka技巧.md",
-    "运维/容器/docker/docker.md",
     "运维/容器/containerd/Containerd配置.md",
     "运维/容器/minio.md",
     "运维/容器/postgresql.md",
