@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/nginx/nginx解决方案.md",
+                "file": "运维/linux/文件共享/nfs协议.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nginx解决方案"
+              "title": "nfs协议"
             }
           }
         ],
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端/nginx/nginx解决方案.md",
+                "file": "运维/linux/文件共享/nfs协议.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "nginx解决方案 的大纲"
+              "title": "nfs协议 的大纲"
             }
           },
           {
@@ -209,6 +209,7 @@
   },
   "active": "c56682278e601346",
   "lastOpenFiles": [
+    "前端/nginx/nginx解决方案.md",
     "运维/容器/docker/docker.md",
     "运维/容器/docker/docker-file仓库.md",
     "运维/linux/linux解决方案.md",
@@ -217,7 +218,6 @@
     "运维/CI-CD/jenkins/jenkins解决方案.md",
     "运维/CI-CD/jenkins/jenkins技巧.md",
     "运维/CI-CD/jenkins/jenkins安装.md",
-    "前端/nginx/nginx解决方案.md",
     "前端/nginx/Acme.sh自动化配置证书.md",
     "前端/前端技巧.md",
     "前端/nginx",
