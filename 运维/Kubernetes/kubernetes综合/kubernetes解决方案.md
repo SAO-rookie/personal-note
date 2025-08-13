@@ -195,6 +195,7 @@ spec:
       securityContext: {}
 ```
 ## 使用service 配置公网ip地址
+**注意：两个名字必须一样才可以**
 1. 使用以下配置文件创建一个service
 ```
 apiVersion: v1
@@ -206,7 +207,7 @@ spec:
     - protocol: TCP
       name: lz
       port: 80
-      targetPort: 80
+      targetPort: 30001
 ```
 2. 使用以下配置创建一个Endpoints
 ```
