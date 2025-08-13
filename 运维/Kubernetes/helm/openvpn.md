@@ -75,6 +75,7 @@ remote {ip} {port} tcp
 * port：开发的端口
 # 客户端配置
 ## 使用vpn软件连接
+
 [pritunl下载地址-三端通用](https://client.pritunl.com/)
 将以.ovpn结尾的密钥文件导入即可
 ## linux命令行请按照以下策略

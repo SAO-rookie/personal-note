@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "运维/Kubernetes/kubernetes综合/kubernetes解决方案.md",
+                "file": "运维/Kubernetes/helm/openvpn.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kubernetes解决方案"
+              "title": "openvpn"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/Kubernetes/kubernetes综合/kubernetes解决方案.md",
+                "file": "运维/Kubernetes/helm/openvpn.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "kubernetes解决方案 的大纲"
+              "title": "openvpn 的大纲"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -180,6 +180,7 @@
   },
   "active": "ebb606fe73b47b68",
   "lastOpenFiles": [
+    "运维/Kubernetes/kubernetes综合/kubernetes解决方案.md",
     "运维/Kubernetes/kubernetes综合/kubernetes技巧.md",
     "运维/Kubernetes/kubernetes综合/kubernetes工具.md",
     "运维/Kubernetes/helm/kubevpn.md",
@@ -206,7 +207,6 @@
     "后端/go/go技巧.md",
     "后端/消息队列/kafka技巧.md",
     "运维/容器/containerd/Containerd配置.md",
-    "运维/容器/minio.md",
     "运维/Kubernetes/kubernetes综合",
     "运维/Kubernetes/kubernetes综合/容器安装",
     "后端/java/未命名",
