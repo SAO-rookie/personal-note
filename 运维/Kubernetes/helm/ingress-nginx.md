@@ -16,7 +16,7 @@ helm pull ingress-nginx/ingress-nginx
 tar -zxvf ingress-nginx-x.x.x.tgz
 ```
 
-### 有LoadBalance IP
+### 无LoadBalance IP
 **方法一：使用主机网络**
 1.  修改 controller.dnsPolicy 的值为 ClusterFirstWithHostNet
 ```yaml
@@ -87,7 +87,7 @@ iptables -t nat -A OUTPUT -o lo -p tcp --dport 443 -j REDIRECT --to-port 30443
 apt-get install iptables-persistent -y 
 netfilter-persistent save
 ```
-### 无LoadBalance IP
+### 有LoadBalance IP
  1. 修改controller.service.type 的业务类型
 ```yaml
 controller:
