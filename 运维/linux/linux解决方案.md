@@ -38,6 +38,16 @@ endif
 ```
 
 # SSH 配置
+## 配置免密登录
+控制节点输入
+```shell
+# 生成 SSH 密钥
+ssh-keygen -t rsa -b 4096
+# 连续按回车即可（默认路径是 `~/.ssh/id_rsa`
+ssh-copy-id user@192.168.1.10
+# 把 `user` 换成目标机登录用户名，例如 `root` 或 `ubuntu`。
+# 系统会提示输入一次密码，然后自动把公钥写入目标主机的 ~/.ssh/authorized_keys 
+```
 ## 配置密码登录
 ```bash
 vim /etc/ssh/sshd_config
