@@ -183,12 +183,15 @@
   "active": "c16aa54af7ec178d",
   "lastOpenFiles": [
     "前端/nginx/nginx解决方案.md",
+    "前端/nginx/Acme.sh自动化配置证书.md",
+    "前端/Node注意事项.md",
+    "运维/容器/docker/docker.md",
+    "运维/容器/docker/docker-file仓库.md",
+    "前端/前端技巧.md",
     "后端/go/go技巧.md",
     "工具/杂物.md",
     "后端/java/springboot/Springboot测试.md",
     "后端/java/图片处理/GraphicsMagick.md",
-    "前端/前端技巧.md",
-    "运维/容器/docker/docker.md",
     "运维/Kubernetes/kubernetes安装/kubeadm安装/Kubernetes安装.md",
     "运维/linux/linux解决方案.md",
     "运维/Kubernetes/kubernetes综合/kubernetes解决方案.md",
@@ -206,14 +209,11 @@
     "运维/ansible",
     "运维/CI-CD/jenkins/pipline脚本.md",
     "运维/CI-CD/jenkins/jenkins技巧.md",
-    "运维/CI-CD/jenkins/jenkins解决方案.md",
     "未命名 1.base",
     "运维/CI-CD/jenkins/image/jenkins-install/10.png",
     "未命名.base",
     "运维/Kubernetes/kubernetes安装/kubespray安装",
     "运维/Kubernetes/kubernetes安装/k3s安装",
-    "运维/Kubernetes/kubernetes安装/k3s安装/k3s安装.md",
-    "运维/Kubernetes/kubernetes安装/kubeadm安装",
-    "运维/Kubernetes/helm/loki.md"
+    "运维/Kubernetes/kubernetes安装/kubeadm安装"
   ]
 }
