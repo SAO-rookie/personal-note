@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端/前端技巧.md",
+                "file": "后端/postgreSql/postgresql技巧.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "前端技巧"
+              "title": "postgresql技巧"
             }
           }
         ]
@@ -142,17 +142,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "运维/linux/linux解决方案.md",
-                "followCursor": false,
+                "file": "后端/postgreSql/postgresql技巧.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "linux解决方案 的大纲"
+              "title": "postgresql技巧 的大纲"
             }
           },
           {
-            "id": "1e76c1289fdf3c2a",
+            "id": "5ef910630dbe9f1a",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -180,35 +180,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c16aa54af7ec178d",
+  "active": "29ee80bdfdadd1a1",
   "lastOpenFiles": [
+    "后端/mysql/mysql配置.md",
+    "后端/mysql/mysql技巧.md",
+    "后端/java/图片处理/GraphicsMagick.md",
+    "后端/go/go技巧.md",
+    "后端/消息队列/kafka技巧.md",
+    "运维/容器/postgresql.md",
+    "运维/容器/minio.md",
+    "运维/容器/docker/docker-file仓库.md",
+    "运维/容器/docker/docker.md",
+    "运维/容器/containerd/Containerd配置.md",
+    "前端/前端技巧.md",
     "前端/nginx/nginx解决方案.md",
     "前端/nginx/Acme.sh自动化配置证书.md",
     "前端/Node注意事项.md",
-    "运维/容器/docker/docker.md",
-    "运维/容器/docker/docker-file仓库.md",
-    "前端/前端技巧.md",
-    "后端/go/go技巧.md",
     "工具/杂物.md",
     "后端/java/springboot/Springboot测试.md",
-    "后端/java/图片处理/GraphicsMagick.md",
     "运维/Kubernetes/kubernetes安装/kubeadm安装/Kubernetes安装.md",
     "运维/linux/linux解决方案.md",
     "运维/Kubernetes/kubernetes综合/kubernetes解决方案.md",
     "运维/Kubernetes/kubernetes综合/kubernetes技巧.md",
     "运维/Kubernetes/kubernetes综合/kubernetes工具.md",
     "运维/Kubernetes/kubernetes安装/kubeadm安装/服务器初始化.md",
-    "运维/容器/minio.md",
-    "运维/容器/postgresql.md",
-    "运维/容器/containerd/Containerd配置.md",
-    "后端/mysql/mysql配置.md",
-    "后端/mysql/mysql技巧.md",
     "运维/linux/文件共享/nfs协议.md",
     "运维/linux/文件共享/smb协议.md",
     "运维/CI-CD/jenkins/jenkins安装.md",
     "运维/ansible",
     "运维/CI-CD/jenkins/pipline脚本.md",
-    "运维/CI-CD/jenkins/jenkins技巧.md",
     "未命名 1.base",
     "运维/CI-CD/jenkins/image/jenkins-install/10.png",
     "未命名.base",
