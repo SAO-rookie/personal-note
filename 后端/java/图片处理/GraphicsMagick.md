@@ -1,3 +1,4 @@
+# GraphicsMagick
 ## window安装
 [windows下载地址](https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/)
 ## linux安装
