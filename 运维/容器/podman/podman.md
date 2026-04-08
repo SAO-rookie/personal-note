@@ -7,4 +7,4 @@
 sudo loginctl enable-linger $(whoami)
 ```
 ### 2.服务器重启，服务没同时启动
-
+在 Rootless 模式下,当服务器重启后，所用服务都会被关闭，需要手动重启
