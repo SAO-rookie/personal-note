@@ -1,7 +1,6 @@
 # Mybatis-plus
 ## 逻辑删除
-参考
-[官方文档](https://baomidou.com/guides/logic-delete/)
+参考：[官方文档](https://baomidou.com/guides/logic-delete/)
 ### 1.时间类型
 使用时间类型作为逻辑删除,以下配置要同时使用
 yaml配置
